@@ -10,7 +10,7 @@ module.exports = {
     title: "Imran Molla Joy",
     description:
       "Imran Molla Joy is a web developer and a programmer, graphics designer and a UI designer.",
-    image: "images/aboutme.png",
+    image: "/imjoy.png",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
