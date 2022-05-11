@@ -70,16 +70,12 @@ const Hero = () => {
           <HStack>
             <MotionDiv delay={1.4} animation="scale">
               <Link to="#portfolio">
-                <Button variant={"solid"} size="lg">
-                  Portfolio
-                </Button>
+                <Button variant={"solid"}>Portfolio</Button>
               </Link>
             </MotionDiv>
             <MotionDiv delay={1.6} animation="scale">
               <Link to="#about">
-                <Button variant={"outline"} size="lg">
-                  About me
-                </Button>
+                <Button variant={"outline"}>About me</Button>
               </Link>
             </MotionDiv>
           </HStack>
