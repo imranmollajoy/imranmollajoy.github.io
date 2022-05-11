@@ -7,10 +7,13 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "My New Blog",
-    description: "This is my awesome blog I made from scratch!",
+    title: "Imran Molla Joy",
+    description:
+      "Imran Molla Joy is a web developer and a programmer, graphics designer and a UI designer.",
+    image: "images/aboutme.png",
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-catch-links`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-image`,

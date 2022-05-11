@@ -4,8 +4,14 @@ import "./global.css"
 import { ChakraProvider } from "@chakra-ui/react"
 import "../../styles/fonts.css"
 import theme from "../../styles/Theme"
+import SEO from "../SEO"
 const Layout = ({ children }) => {
-  return <ChakraProvider theme={theme}>{children}</ChakraProvider>
+  return (
+    <>
+      <SEO />
+      <ChakraProvider theme={theme}>{children}</ChakraProvider>
+    </>
+  )
 }
 
 export default Layout
