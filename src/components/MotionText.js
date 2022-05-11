@@ -5,7 +5,7 @@ const MotionText = () => {
   const texts = [
     "a web developer",
     "a web designer",
-    "a graphics designer",
+    "a graphic designer",
     "a UI desinger",
   ]
   useEffect(() => {
