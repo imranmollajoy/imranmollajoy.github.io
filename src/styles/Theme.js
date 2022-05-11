@@ -14,7 +14,16 @@ const theme = extendTheme(
 
       // Custom colors
       brand: {
+        50: "#7771FB",
+        100: "#6D67FB",
+        200: "#645EFB",
+        300: "#5B54FB",
+        400: "#524BFA",
         500: "#4941fa",
+        600: "#453EEE",
+        700: "#423BE1",
+        800: "#3E37D5",
+        900: "#3A34C8",
       },
       background: "#e0dcdb",
       text: "#2a2726",
