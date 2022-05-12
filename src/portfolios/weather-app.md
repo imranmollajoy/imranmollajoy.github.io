@@ -18,4 +18,4 @@ An app made mainly for getting the days with high chances of rainfall. It also g
 
 This app was made using ReactJS and CSS. For generating charts, Recharts was used.
 
-You can found the app [by clicking here](https://imranmollajoy.github.io/bring-your-umbrella/)
+You can find the app [by clicking here](https://imranmollajoy.github.io/bring-your-umbrella/)
