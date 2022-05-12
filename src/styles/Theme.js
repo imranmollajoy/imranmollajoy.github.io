@@ -56,6 +56,7 @@ const theme = extendTheme(
           color: "text",
           backgroundColor: "background",
           fontSize: "lg",
+          overflowX: "hidden",
         },
         a: {
           transition: "all 0.2s",
