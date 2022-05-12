@@ -10,4 +10,4 @@ An app to generate dummy text. Useful for testing purposes. It uses a free remot
 
 The app was made using ReactJS and Material UI.
 
-You can found the app [by clicking here](https://imranmollajoy.github.io/dummy-text-generator/)
+You can find the app [by clicking here](https://imranmollajoy.github.io/dummy-text-generator/)
