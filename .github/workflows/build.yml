@@ -11,7 +11,7 @@ jobs:
     environment: production
     steps:
       - name: Environment variable
-        run: echo "${{secrets.CONTENTFUL_ACCESS_TOKEN }}" > .env.production
+        run: echo "${{ secrets.GATSBY_CONTENTFUL_ACCESS_TOKEN }}" > .env.production
       - name: Checkout
         uses: actions/checkout@v3
       - name: Gatsby to Gh Pages
