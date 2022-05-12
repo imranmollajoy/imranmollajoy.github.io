@@ -16,12 +16,14 @@ import {
   ModalBody,
   ModalCloseButton,
   useDisclosure,
-  Badge,
   Text,
 } from "@chakra-ui/react"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import BlogCard from "../BlogCard"
 import MotionDiv from "../MotionDiv"
+import { MDXProvider } from "@mdx-js/react"
+import { MDXRenderer } from "gatsby-plugin-mdx"
+
 const PortfolioSection = ({ portfolios }) => {
   const colspan = useBreakpointValue({
     base: 3,
@@ -38,6 +40,18 @@ const PortfolioSection = ({ portfolios }) => {
   ]
   const { isOpen, onOpen, onClose } = useDisclosure()
   const [modalData, setModalData] = useState("")
+  const chakraUiComponents = {
+    h1: props => <Heading as="h1" paddingY="5" size="2xl" {...props} />,
+    h2: props => <Heading as="h2" paddingY="5" size="xl" {...props} />,
+    h3: props => <Heading as="h3" paddingY="5" size="lg" {...props} />,
+    h4: props => <Heading as="h4" paddingY="5" size="md" {...props} />,
+    h5: props => <Heading as="h5" paddingY="5" size="sm" {...props} />,
+    h6: props => <Heading as="h6" paddingY="5" size="xl" {...props} />,
+    p: props => (
+      <Text lineHeight={2} paddingBottom="2" fontSize="lg" {...props} />
+    ),
+    img: props => <GatsbyImage marginBottom="4" {...props} />,
+  }
   function openModal(props) {
     setModalData(props)
     onOpen()
@@ -97,7 +111,9 @@ const PortfolioSection = ({ portfolios }) => {
                   image={getImage(modalData?.frontmatter?.featuredImg)}
                   alt={modalData?.frontmatter?.name}
                 />
-                <Box dangerouslySetInnerHTML={{ __html: modalData.html }} />
+                <MDXProvider components={chakraUiComponents}>
+                  <MDXRenderer>{modalData?.body}</MDXRenderer>
+                </MDXProvider>
               </ModalBody>
               <ModalFooter>
                 <Button onClick={onClose}>Close</Button>

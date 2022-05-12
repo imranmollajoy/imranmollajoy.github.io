@@ -9,8 +9,8 @@ import { graphql } from "gatsby"
 import { Layout } from "../components/ui"
 
 export default function Home({ data }) {
-  const portfolios = data.portfolios.nodes
   console.log(data)
+  const portfolios = data.portfolios.nodes
   return (
     <Layout>
       <Hero />
@@ -23,22 +23,23 @@ export default function Home({ data }) {
 
 export const pageQuery = graphql`
   query HomepageQuery {
-    portfolios: allMarkdownRemark(
+    portfolios: allMdx(
       filter: { frontmatter: { category: { eq: "portfolio" } } }
       limit: 4
     ) {
       nodes {
-        html
+        body
         frontmatter {
-          name
-          title
-          slug
-          stacks
+          category
           featuredImg {
             childImageSharp {
-              gatsbyImageData(placeholder: DOMINANT_COLOR)
+              gatsbyImageData(placeholder: BLURRED)
             }
           }
+          name
+          slug
+          stacks
+          title
         }
       }
     }

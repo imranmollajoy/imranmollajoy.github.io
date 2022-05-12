@@ -55,6 +55,7 @@ const theme = extendTheme(
         body: {
           color: "text",
           backgroundColor: "background",
+          fontSize: "lg",
         },
         a: {
           transition: "all 0.2s",

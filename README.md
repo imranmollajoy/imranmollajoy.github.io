@@ -2,6 +2,6 @@
 
 # Heading
 
-Source of portfolio website for Imran Molla Joy. Made in React,  Gatsby.js, Chakra UI with VSCode, Linux Mint XFCE.
+Source of portfolio website for Imran Molla Joy. Made in React, Gatsby.js, Chakra UI with VSCode, Linux Mint XFCE.
 
 Built automatically by Github Actions. Hosted on Github Pages.

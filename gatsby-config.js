@@ -33,5 +33,11 @@ module.exports = {
         path: `${__dirname}/src/portfolios/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [".mdx", ".md"],
+      },
+    },
   ],
 }
