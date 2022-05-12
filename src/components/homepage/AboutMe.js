@@ -56,7 +56,7 @@ const AboutMe = () => {
               About Me
             </Heading>
           </MotionDiv>
-          <MotionDiv animation="fromRight" delay={0.5}>
+          <MotionDiv animation="fromLeft" delay={0.5}>
             <Box width="full">
               <AboutMeText />
             </Box>
