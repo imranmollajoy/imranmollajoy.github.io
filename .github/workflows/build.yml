@@ -23,7 +23,7 @@ jobs:
       	  path: ~/.npm
         	key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         	restore-keys: |
-                	${{ runner.os }}-node-
+          ${{ runner.os }}-node-
       - name: Gatsby to Gh Pages
         uses: enriikke/gatsby-gh-pages-action@v2
         with:
