@@ -4,16 +4,19 @@ on:
   push:
     branches:
       - source
+<<<<<<< HEAD
+=======
+env:
+   GATSBY_CONTENTFUL_ACCESS_TOKEN: ${{ secrets.GATSBY_CONTENTFUL_ACCESS_TOKEN }}
+
+
+>>>>>>> 9786f6163750aea521e78ffaf4331cfec0ea04ce
 jobs:
   build:
     runs-on: ubuntu-latest
     environment: production
     steps:
-      - name: Environment variable
-        env:
-          ENV: ${{ secrets.GATSBY_CONTENTFUL_ACCESS_TOKEN }}
-        run: |
-          echo $ENV > .env.production
+      
       - name: Checkout
         uses: actions/checkout@v3
       - name: Gatsby to Gh Pages
