@@ -19,8 +19,8 @@ import {
   Text,
 } from "@chakra-ui/react"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import BlogCard from "../BlogCard"
-import MotionDiv from "../MotionDiv"
+import PortfolioCard from "../PortfolioCard"
+import { MotionDiv } from "../ui"
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
@@ -83,7 +83,7 @@ const PortfolioSection = ({ portfolios }) => {
         </HStack>
         <SimpleGrid columns={3} spacing="3" alignItems="stretch">
           {portfolios.map((portfolio, index) => (
-            <BlogCard
+            <PortfolioCard
               key={index}
               data={portfolio}
               color={colors[index]}

@@ -1,30 +1,43 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import { Box, Heading, Text } from "@chakra-ui/react"
+import { Box, Container, Heading, Text, VStack } from "@chakra-ui/react"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
-
+import { Layout } from "../../components/ui"
+import BlogCard from "../../components/BlogCard"
 const Blog = ({ data }) => {
   console.log(data)
   const blogs = data.blogs.edges
   return (
-    <Box>
-      {blogs.map(({ node }) => {
-        return (
-          <Box>
-            <Link to={`/blog/${node.slug}`}>
-              <Heading>{node.title}</Heading>
-            </Link>
-            <Box>{renderRichText(node.body)}</Box>
-            <Box>{node.category}</Box>
-            <Box>
-              {node.tags.map(tag => {
-                return <Box as="span">{tag}</Box>
-              })}
-            </Box>
-          </Box>
-        )
-      })}
-    </Box>
+    <Layout>
+      <Box>
+        <Container maxW="container.xl" py={24}>
+          <VStack spacing={4}>
+            {blogs.map(({ node }) => {
+              const {
+                id,
+                slug,
+                title,
+                category,
+                featured,
+                publishedDate,
+                thumbnail,
+              } = node
+              return (
+                <BlogCard
+                  key={id}
+                  slug={slug}
+                  title={title}
+                  category={category}
+                  featured={featured}
+                  publishedDate={publishedDate}
+                  thumbnail={thumbnail}
+                />
+              )
+            })}
+          </VStack>
+        </Container>
+      </Box>
+    </Layout>
   )
 }
 
@@ -40,8 +53,8 @@ export const BlogsQuery = graphql`
           featured
           tags
           category
-          body {
-            raw
+          thumbnail {
+            gatsbyImageData
           }
         }
       }

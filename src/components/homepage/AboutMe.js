@@ -9,7 +9,7 @@ import {
   HStack,
   useBreakpointValue,
 } from "@chakra-ui/react"
-import MotionDiv from "../MotionDiv"
+import { MotionDiv } from "../ui"
 
 const AboutMe = () => {
   const colspanForText = useBreakpointValue({

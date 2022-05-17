@@ -60,8 +60,10 @@ const theme = extendTheme(
         },
         a: {
           transition: "all 0.2s",
+          display: "inline-block",
+          color: "brand.500",
           _hover: {
-            color: "brand.500",
+            color: "brand.900",
           },
         },
       },
