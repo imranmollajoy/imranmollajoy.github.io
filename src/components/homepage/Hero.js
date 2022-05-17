@@ -9,10 +9,8 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react"
 import { Link } from "gatsby"
-import MotionDiv from "../MotionDiv"
-import MotionOnScroll from "../MotionOnScroll"
-import MotionText from "../MotionText"
-import HeroCurve from "./HeroCurve"
+import { MotionDiv, MotionOnScroll, MotionText } from "../ui"
+
 const Hero = () => {
   const sizeForBgText = useBreakpointValue({
     base: "1000%",
