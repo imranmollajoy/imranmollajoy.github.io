@@ -32,7 +32,7 @@ const theme = extendTheme(
     fonts: {
       ...base.fonts,
       body: `Lato, ${base.fonts?.body}`,
-      heading: `Roboto Flex, Montserrat, sans-serif, ${base.fonts?.heading}`,
+      heading: `Playfair Display, Roboto Flex, Montserrat, sans-serif, ${base.fonts?.heading}`,
     },
     components: {
       ...base.components,
