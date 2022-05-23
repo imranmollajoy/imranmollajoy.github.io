@@ -19,7 +19,6 @@ module.exports = {
     `gatsby-plugin-catch-links`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
     {
       resolve: `gatsby-source-filesystem`,
@@ -47,6 +46,15 @@ module.exports = {
         spaceId: `4odric476j83`,
         // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `dominantColor`,
+        },
       },
     },
   ],
