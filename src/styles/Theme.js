@@ -25,8 +25,9 @@ const theme = extendTheme(
         800: "#3E37D5",
         900: "#3A34C8",
       },
-      background: "#e0dcdb",
+      background: "#f0efef",
       text: "#2a2726",
+      accent: "#f55e5f",
     },
 
     fonts: {

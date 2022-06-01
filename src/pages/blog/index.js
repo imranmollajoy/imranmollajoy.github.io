@@ -10,7 +10,11 @@ const Blog = ({ data }) => {
   return (
     <Layout>
       <Box>
-        <Container maxW="container.xl" py={24}>
+        <Container maxW="container.lg" py={24}>
+          <Heading size="lg" mb={12}>
+            Imran Molla Joy
+          </Heading>
+
           <VStack spacing={4}>
             {blogs.map(({ node }) => {
               const {
@@ -35,6 +39,9 @@ const Blog = ({ data }) => {
               )
             })}
           </VStack>
+          <Box mt={24}>
+            Go to <Link to="/">home page</Link>
+          </Box>
         </Container>
       </Box>
     </Layout>
