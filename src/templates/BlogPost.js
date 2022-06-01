@@ -1,6 +1,6 @@
 import { Box, Container, Heading, Text, Badge } from "@chakra-ui/react"
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Layout } from "../components/ui"
@@ -59,8 +59,9 @@ const BlogPost = ({ data }) => {
         <Box width="full" position="fixed" zIndex={-2} mt="-50vh">
           <GatsbyImage image={getImage(post.thumbnail)} alt={post.title} />
         </Box>
+
         <Container
-          maxW="container.xl"
+          maxW="container.lg"
           backgroundColor="background"
           minH="100vh"
           borderRadius={8}
@@ -69,6 +70,11 @@ const BlogPost = ({ data }) => {
           shadow="lg"
           p={{ sm: 4, md: 8, lg: 24 }}
         >
+          <Link to="/">
+            <Heading size="lg" mb={12}>
+              Imran Molla Joy
+            </Heading>
+          </Link>
           <Box>
             {post.featured && <Text>Featured</Text>}
             <Text>{post.updatedAt}</Text>
@@ -76,7 +82,12 @@ const BlogPost = ({ data }) => {
               {post.category}
             </Badge>
             <Heading my={4}>{post.title}</Heading>
-            <Box>{renderRichText(post.body, renderRichTextOptions)}</Box>
+            <Box textAlign="justify">
+              {renderRichText(post.body, renderRichTextOptions)}
+            </Box>
+            <Box mt={24}>
+              Go to <Link to="/blog">blog</Link>
+            </Box>
           </Box>
         </Container>
       </Box>
