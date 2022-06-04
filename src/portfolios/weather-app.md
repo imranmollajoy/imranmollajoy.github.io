@@ -1,5 +1,5 @@
 ---
-name: Weather and Rain Forecast App
+name: Rain Forecast App
 slug: weather-app
 category: portfolio
 featuredImg: ../images/byu.png

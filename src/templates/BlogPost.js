@@ -1,10 +1,10 @@
-import { Box, Container, Heading, Text, Badge } from "@chakra-ui/react"
-import React from "react"
-import { graphql, Link } from "gatsby"
-import { renderRichText } from "gatsby-source-contentful/rich-text"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { Layout } from "../components/ui"
-import { BLOCKS, MARKS } from "@contentful/rich-text-types"
+import { Box, Container, Heading, Text, Badge } from '@chakra-ui/react'
+import React from 'react'
+import { graphql, Link } from 'gatsby'
+import { renderRichText } from 'gatsby-source-contentful/rich-text'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { Layout } from '../components/ui'
+import { BLOCKS, MARKS } from '@contentful/rich-text-types'
 const BlogPost = ({ data }) => {
   const post = data.contentfulBlogPost
   const renderRichTextOptions = {
@@ -18,7 +18,7 @@ const BlogPost = ({ data }) => {
         <Text
           textAlign="left"
           my={4}
-          fontSize={{ base: "sm", sm: "md", md: "lg" }}
+          fontSize={{ base: 'sm', sm: 'md', md: 'lg' }}
         >
           {children}
         </Text>
@@ -53,16 +53,20 @@ const BlogPost = ({ data }) => {
       ),
     },
   }
+  const img = 'https://source.unsplash.com/random/600x600?nature'
   return (
     <Layout>
       <Box position="relative">
         <Box width="full" position="fixed" zIndex={-2} mt="-50vh">
-          <GatsbyImage image={getImage(post.thumbnail)} alt={post.title} />
+          {post.thumbnail && (
+            <GatsbyImage image={getImage(post.thumbnail)} alt={post.title} />
+          )}
+          {!post.thumbnail && <GatsbyImage image={img} alt={post.title} />}
         </Box>
 
         <Container
           maxW="container.lg"
-          backgroundColor="background"
+          backgroundColor="white"
           minH="100vh"
           borderRadius={8}
           marginTop="50vh"
@@ -77,7 +81,7 @@ const BlogPost = ({ data }) => {
           </Link>
           <Box>
             {post.featured && <Text>Featured</Text>}
-            <Text>{post.updatedAt}</Text>
+            {/* <Text>{post.updatedAt}</Text> */}
             <Badge colorScheme="blue" fontSize="md">
               {post.category}
             </Badge>

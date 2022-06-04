@@ -1,5 +1,5 @@
-import { Link } from "gatsby"
-import React, { useState } from "react"
+import { Link } from 'gatsby'
+import React, { useState } from 'react'
 import {
   Box,
   Container,
@@ -17,12 +17,12 @@ import {
   ModalCloseButton,
   useDisclosure,
   Text,
-} from "@chakra-ui/react"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import PortfolioCard from "../PortfolioCard"
-import { MotionDiv } from "../ui"
-import { MDXProvider } from "@mdx-js/react"
-import { MDXRenderer } from "gatsby-plugin-mdx"
+} from '@chakra-ui/react'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import PortfolioCard from '../PortfolioCard'
+import { MotionDiv } from '../ui'
+import { MDXProvider } from '@mdx-js/react'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 const PortfolioSection = ({ portfolios }) => {
   const colspan = useBreakpointValue({
@@ -30,16 +30,16 @@ const PortfolioSection = ({ portfolios }) => {
     md: 1,
   })
   const colors = [
-    "red",
-    "orange",
-    "yellow",
-    "green",
-    "blue",
-    "indigo",
-    "purple",
+    'red',
+    'orange',
+    'yellow',
+    'green',
+    'blue',
+    'indigo',
+    'purple',
   ]
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const [modalData, setModalData] = useState("")
+  const [modalData, setModalData] = useState('')
   const chakraUiComponents = {
     h1: props => <Heading as="h1" paddingY="5" size="2xl" {...props} />,
     h2: props => <Heading as="h2" paddingY="5" size="xl" {...props} />,
@@ -67,7 +67,7 @@ const PortfolioSection = ({ portfolios }) => {
       id="portfolio"
     >
       <Container maxW="container.xl">
-        <HStack justifyContent={"space-between"} alignItems="center" mb={12}>
+        <HStack justifyContent={'space-between'} alignItems="center" mb={12}>
           <MotionDiv delay={0.5} animation="fromLeft">
             <Heading as="h2" size="2xl">
               Portfolio
@@ -100,7 +100,7 @@ const PortfolioSection = ({ portfolios }) => {
             scrollBehavior="inside"
             size="4xl"
           >
-            <ModalOverlay bg="whiteAlpha.700" backdropFilter="blur(2px)" />
+            <ModalOverlay bg="whiteAlpha.900" />
             <ModalContent>
               <ModalHeader>
                 <Heading as="h2">{modalData?.frontmatter?.name}</Heading>
