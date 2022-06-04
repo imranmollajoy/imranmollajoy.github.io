@@ -1,5 +1,5 @@
-import React from "react"
-import { motion } from "framer-motion"
+import React from 'react'
+import { motion } from 'framer-motion'
 const MotionDiv = ({
   children,
   animation,
@@ -11,7 +11,7 @@ const MotionDiv = ({
   const anim = {
     fromLeft: {
       initial: {
-        x: "-100%",
+        x: '-100%',
         opacity: 0,
       },
       animate: {
@@ -21,13 +21,13 @@ const MotionDiv = ({
         transition: {
           duration: duration ? duration : 0.6,
           delay: delay ? delay : 0,
-          ease: ease ? ease : "easeInOut",
+          ease: ease ? ease : 'easeInOut',
         },
       },
     },
     fromRight: {
       initial: {
-        x: "100%",
+        x: '100%',
         opacity: 0,
       },
       animate: {
@@ -37,7 +37,7 @@ const MotionDiv = ({
         transition: {
           duration: duration ? duration : 0.6,
           delay: delay ? delay : 0,
-          ease: ease ? ease : "easeInOut",
+          ease: ease ? ease : 'easeInOut',
         },
       },
     },
@@ -50,7 +50,7 @@ const MotionDiv = ({
         transition: {
           duration: duration ? duration : 1,
           delay: delay ? delay : 0,
-          ease: ease ? ease : "easeInOut",
+          ease: ease ? ease : 'easeInOut',
         },
       },
     },
@@ -65,7 +65,7 @@ const MotionDiv = ({
         transition: {
           duration: duration ? duration : 0.6,
           delay: delay ? delay : 0,
-          ease: ease ? ease : "easeInOut",
+          ease: ease ? ease : 'easeInOut',
         },
       },
     },
@@ -73,13 +73,13 @@ const MotionDiv = ({
 
   function desiredAnimation() {
     switch (animation) {
-      case "fromLeft":
+      case 'fromLeft':
         return anim.fromLeft
-      case "fadeIn":
+      case 'fadeIn':
         return anim.fadeIn
-      case "fromRight":
+      case 'fromRight':
         return anim.fromRight
-      case "scale":
+      case 'scale':
         return anim.scale
       default:
         return anim.fadeIn

@@ -1,9 +1,9 @@
-import React from "react"
-import { graphql, Link } from "gatsby"
-import { Box, Container, Heading, Text, VStack } from "@chakra-ui/react"
-import { renderRichText } from "gatsby-source-contentful/rich-text"
-import { Layout } from "../../components/ui"
-import BlogCard from "../../components/BlogCard"
+import React from 'react'
+import { graphql, Link } from 'gatsby'
+import { Box, Container, Heading, Text, VStack } from '@chakra-ui/react'
+import { renderRichText } from 'gatsby-source-contentful/rich-text'
+import { Layout } from '../../components/ui'
+import BlogCard from '../../components/BlogCard'
 const Blog = ({ data }) => {
   console.log(data)
   const blogs = data.blogs.edges
@@ -16,7 +16,7 @@ const Blog = ({ data }) => {
           </Heading>
 
           <VStack spacing={4}>
-            {blogs.map(({ node }) => {
+            {blogs.map(({ node }, index) => {
               const {
                 id,
                 slug,
@@ -35,6 +35,7 @@ const Blog = ({ data }) => {
                   featured={featured}
                   publishedDate={publishedDate}
                   thumbnail={thumbnail}
+                  index={index}
                 />
               )
             })}
