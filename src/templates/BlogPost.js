@@ -61,7 +61,9 @@ const BlogPost = ({ data }) => {
           {post.thumbnail && (
             <GatsbyImage image={getImage(post.thumbnail)} alt={post.title} />
           )}
-          {!post.thumbnail && <GatsbyImage image={img} alt={post.title} />}
+          {!post.thumbnail && (
+            <img src={img} alt={post.title} width="100%" height="100%" />
+          )}
         </Box>
 
         <Container
