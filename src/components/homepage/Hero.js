@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import {
   Container,
   Heading,
@@ -7,15 +7,15 @@ import {
   HStack,
   Box,
   useBreakpointValue,
-} from "@chakra-ui/react"
-import { Link } from "gatsby"
-import { MotionDiv, MotionOnScroll, MotionText } from "../ui"
-
+} from '@chakra-ui/react'
+import { Link } from 'gatsby'
+import { MotionDiv, MotionOnScroll, MotionText } from '../ui'
+import Massive from '../../../static/visual-elements/massive.svg'
 const Hero = () => {
   const sizeForBgText = useBreakpointValue({
-    base: "1000%",
-    md: "1500%",
-    lg: "2000%",
+    base: '1000%',
+    md: '1500%',
+    lg: '2000%',
   })
   return (
     <Box
@@ -47,7 +47,9 @@ const Hero = () => {
             Imran Molla Joy
           </Heading>
         </MotionOnScroll>
-
+        <Box h="100%" w="100%" position="absolute" top="-75%" right="-25%">
+          <img src={Massive} alt="Massive" width="100%" height="100%" />
+        </Box>
         <VStack spacing={1} alignItems="flex-start" zIndex={2}>
           <MotionDiv duration={1} delay={0.25} animation="fromLeft">
             <Heading as="h2">Hi There</Heading>
@@ -64,16 +66,23 @@ const Hero = () => {
               <MotionText />
             </Heading>
           </MotionDiv>
-          <Box mb={14}></Box>
+          <Box
+            mb={14}
+            sx={{
+              background: 'transparent',
+              width: '100%',
+              height: '1rem',
+            }}
+          ></Box>
           <HStack>
             <MotionDiv delay={1.4} animation="scale">
               <Link to="#portfolio">
-                <Button variant={"solid"}>Portfolio</Button>
+                <Button variant={'solid'}>Portfolio</Button>
               </Link>
             </MotionDiv>
             <MotionDiv delay={1.6} animation="scale">
               <Link to="#about">
-                <Button variant={"outline"}>About me</Button>
+                <Button variant={'outline'}>About me</Button>
               </Link>
             </MotionDiv>
           </HStack>

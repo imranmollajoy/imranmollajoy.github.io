@@ -1,16 +1,14 @@
-import React from "react"
+import React from 'react'
 import {
   Box,
   Container,
   Heading,
   Text,
-  SimpleGrid,
-  GridItem,
-  HStack,
   useBreakpointValue,
-} from "@chakra-ui/react"
-import { MotionDiv } from "../ui"
-
+} from '@chakra-ui/react'
+import { MotionDiv } from '../ui'
+import Wave from '../../../static/visual-elements/wave.svg'
+import Hexagon from '../../../static/visual-elements/hexagon.svg'
 const AboutMe = () => {
   const colspanForText = useBreakpointValue({
     base: 3,
@@ -48,9 +46,13 @@ const AboutMe = () => {
       backgroundColor="whiteAlpha.900"
       shadow="xl"
       zIndex={3}
+      position="relative"
     >
       <Container maxW="container.xl" borderRadius="lg">
         <Box>
+          <Box w="54px" mt="32px" position="absolute" right="23%" top="13%">
+            <img src={Hexagon} alt="Massive" width="100%" height="100%" />
+          </Box>
           <MotionDiv animation="fromLeft">
             <Heading as="h2" size="2xl" my={6}>
               About Me
