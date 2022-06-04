@@ -6,6 +6,7 @@ import {
   Text,
   Flex,
   chakra,
+  useBreakpointValue,
 } from '@chakra-ui/react'
 import { Link } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
@@ -20,6 +21,17 @@ const BlogCard = ({
   thumbnail,
   index = 1,
 }) => {
+  const titleSize = useBreakpointValue({
+    base: 'md',
+    md: 'lg',
+    lg: 'xl',
+  })
+  const padding = useBreakpointValue({
+    base: 4,
+    md: 8,
+    lg: 10,
+  })
+
   return (
     <Box width={'100%'}>
       <MotionDiv delay={index / 4} animation="scale">
@@ -40,11 +52,13 @@ const BlogCard = ({
               height="full"
             />
           </Box> */}
-            <Box p={8}>
+            <Box p={padding}>
               {/* <Text>{publishedDate}</Text> */}
               <Text>{category}</Text>
               <Link to={slug}>
-                <Heading as="h3">{title}</Heading>
+                <Heading as="h3" size={titleSize}>
+                  {title}
+                </Heading>
               </Link>
             </Box>
             {/* {featured && <p>Featured</p>} */}
