@@ -74,7 +74,7 @@ const PortfolioSection = ({ portfolios }) => {
             </Heading>
           </MotionDiv>
           {portfolios.length >= 4 && (
-            <MotionDiv delay={1} animation="fromRight">
+            <MotionDiv delay={1} animation="scale">
               <Link to="/portfolio">
                 <Button>More</Button>
               </Link>

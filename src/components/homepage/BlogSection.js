@@ -21,7 +21,7 @@ const BlogSection = ({ blogs }) => {
             </Heading>
           </MotionDiv>
           {blogs.length >= 1 && (
-            <MotionDiv delay={1} animation="fromRight">
+            <MotionDiv delay={1} animation="scale">
               <Link to="/blog">
                 <Button>More</Button>
               </Link>
