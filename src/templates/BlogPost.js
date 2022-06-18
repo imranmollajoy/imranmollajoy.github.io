@@ -78,16 +78,6 @@ const BlogPost = ({ data }) => {
         </OrderedList>
       ),
       [BLOCKS.HR]: () => <Divider />,
-      [BLOCKS.EMBEDDED_ASSET]: (node, children) => {
-        const { file } = node.data.target.fields
-        const { url } = file.url
-        const { title } = node.data.target.fields
-        return (
-          <Box>
-            <GatsbyImage image={getImage(url)} alt={title} />
-          </Box>
-        )
-      },
     },
   }
   const img = 'https://source.unsplash.com/random/600x600?nature'
