@@ -12,12 +12,13 @@ const BlogPost = ({ data }) => {
       [MARKS.BOLD]: text => <strong>{text}</strong>,
       [MARKS.UNDERLINE]: text => <u>{text}</u>,
       [MARKS.ITALIC]: text => <em>{text}</em>,
+      [MARKS.CODE]: text => <code>{text}</code>,
     },
     renderNode: {
       [BLOCKS.PARAGRAPH]: (node, children) => (
         <Text
           textAlign="left"
-          my={4}
+          my={2}
           fontSize={{ base: 'sm', sm: 'md', md: 'lg' }}
         >
           {children}
