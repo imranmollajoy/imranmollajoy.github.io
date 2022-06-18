@@ -84,7 +84,7 @@ const BlogPost = ({ data }) => {
         const { title } = node.data.target.fields
         return (
           <Box>
-            <GatsbyImage image={getImage(post.thumbnail)} alt={title} />
+            <GatsbyImage image={getImage(url)} alt={title} />
           </Box>
         )
       },
