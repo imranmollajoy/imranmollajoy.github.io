@@ -36,17 +36,17 @@ const BlogPost = ({ data }) => {
         </Text>
       ),
       [BLOCKS.HEADING_1]: (node, children) => (
-        <Heading as="h1" size="xl" id={children.replace(/^\s+|\s+$/gm, '')}>
+        <Heading as="h1" size="xl">
           {children}
         </Heading>
       ),
       [BLOCKS.HEADING_2]: (node, children) => (
-        <Heading as="h2" size="lg" id={children.replace(/^\s+|\s+$/gm, '')}>
+        <Heading as="h2" size="lg">
           {children}
         </Heading>
       ),
       [BLOCKS.HEADING_3]: (node, children) => (
-        <Heading as="h3" size="md" id={children.replace(/^\s+|\s+$/gm, '')}>
+        <Heading as="h3" size="md">
           {children}
         </Heading>
       ),
