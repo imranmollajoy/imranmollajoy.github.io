@@ -8,6 +8,7 @@ import {
   ListItem,
   UnorderedList,
   OrderedList,
+  Divider,
 } from '@chakra-ui/react'
 import React from 'react'
 import { graphql, Link } from 'gatsby'
@@ -35,17 +36,17 @@ const BlogPost = ({ data }) => {
         </Text>
       ),
       [BLOCKS.HEADING_1]: (node, children) => (
-        <Heading as="h1" size="xl">
+        <Heading as="h1" size="xl" id={children.replace(/^\s+|\s+$/gm, '')}>
           {children}
         </Heading>
       ),
       [BLOCKS.HEADING_2]: (node, children) => (
-        <Heading as="h2" size="lg">
+        <Heading as="h2" size="lg" id={children.replace(/^\s+|\s+$/gm, '')}>
           {children}
         </Heading>
       ),
       [BLOCKS.HEADING_3]: (node, children) => (
-        <Heading as="h3" size="md">
+        <Heading as="h3" size="md" id={children.replace(/^\s+|\s+$/gm, '')}>
           {children}
         </Heading>
       ),
@@ -62,20 +63,31 @@ const BlogPost = ({ data }) => {
       [BLOCKS.HEADING_6]: (node, children) => (
         <Heading as="h6">{children}</Heading>
       ),
-      [BLOCKS.OL_LIST]: (node, children) => (
+      [BLOCKS.UL_LIST]: (node, children) => (
         <UnorderedList>
           {children.map((child, index) => (
             <ListItem key={index}>{child}</ListItem>
           ))}
         </UnorderedList>
       ),
-      [BLOCKS.UL_LIST]: (node, children) => (
+      [BLOCKS.OL_LIST]: (node, children) => (
         <OrderedList>
           {children.map((child, index) => (
             <ListItem key={index}>{child}</ListItem>
           ))}
         </OrderedList>
       ),
+      [BLOCKS.HR]: () => <Divider />,
+      [BLOCKS.EMBEDDED_ASSET]: (node, children) => {
+        const { file } = node.data.target.fields
+        const { url } = file.url
+        const { title } = node.data.target.fields
+        return (
+          <Box>
+            <GatsbyImage image={getImage(post.thumbnail)} alt={title} />
+          </Box>
+        )
+      },
     },
   }
   const img = 'https://source.unsplash.com/random/600x600?nature'
