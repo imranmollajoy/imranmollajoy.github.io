@@ -6,6 +6,8 @@ import {
   Badge,
   List,
   ListItem,
+  UnorderedList,
+  OrderedList,
 } from '@chakra-ui/react'
 import React from 'react'
 import { graphql, Link } from 'gatsby'
@@ -61,11 +63,18 @@ const BlogPost = ({ data }) => {
         <Heading as="h6">{children}</Heading>
       ),
       [BLOCKS.OL_LIST]: (node, children) => (
-        <List>
+        <UnorderedList>
           {children.map((child, index) => (
             <ListItem key={index}>{child}</ListItem>
           ))}
-        </List>
+        </UnorderedList>
+      ),
+      [BLOCKS.UL_LIST]: (node, children) => (
+        <OrderedList>
+          {children.map((child, index) => (
+            <ListItem key={index}>{child}</ListItem>
+          ))}
+        </OrderedList>
       ),
     },
   }
