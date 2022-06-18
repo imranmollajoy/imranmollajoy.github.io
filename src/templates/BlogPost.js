@@ -1,4 +1,12 @@
-import { Box, Container, Heading, Text, Badge } from '@chakra-ui/react'
+import {
+  Box,
+  Container,
+  Heading,
+  Text,
+  Badge,
+  List,
+  ListItem,
+} from '@chakra-ui/react'
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import { renderRichText } from 'gatsby-source-contentful/rich-text'
@@ -51,6 +59,13 @@ const BlogPost = ({ data }) => {
       ),
       [BLOCKS.HEADING_6]: (node, children) => (
         <Heading as="h6">{children}</Heading>
+      ),
+      [BLOCKS.OL_LIST]: (node, children) => (
+        <List>
+          {children.map((child, index) => (
+            <ListItem key={index}>{child}</ListItem>
+          ))}
+        </List>
       ),
     },
   }
