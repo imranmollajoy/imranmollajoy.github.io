@@ -39,7 +39,7 @@ const BlogPost = ({ data }) => {
         </Heading>
       ),
       [BLOCKS.HEADING_4]: (node, children) => (
-        <Heading as="h4" size="md">
+        <Heading as="h4" size="sm">
           {children}
         </Heading>
       ),
