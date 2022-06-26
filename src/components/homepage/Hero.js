@@ -59,12 +59,8 @@ const Hero = () => {
               Hello!
             </Heading>
           </MotionDiv>
-
           <MotionDiv delay={0.2} animation="fromLeft">
-            <Heading size="3xl" color="text">
-              I am
-              <MotionText />
-            </Heading>
+            <MotionText />
           </MotionDiv>
           <Box
             mb={14}
