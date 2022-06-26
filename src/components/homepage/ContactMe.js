@@ -2,12 +2,15 @@ import { Box, Button, Container, Heading, Text } from '@chakra-ui/react'
 import { Link } from 'gatsby'
 import React from 'react'
 import { MotionDiv } from '../ui'
-
+import Plus from '../../../static/visual-elements/Plusses.svg'
 const ContactMe = () => {
   const textColor = 'whiteAlpha.900'
   return (
-    <Box backgroundColor="brand.500" py={64}>
-      <Container maxW="container.xl">
+    <Box backgroundColor="brand.500" py={64} position="relative">
+      <Box w="100%" position="absolute" bottom="0" right="0">
+        <img src={Plus} alt="Plus" width="100%" height="100%" />
+      </Box>
+      <Container maxW="container.xl" position="relative">
         <MotionDiv delay={0.5} animation="scale">
           <Heading color={textColor} size="2xl">
             Contact Me
