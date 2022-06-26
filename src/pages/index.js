@@ -19,7 +19,8 @@ export default function Home({ data }) {
       <PortfolioSection portfolios={portfolios} />
       <AboutMe />
       <ContactMe />
-      <BlogSection blogs={blogs} />
+  {/* disabling blog section untill i have sufficient articles */}
+  {/*<BlogSection blogs={blogs} /> */}
     </Layout>
   )
 }
