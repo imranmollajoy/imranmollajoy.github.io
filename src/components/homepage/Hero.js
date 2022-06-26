@@ -47,9 +47,9 @@ const Hero = () => {
             Imran Molla Joy
           </Heading>
         </MotionOnScroll>
-        <Box h="100%" w="100%" position="absolute" top="-75%" right="-25%">
+        {/* <Box h="100%" w="100%" position="absolute" top="-75%" right="-25%">
           <img src={Massive} alt="Massive" width="100%" height="100%" />
-        </Box>
+        </Box> */}
         <VStack spacing={1} alignItems="flex-start" zIndex={2}>
           <MotionDiv duration={1} delay={0.25} animation="fromLeft">
             <Heading as="h2">Hi There</Heading>
