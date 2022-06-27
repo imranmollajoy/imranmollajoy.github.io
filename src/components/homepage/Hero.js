@@ -9,7 +9,7 @@ import {
   useBreakpointValue,
 } from '@chakra-ui/react'
 import { Link } from 'gatsby'
-import { MotionDiv, MotionOnScroll, MotionText } from '../ui'
+import { MotionDiv, MotionOnScroll, MotionText, ScrollDown } from '../ui'
 import Massive from '../../../static/visual-elements/massive.svg'
 const Hero = () => {
   const sizeForBgText = useBreakpointValue({
@@ -81,6 +81,7 @@ const Hero = () => {
             </MotionDiv>
           </HStack>
         </VStack>
+        <ScrollDown />
       </Container>
     </Box>
   )
