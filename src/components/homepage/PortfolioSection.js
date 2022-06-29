@@ -26,7 +26,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 const PortfolioSection = ({ portfolios }) => {
   const colspan = useBreakpointValue({
-    base: 3,
+    base: 2,
     md: 1,
   })
   const colors = [
@@ -73,7 +73,7 @@ const PortfolioSection = ({ portfolios }) => {
               Portfolio
             </Heading>
           </MotionDiv>
-          {portfolios.length >= 4 && (
+          {portfolios.length > 4 && (
             <MotionDiv delay={1} animation="scale">
               <Link to="/portfolio">
                 <Button>More</Button>
@@ -81,7 +81,7 @@ const PortfolioSection = ({ portfolios }) => {
             </MotionDiv>
           )}
         </HStack>
-        <SimpleGrid columns={3} spacing="3" alignItems="stretch">
+        <SimpleGrid columns={4} spacing="3" alignItems="stretch">
           {portfolios.map((portfolio, index) => (
             <PortfolioCard
               key={index}
