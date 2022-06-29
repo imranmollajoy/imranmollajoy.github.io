@@ -26,7 +26,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 const PortfolioSection = ({ portfolios }) => {
   const colspan = useBreakpointValue({
-    base: 2,
+    base: 4,
     md: 1,
   })
   const colors = [
