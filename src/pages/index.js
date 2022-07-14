@@ -19,8 +19,8 @@ export default function Home({ data }) {
       <PortfolioSection portfolios={portfolios} />
       <AboutMe />
       <ContactMe />
-  {/* disabling blog section untill i have sufficient articles */}
-  {/*<BlogSection blogs={blogs} /> */}
+      {/* disabling blog section untill i have sufficient articles */}
+      {/*<BlogSection blogs={blogs} /> */}
     </Layout>
   )
 }
@@ -29,7 +29,7 @@ export const pageQuery = graphql`
   query HomepageQuery {
     portfolios: allMdx(
       filter: { frontmatter: { category: { eq: "portfolio" } } }
-      limit: 4
+      limit: 8
     ) {
       nodes {
         body
