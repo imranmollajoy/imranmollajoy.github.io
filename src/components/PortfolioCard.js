@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import {
   Box,
   Heading,
@@ -9,9 +9,9 @@ import {
   Link,
   LinkBox,
   LinkOverlay,
-} from "@chakra-ui/react"
-import { getImage, GatsbyImage } from "gatsby-plugin-image"
-import MotionDiv from "./ui/MotionDiv"
+} from '@chakra-ui/react'
+import { getImage, GatsbyImage } from 'gatsby-plugin-image'
+import MotionDiv from './ui/MotionDiv'
 const BlogCard = ({ data, color, colspan, openModal, index }) => {
   return (
     <GridItem colSpan={colspan}>
@@ -37,14 +37,14 @@ const BlogCard = ({ data, color, colspan, openModal, index }) => {
                   fontSize="0.8em"
                   colorScheme={color}
                   key={index}
-                  borderRadius={"lg"}
+                  borderRadius={'lg'}
                 >
                   {stack}
                 </Badge>
               ))}
             </HStack>
-            <Link onClick={() => openModal(data)}>
-              <Heading as="h5" size="lg">
+            <Link onClick={() => openModal(data)} mt={2}>
+              <Heading as="h4" size="md">
                 {data.frontmatter.name}
               </Heading>
             </Link>
