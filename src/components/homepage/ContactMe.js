@@ -21,7 +21,7 @@ const ContactMe = () => {
         </MotionDiv>
         <Box mb={3}></Box>
         <MotionDiv delay={0.9} animation="scale">
-          <Link to="mailto:imranmollajoy@gmail.com">
+          <Link to="mailto:imj_portfolio.3z5y3@simplelogin.com">
             <Button colorScheme="whiteAlpha">Email Me</Button>
           </Link>
         </MotionDiv>
