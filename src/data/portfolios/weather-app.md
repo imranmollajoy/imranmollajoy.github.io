@@ -2,7 +2,7 @@
 name: Rain Forecast App
 slug: weather-app
 category: portfolio
-featuredImg: "byu.png"
+featuredImg: "byu"
 stacks: ["react-js", "remote api"]
 date: 2025-10-24
 ---
