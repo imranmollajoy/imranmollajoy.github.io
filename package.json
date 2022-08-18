@@ -10,7 +10,8 @@
 		"test": "playwright test",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
 		"format": "prettier --write --plugin-search-dir=. .",
-		"deploy": "node ./gh-pages.js"
+		"deploy": "node ./gh-pages.js",
+		"push": "./push.sh"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.25.0",
