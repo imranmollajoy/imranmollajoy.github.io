@@ -1,8 +1,12 @@
 export const load = async ({ url }) => {
-	const response = await fetch(`${url.origin}/api/portfolios`);
-	const portfolios = await response.json();
+	const resPort = await fetch(`${url.origin}/api/portfolios`);
+	const resBlog = await fetch(`${url.origin}/api/blogs`);
+
+	const portfolios = await resPort.json();
+	const blogs = await resBlog.json();
 
 	return {
-		portfolios
+		portfolios,
+		blogs
 	};
 };

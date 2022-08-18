@@ -17,7 +17,7 @@
 <style>
 	section {
 		position: relative;
-		overflow-x: hidden;
+		overflow: hidden;
 		margin: 0;
 	}
 	.container {
