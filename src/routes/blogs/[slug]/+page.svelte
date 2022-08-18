@@ -8,11 +8,11 @@
 			text: 'Home'
 		},
 		{
-			path: '/portfolios',
-			text: 'Portfolios'
+			path: '/blogs',
+			text: 'Blogs'
 		},
 		{
-			path: '/portfolios/' + data.slug,
+			path: '/blogs/' + data.slug,
 			text: data.name
 		}
 	];
@@ -23,7 +23,8 @@
 <div class="container">
 	<article>
 		<h1>{data.name}</h1>
-		<img src={data.img.default} alt="" />
+		<p class="badge">{data.category}</p>
+		<!-- <img src={data.img.default} alt="" /> -->
 		<div class="post">
 			{@html data.content}
 		</div>

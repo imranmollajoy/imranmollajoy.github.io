@@ -1,17 +1,17 @@
 <script>
-	export let portfolios;
+	export let blogs;
 	// trim portfolio data to only show 3 items
-	portfolios = portfolios.slice(0, 3);
+	blogs = blogs.slice(0, 3);
 </script>
 
 <section>
 	<div class="container" id="portfolio">
-		<h2>Portfolio</h2>
-		{#each portfolios as p}
+		<h2>Blogs</h2>
+		{#each blogs as p}
 			<a href={p.path} class="post">
 				<h5>{p.meta.name}</h5>
 			</a>
 		{/each}
-		<a href="/portfolios" class="button button-primary">More</a>
+		<a href="/blogs" class="button button-primary">More</a>
 	</div>
 </section>
