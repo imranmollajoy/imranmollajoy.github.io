@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+	<link href="../../_app/immutable/assets/+layout-7a6a1c54.css" rel="stylesheet">
+	<link href="../../_app/immutable/assets/Breadcrumb-17f37f6a.css" rel="stylesheet">
+	<link rel="modulepreload" href="../../_app/immutable/start-3287f856.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/index-e52b287a.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/preload-helper-aa6bc0ce.js">
+	<link rel="modulepreload" href="../../_app/immutable/components/pages/_layout.svelte-d2041a80.js">
+	<link rel="modulepreload" href="../../_app/immutable/components/pages/blogs/categories/_name_/_page.svelte-8e563d4b.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/Breadcrumb-dabbe838.js">
+	</head>
+	<body>
+		<div>
+
+
+<section class="breadcrumb"><div class="container svelte-1rcx6es"><a href="/" class="active svelte-1rcx6es">Home</a><a href="/blogs" class="active svelte-1rcx6es">Blogs</a><a href="/blogs/categories" class="active svelte-1rcx6es">Categories</a><p class="svelte-1rcx6es">Uncategorized</p></div>
+</section>
+<section><div class="container"><h2>Blogs : Uncategorized</h2>
+		<a href="/blogs/another-dummy-post" class="post"><h4>Another dummy post</h4>
+				<div class="tags"><div class="badge uppercase">Uncategorized</div></div>
+			</a></div></section>
+
+
+		<script type="module" data-sveltekit-hydrate="1yzzkm">
+		import { set_public_env, start } from "../../_app/immutable/start-3287f856.js";
+
+		set_public_env({});
+
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="1yzzkm"]').parentNode,
+			paths: {"base":"","assets":""},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				node_ids: [0, 6],
+				params: {name:"Uncategorized"},
+				routeId: "blogs/categories/[name]"
+			}
+		});
+	</script>
+	<script type="application/json" sveltekit:data-type="server_data">[{"url":"http://sveltekit-prerender/blogs/categories/Uncategorized","origin":"http://sveltekit-prerender","pathname":"/blogs/categories/Uncategorized"},{"blogs":[{"meta":{"name":"Another dummy post","slug":"dummy-post-another","category":"Uncategorized","date":"17 Aug, 2022"},"path":"/blogs/another-dummy-post"}],"category":"Uncategorized"}]</script></div>
+	</body>
+</html>
