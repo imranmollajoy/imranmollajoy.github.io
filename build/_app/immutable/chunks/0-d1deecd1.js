@@ -1,0 +1,1 @@
+import{default as i}from"../components/pages/_layout.svelte-d2041a80.js";import"./preload-helper-aa6bc0ce.js";import"./index-e52b287a.js";/* empty css                                                 */const e=!0;export{i as component,e as server};

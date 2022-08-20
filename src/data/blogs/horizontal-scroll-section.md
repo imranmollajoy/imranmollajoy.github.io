@@ -1,7 +1,7 @@
 ---
 name: Make a horizontal scroll section with HTML, CSS and JavaScript
 slug: horizontal-scroll-section
-category: ['Web development']
+category: 'Web development'
 featured: true
 date: 18 Aug, 2022
 ---

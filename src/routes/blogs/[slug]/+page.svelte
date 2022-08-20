@@ -23,9 +23,11 @@
 <div class="container">
 	<article>
 		<h1>{data.name}</h1>
-		<p class="badge">{data.category}</p>
+		<a href={`/blogs/categories/${data.category}`}
+			><p class="badge clickable">{data.category}</p>
+		</a>
 		<!-- <img src={data.img.default} alt="" /> -->
-		<div class="post">
+		<div class="post-body">
 			{@html data.content}
 		</div>
 	</article>
@@ -35,7 +37,7 @@
 	article {
 		margin-top: 6rem;
 	}
-	.post {
+	.post-body {
 		margin-top: 4rem;
 	}
 </style>

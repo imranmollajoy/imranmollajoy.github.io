@@ -13,10 +13,57 @@ a.post:hover {
 	transform: scale(1.02);
 }
 
-a.post * {
+a.post h5,
+a.post h4,
+a.post p {
 	margin: 0;
 }
 
-article .post {
-	margin: 4rem 0;
+article .post-body {
+	margin: 2rem -2rem;
+	background-color: var(--white);
+	padding: 2rem;
+	box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.041);
+	border-radius: 0.4rem;
+}
+.anchor {
+	opacity: 0;
+	height: 0;
+}
+.tags {
+	display: inline;
+	overflow-wrap: break-word;
+}
+
+.featured {
+	border-left: 4px solid var(--clr-accent);
+}
+
+code .punctuation {
+	color: blueviolet;
+}
+
+code .keyword {
+	color: brown;
+}
+code .function {
+	color: cadetblue;
+}
+code .operator {
+	color: chocolate;
+}
+code .template-punctuation,
+code .interpolation-punctuation {
+	color: rgb(102, 136, 33);
+}
+code .interpolation {
+	color: rgb(0, 123, 161);
+}
+
+code .string {
+	color: darkgreen;
+}
+
+code .comment {
+	color: gray;
 }

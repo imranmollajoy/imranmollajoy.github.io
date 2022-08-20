@@ -14,15 +14,23 @@ export const GET = async () => {
 			};
 		})
 	);
+	var featuredPosts = [];
+	var restPosts = [];
 
-	const sortedPosts = allPosts.sort((a, b) => {
+	allPosts.forEach((element) => {
+		if (element.meta.featured) featuredPosts = [...featuredPosts, element];
+		else restPosts = [...restPosts, element];
+	});
+
+	const sortedFeaturedPosts = featuredPosts.sort((a, b) => {
 		return new Date(b.meta.date) - new Date(a.meta.date);
 	});
-	var newSort = [];
-	sortedPosts.forEach((element) => {
-		if (element.meta.featured) newSort = [element, ...newSort];
-		else newSort = [...newSort, element];
+	const sortedRestPosts = restPosts.sort((a, b) => {
+		return new Date(b.meta.date) - new Date(a.meta.date);
 	});
+
+	var newSort = [...sortedFeaturedPosts, ...sortedRestPosts];
+
 	const responseOptions = {
 		status: 200,
 		headers: {

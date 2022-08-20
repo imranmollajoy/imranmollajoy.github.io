@@ -1,5 +1,6 @@
+<div class="anchor" id="about">Anchor</div>
 <section>
-	<div class="container" id="about">
+	<div class="container">
 		<h2>About Me</h2>
 		<p>
 			My name is Imran Molla Joy. I am a web developer, UI designer, and graphic designer. I have a

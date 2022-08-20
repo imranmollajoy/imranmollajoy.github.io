@@ -5,35 +5,47 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-	<link href="/_app/immutable/assets/+layout-6ea0781b.css" rel="stylesheet">
-	<link href="/_app/immutable/assets/+page-99acf692.css" rel="stylesheet">
-	<link rel="modulepreload" href="/_app/immutable/start-323cf674.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-1b03af18.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/preload-helper-c28b9807.js">
-	<link rel="modulepreload" href="/_app/immutable/components/pages/_layout.svelte-b23b00b7.js">
-	<link rel="modulepreload" href="/_app/immutable/components/pages/portfolios/_page.svelte-6fda2c1b.js">
+	<link href="./_app/immutable/assets/+layout-7a6a1c54.css" rel="stylesheet">
+	<link href="./_app/immutable/assets/Breadcrumb-17f37f6a.css" rel="stylesheet">
+	<link rel="modulepreload" href="./_app/immutable/start-3287f856.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/index-e52b287a.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper-aa6bc0ce.js">
+	<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-d2041a80.js">
+	<link rel="modulepreload" href="./_app/immutable/components/pages/portfolios/_page.svelte-5872db13.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/Breadcrumb-dabbe838.js">
 	</head>
 	<body>
 		<div>
 
 
-<section><div class="container"><h2>Portfolio</h2>
-		<a href="/portfolios/note-taking-app" class="post svelte-1st4whi"><h5>A Simple Note Taking App</h5>
-			</a><a href="/portfolios/watchnext" class="post svelte-1st4whi"><h5>Movie and Show Tracking App</h5>
-			</a><a href="/portfolios/weather-app" class="post svelte-1st4whi"><h5>Rain Forecast App</h5>
-			</a><a href="/portfolios/blog-with-svelte-kit-and-contentful" class="post svelte-1st4whi"><h5>Blog with Svelte Kit and Contentful</h5>
-			</a><a href="/portfolios/dummy-text-generator" class="post svelte-1st4whi"><h5>Dummy Text Generator</h5>
-			</a></div>
+<section class="breadcrumb"><div class="container svelte-1rcx6es"><a href="/" class="active svelte-1rcx6es">Home</a><p class="svelte-1rcx6es">Portfolios</p></div>
 </section>
+<section><div class="container"><h2>Portfolios</h2>
+		<a href="/portfolios/note-taking-app" class="post">
+				<h5>A Simple Note Taking App</h5>
+				<div class="tags"><div class="badge uppercase">react-js</div><div class="badge uppercase">local storage</div></div>
+			</a><a href="/portfolios/watchnext" class="post">
+				<h5>Movie and Show Tracking App</h5>
+				<div class="tags"><div class="badge uppercase">svelte-kit</div><div class="badge uppercase">remote api</div><div class="badge uppercase">local storage</div></div>
+			</a><a href="/portfolios/weather-app" class="post">
+				<h5>Rain Forecast App</h5>
+				<div class="tags"><div class="badge uppercase">react-js</div><div class="badge uppercase">remote api</div></div>
+			</a><a href="/portfolios/blog-with-svelte-kit-and-contentful" class="post">
+				<h5>Blog with Svelte Kit and Contentful</h5>
+				<div class="tags"><div class="badge uppercase">svelte-kit</div><div class="badge uppercase">Contentful</div></div>
+			</a><a href="/portfolios/dummy-text-generator" class="post">
+				<h5>Dummy Text Generator</h5>
+				<div class="tags"><div class="badge uppercase">react-js</div><div class="badge uppercase">remote api</div></div>
+			</a></div></section>
 
 
-		<script type="module" data-sveltekit-hydrate="axfwn">
-		import { set_public_env, start } from "/_app/immutable/start-323cf674.js";
+		<script type="module" data-sveltekit-hydrate="1ewp1k2">
+		import { set_public_env, start } from "./_app/immutable/start-3287f856.js";
 
 		set_public_env({});
 
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="axfwn"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="1ewp1k2"]').parentNode,
 			paths: {"base":"","assets":""},
 			route: true,
 			spa: false,
@@ -41,12 +53,12 @@
 			hydrate: {
 				status: 200,
 				error: null,
-				node_ids: [0, 3],
+				node_ids: [0, 7],
 				params: {},
 				routeId: "portfolios"
 			}
 		});
 	</script>
-	<script type="application/json" sveltekit:data-type="server_data">[null,{"portfolios":[{"meta":{"name":"A Simple Note Taking App","slug":"note-taking-app","category":"portfolio","featuredImg":"tkn","stacks":["react-js","local storage"],"date":"2025-10-24T00:00:00.000Z"},"path":"/portfolios/note-taking-app"},{"meta":{"name":"Movie and Show Tracking App","slug":"watchnext","category":"portfolio","featuredImg":"watchnext","stacks":["svelte-kit","remote api","local storage"],"date":"2025-10-24T00:00:00.000Z"},"path":"/portfolios/watchnext"},{"meta":{"name":"Rain Forecast App","slug":"weather-app","category":"portfolio","featuredImg":"byu","stacks":["react-js","remote api"],"date":"2025-10-24T00:00:00.000Z"},"path":"/portfolios/weather-app"},{"meta":{"name":"Blog with Svelte Kit and Contentful","slug":"blog-with-svelte-kit","category":"portfolio","featuredImg":"blogwithsvelteandcontentful","stacks":["svelte-kit","Contentful"],"date":"2020-06-01T00:00:00.000Z"},"path":"/portfolios/blog-with-svelte-kit-and-contentful"},{"meta":{"name":"Dummy Text Generator","slug":"dummy-text-generator","category":"portfolio","featuredImg":"dtg-b","stacks":["react-js","remote api"],"date":"2020-06-01T00:00:00.000Z"},"path":"/portfolios/dummy-text-generator"}]}]</script></div>
+	<script type="application/json" sveltekit:data-type="server_data">[{"url":"http://sveltekit-prerender/portfolios","origin":"http://sveltekit-prerender","pathname":"/portfolios"},{"portfolios":[{"meta":{"name":"A Simple Note Taking App","slug":"note-taking-app","category":"portfolio","featuredImg":"tkn","stacks":["react-js","local storage"],"date":"2025-10-24T00:00:00.000Z"},"path":"/portfolios/note-taking-app"},{"meta":{"name":"Movie and Show Tracking App","slug":"watchnext","category":"portfolio","featuredImg":"watchnext","stacks":["svelte-kit","remote api","local storage"],"date":"2025-10-24T00:00:00.000Z"},"path":"/portfolios/watchnext"},{"meta":{"name":"Rain Forecast App","slug":"weather-app","category":"portfolio","featuredImg":"byu","stacks":["react-js","remote api"],"date":"2025-10-24T00:00:00.000Z"},"path":"/portfolios/weather-app"},{"meta":{"name":"Blog with Svelte Kit and Contentful","slug":"blog-with-svelte-kit","category":"portfolio","featuredImg":"blogwithsvelteandcontentful","stacks":["svelte-kit","Contentful"],"date":"2020-06-01T00:00:00.000Z"},"path":"/portfolios/blog-with-svelte-kit-and-contentful"},{"meta":{"name":"Dummy Text Generator","slug":"dummy-text-generator","category":"portfolio","featuredImg":"dtg-b","stacks":["react-js","remote api"],"date":"2020-06-01T00:00:00.000Z"},"path":"/portfolios/dummy-text-generator"}]}]</script></div>
 	</body>
 </html>

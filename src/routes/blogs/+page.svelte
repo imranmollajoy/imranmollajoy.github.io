@@ -19,13 +19,11 @@
 	<div class="container">
 		<h2>Blogs</h2>
 		{#each data.blogs as blog}
-			<a href={blog.path} class="post">
+			<a href={blog.path} class="post" class:featured={blog.meta.featured}>
 				<h4>{blog.meta.name}</h4>
-				<p>
-					{blog.meta.category}
-					{#if blog.meta.featured}
-						<span class="accent" style="margin-left: 1rem;"> Featured </span>{/if}
-				</p>
+				<div class="tags">
+					<p class="badge">{blog.meta.category}</p>
+				</div>
 			</a>
 		{/each}
 	</div>

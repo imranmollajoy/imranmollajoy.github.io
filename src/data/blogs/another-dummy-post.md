@@ -1,7 +1,7 @@
 ---
 name: Another dummy post 
 slug: dummy-post-another
-category: ['Uncategorized']
+category: 'Uncategorized'
 date: 17 Aug, 2022
 ---
 

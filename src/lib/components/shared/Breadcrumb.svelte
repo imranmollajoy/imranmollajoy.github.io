@@ -21,16 +21,20 @@
 </section>
 
 <style>
+	.container {
+		background-color: var(--clr-accent);
+	}
 	p {
 		display: inline;
 		margin-left: 1rem;
 	}
-
 	.active {
 		margin: 0;
 		padding: 0.3rem 2rem;
 		text-decoration: none;
+		background-color: var(--white);
 		border: 1px solid var(--clr-accent);
+		border-right: none;
 		text-transform: uppercase;
 	}
 </style>
