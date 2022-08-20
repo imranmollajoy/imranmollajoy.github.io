@@ -11,4 +11,4 @@
 <Portfolio portfolios={data.portfolios} />
 <AboutMe />
 <Contact />
-<Blog blogs={data.blogs} />
+<!-- <Blog blogs={data.blogs} /> -->
