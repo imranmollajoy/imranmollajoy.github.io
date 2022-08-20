@@ -1,0 +1,1 @@
+{"type":"data","nodes":[{"data":{"url":"http://sveltekit-prerender/blogs/another-dummy-post","origin":"http://sveltekit-prerender","pathname":"/blogs/another-dummy-post"}},{"data":{"name":"Another dummy post","category":"Uncategorized","origin":"http://sveltekit-prerender","content":"<h2>Dummy post</h2>\n<p>A dummy post is made for testing purposes.</p>"}}]}

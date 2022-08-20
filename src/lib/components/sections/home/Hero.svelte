@@ -32,6 +32,10 @@
 		top: 0;
 		right: -5%;
 	}
+	h1 {
+		transition: all;
+	}
+
 	/* media for phone */
 	@media (max-width: 768px) {
 		img {
