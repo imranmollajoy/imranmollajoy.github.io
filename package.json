@@ -11,7 +11,8 @@
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
 		"format": "prettier --write --plugin-search-dir=. .",
 		"deploy": "node ./gh-pages.js",
-		"push": "./push.sh"
+		"push": "./push.sh",
+		"postbuild": "npx svelte-sitemap --domain https://imranmollajoy.github.io"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.25.0",
@@ -23,6 +24,7 @@
 		"prettier": "^2.6.2",
 		"prettier-plugin-svelte": "^2.7.0",
 		"svelte": "^3.44.0",
+		"svelte-sitemap": "^2.5.1",
 		"vite": "^3.0.0"
 	},
 	"type": "module",
