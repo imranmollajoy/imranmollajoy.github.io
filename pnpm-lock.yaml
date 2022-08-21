@@ -16,6 +16,7 @@ specifiers:
   prettier-plugin-svelte: ^2.7.0
   svelte: ^3.44.0
   svelte-image: ^0.2.9
+  svelte-toc: ^0.2.10
   svelte-typewriter: ^3.0.4
   vite: ^3.0.0
 
@@ -38,6 +39,7 @@ devDependencies:
   prettier: 2.7.1
   prettier-plugin-svelte: 2.7.0_o3ioganyptcsrh6x4hnxvjkpqi
   svelte: 3.49.0
+  svelte-toc: 0.2.10
   vite: 3.0.8
 
 packages:
@@ -3034,6 +3036,10 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: false
+
+  /svelte-toc/0.2.10:
+    resolution: {integrity: sha512-vEIdbvvW7mtR5e9CNBGJfKdWl2zoOXmdmWh5nDomXKm5wpcUawFTF9DswCLNsXKWIWO/59v6OlxBTPs693vYBQ==}
+    dev: true
 
   /svelte-typewriter/3.0.4_svelte@3.49.0:
     resolution: {integrity: sha512-W5DTfqCqDWrk+ECY8+g2xor0lGYCtHYGP8Wba+b+XYQLw4KWW8EbhbYKCCYSp71jiLgIK9kO2N4IUbXq3FIG7A==}

@@ -5,10 +5,12 @@
 	import Portfolio from '$lib/components/sections/home/Portfolio.svelte';
 	import Blog from '../lib/components/sections/home/Blog.svelte';
 	import Seo from '../lib/components/shared/SEO/SEO.svelte';
+	import Toc from 'svelte-toc';
 	export let data;
 </script>
 
 <Seo title="Home" />
+
 <Hero />
 <Portfolio portfolios={data.portfolios} />
 <AboutMe />
