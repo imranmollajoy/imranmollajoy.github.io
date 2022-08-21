@@ -1,0 +1,1 @@
+import{default as i}from"../components/pages/blogs/categories/_name_/_page.svelte-9754bd8f.js";import"./index-ea49385d.js";import"./Breadcrumb-26a96f1a.js";import"./SEO-541a60a7.js";const e=!0;export{i as component,e as server};
