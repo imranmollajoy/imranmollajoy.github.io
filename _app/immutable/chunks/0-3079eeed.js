@@ -1,1 +1,0 @@
-import{default as m}from"../components/pages/_layout.svelte-1c4261e2.js";import"./index-a124fded.js";/* empty css                                                 */const t=!0;export{m as component,t as server};
