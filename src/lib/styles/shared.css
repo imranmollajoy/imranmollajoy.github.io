@@ -18,7 +18,10 @@ a.post h4,
 a.post p {
 	margin: 0;
 }
-
+a.post h5,
+a.post h4 {
+	margin-bottom: 1rem;
+}
 article .post-body {
 	margin: 2rem -2rem;
 	background-color: var(--white);
@@ -39,7 +42,7 @@ article .post-body {
 	border-left: 4px solid var(--clr-accent);
 }
 
-code .punctuation {
+/* code .punctuation {
 	color: blueviolet;
 }
 
@@ -66,4 +69,4 @@ code .string {
 
 code .comment {
 	color: gray;
-}
+} */

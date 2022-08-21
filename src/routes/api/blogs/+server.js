@@ -1,12 +1,12 @@
 // +server.js
 export const GET = async () => {
-	const allPostFiles = import.meta.glob('../../../data/blogs/*.md');
+	const allPostFiles = import.meta.glob('../../../data/blogs/*.svx');
 	const iterablePostFiles = Object.entries(allPostFiles);
 
 	const allPosts = await Promise.all(
 		iterablePostFiles.map(async ([path, resolver]) => {
 			const { metadata } = await resolver();
-			const postPath = path.replace('/data', '').slice(8, -3);
+			const postPath = path.replace('/data', '').slice(8, -4);
 
 			return {
 				meta: metadata,

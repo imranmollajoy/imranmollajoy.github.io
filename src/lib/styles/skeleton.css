@@ -25,10 +25,10 @@
 */
 
 :root {
-	--clr-accent: #04d289;
-	--clr-accent-hover: #0cc584;
-	--clr-light: #fbffff;
-	--clr-dark: #264364;
+	--clr-accent: #0a9898;
+	--clr-accent-hover: #15adad;
+	--clr-light: #f0f7f1;
+	--clr-dark: #0d3450;
 	--white: #fff;
 	--black: #131313;
 	--grey: #838383;
@@ -36,8 +36,8 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--clr-light: #0e1925;
-		--clr-dark: #fbffff;
+		--clr-light: #0d3450;
+		--clr-dark: #f0f7f1;
 		--white: #131313;
 		--black: #fff;
 		--grey: #494949;

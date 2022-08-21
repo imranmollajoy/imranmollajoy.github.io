@@ -2,7 +2,7 @@
 name: Blog with Svelte Kit and Contentful
 slug: blog-with-svelte-kit
 category: portfolio
-featuredImg: "blogwithsvelteandcontentful"
+featuredImg: "blogwithsvelteandcontentful.png"
 stacks: ["svelte-kit", "Contentful"]
 date: 2020-06-01
 ---

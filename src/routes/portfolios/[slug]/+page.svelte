@@ -1,6 +1,6 @@
 <script>
 	import Breadcrumb from '$lib/components/shared/Breadcrumb.svelte';
-
+	import Image from 'svelte-image';
 	export let data;
 	let breadcrumb = [
 		{
@@ -23,7 +23,7 @@
 <div class="container">
 	<article>
 		<h1>{data.name}</h1>
-		<img src={data.img.default} alt="" />
+		<Image src={`/images/portfolios/${data.featuredImg}`} />
 		<div class="post">
 			{@html data.content}
 		</div>
