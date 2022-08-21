@@ -42,32 +42,3 @@ article .post-body {
 .featured {
 	border-left: 4px solid var(--clr-accent);
 }
-
-/* code .punctuation {
-	color: blueviolet;
-}
-
-code .keyword {
-	color: brown;
-}
-code .function {
-	color: cadetblue;
-}
-code .operator {
-	color: chocolate;
-}
-code .template-punctuation,
-code .interpolation-punctuation {
-	color: rgb(102, 136, 33);
-}
-code .interpolation {
-	color: rgb(0, 123, 161);
-}
-
-code .string {
-	color: darkgreen;
-}
-
-code .comment {
-	color: gray;
-} */

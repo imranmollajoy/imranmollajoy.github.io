@@ -11,7 +11,7 @@ featuredImg: first.png
 
 A horizontal section is a section which spreads left to right. It is very elegant and takes less space and can show more data.
 
-### Making a horizontal section
+## Making a horizontal section
 
 Create three files, index.html, index.css and index.js. Name theme to your liking. Just be sure to link them properly in the index.html file. Then open the index.html file in your favorite code editor. Add the following code to the index.html file:
 
@@ -135,6 +135,7 @@ Nice. Now open the index.html in your browser. You can see the result. The secti
 
 ![alt](./first.png)
 
+### Adding scroll functionality
 But you can't scroll to view rest of them. This is where we need a little bit of javascript. Open index.js and add the following...
 
 ```javascript
@@ -165,6 +166,7 @@ hSections.forEach((hSection) => {
 
 Save and test the index.html. It's **working**!
 
+## Final Code
 Here is the full code.
 
 ```html
