@@ -1,5 +1,6 @@
 <script>
 	import Breadcrumb from '$lib/components/shared/Breadcrumb.svelte';
+
 	import '../../../lib/helpers/prism';
 	import '../../../lib/helpers/prism.css';
 	export let data;
@@ -27,6 +28,7 @@
 		<a href={`/blogs/categories/${data.category}`}
 			><p class="badge clickable">{data.category}</p>
 		</a>
+		<!-- <img src={data.featuredImgPath} alt="" /> -->
 		<!-- <img src={data.img.default} alt="" /> -->
 		<div class="post-body">
 			{@html data.content}

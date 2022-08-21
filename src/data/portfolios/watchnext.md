@@ -2,10 +2,10 @@
 name: Movie and Show Tracking App
 slug: watchnext
 category: portfolio
-featuredImg: "watchnext.png"
 stacks: ["svelte-kit", "remote api",'local storage']
 date: 2025-10-24
 ---
+![](./images/watchnext.png)
 
 An app which fetch data from TMDB API and display the movies and shows which are trending and popular in the world.
 

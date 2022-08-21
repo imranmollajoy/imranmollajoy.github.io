@@ -20,10 +20,8 @@
 <style>
 	.row {
 		display: flex;
-		overflow-x: auto;
 		overflow-y: hidden;
-		height: calc(156 * 500 / 700) px;
-		gap: 0.6rem;
+		gap: 2rem;
 		scroll-behavior: smooth;
 	}
 	.row::-webkit-scrollbar {

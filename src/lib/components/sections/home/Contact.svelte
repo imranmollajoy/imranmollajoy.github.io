@@ -28,6 +28,9 @@
 		left: 50%;
 		transform: rotate(30deg);
 	}
+	h2 {
+		color: var(--clr-light);
+	}
 	/* media for mobile */
 	@media (max-width: 425px) {
 		img {
