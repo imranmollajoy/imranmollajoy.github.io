@@ -13,6 +13,7 @@ specifiers:
   gray-matter: ^4.0.3
   mdsvex: ^0.10.6
   mdsvex-relative-images: ^1.0.2
+  nprogress: ^0.2.0
   prettier: ^2.6.2
   prettier-plugin-svelte: ^2.7.0
   rehype-slug: ^5.0.1
@@ -40,6 +41,7 @@ devDependencies:
   eslint: 8.22.0
   eslint-config-prettier: 8.5.0_eslint@8.22.0
   eslint-plugin-svelte3: 4.0.0_laaqauvsmoyypsiqkozwyi2fn4
+  nprogress: 0.2.0
   prettier: 2.7.1
   prettier-plugin-svelte: 2.7.0_o3ioganyptcsrh6x4hnxvjkpqi
   svelte: 3.49.0
@@ -2495,6 +2497,10 @@ packages:
       console-control-strings: 1.1.0
       gauge: 3.0.2
       set-blocking: 2.0.0
+    dev: true
+
+  /nprogress/0.2.0:
+    resolution: {integrity: sha512-I19aIingLgR1fmhftnbWWO3dXc0hSxqHQHQb3H8m+K3TnEn/iSeTZZOyvKXWqQESMwuUVnatlCnZdLBZZt2VSA==}
     dev: true
 
   /nth-check/1.0.2:
