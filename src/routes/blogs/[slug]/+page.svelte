@@ -1,6 +1,6 @@
 <script>
 	import Breadcrumb from '$lib/components/shared/Breadcrumb.svelte';
-
+	import Seo from '../../../lib/components/shared/SEO/SEO.svelte';
 	import '../../../lib/helpers/prism';
 	import '../../../lib/helpers/prism.css';
 	export let data;
@@ -20,6 +20,7 @@
 	];
 </script>
 
+<Seo title={data.name} article={true} />
 <Breadcrumb links={breadcrumb} />
 
 <div class="container">

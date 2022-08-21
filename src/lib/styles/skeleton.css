@@ -32,11 +32,13 @@
 	--white: #fff;
 	--black: #131313;
 	--grey: #838383;
+	--cursor-color: var(--clr-accent);
+	--cursor-width: 4px;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--clr-light: #0d3450;
+		--clr-light: #0a1720;
 		--clr-dark: #f0f7f1;
 		--white: #131313;
 		--black: #fff;
@@ -58,6 +60,13 @@ blockquote {
 }
 blockquote *:only-child {
 	margin: 0;
+}
+* {
+	box-sizing: border-box;
+}
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -224,6 +233,7 @@ body {
 	font-family: 'Roboto', 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: var(--clr-dark);
 	background-color: var(--clr-light);
+	overflow-x: hidden;
 }
 
 /* Typography
@@ -248,6 +258,7 @@ h2 {
 	font-size: 3.6rem;
 	line-height: 1.25;
 	letter-spacing: -0.1rem;
+	opacity: 0.7;
 }
 h3 {
 	font-size: 3rem;
@@ -382,7 +393,7 @@ input[type='button'].button-primary {
 	color: var(--white);
 	background-color: var(--clr-accent);
 	border-color: var(--clr-accent);
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.281);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 .button.button-primary:hover,
 button.button-primary:hover,
@@ -397,7 +408,7 @@ input[type='button'].button-primary:focus {
 	color: var(--white);
 	background-color: var(--clr-accent-hover);
 	border-color: var(--clr-accent);
-	box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.075);
+	box-shadow: 0 1px 12px rgba(0, 0, 0, 0.315);
 }
 
 .button.button-secondary,

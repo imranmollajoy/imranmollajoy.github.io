@@ -1,5 +1,10 @@
+<script>
+	import CURVE from '$lib/images/Curve2.svg';
+</script>
+
 <div class="anchor" id="about">Anchor</div>
 <section>
+	<img src={CURVE} alt="" class="left" />
 	<div class="container">
 		<h2>About Me</h2>
 		<p>
@@ -20,5 +25,20 @@
 		min-height: 95vh;
 		display: flex;
 		align-items: center;
+		position: relative;
+		overflow: visible;
+	}
+	img {
+		position: absolute;
+		z-index: -1;
+		top: -345px;
+		left: -64px;
+	}
+
+	@media (max-width: 550px) {
+		img {
+			top: -95px;
+			left: -24px;
+		}
 	}
 </style>

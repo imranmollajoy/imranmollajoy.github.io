@@ -1,5 +1,6 @@
 <script>
 	import Breadcrumb from '$lib/components/shared/Breadcrumb.svelte';
+	import Seo from '../../lib/components/shared/SEO/SEO.svelte';
 	export let data;
 	let breadcrumb = [
 		{
@@ -11,9 +12,9 @@
 			text: 'Portfolios'
 		}
 	];
-	var imgs = [];
 </script>
 
+<Seo title="Portfolios" />
 <Breadcrumb links={breadcrumb} />
 <section>
 	<div class="container">
