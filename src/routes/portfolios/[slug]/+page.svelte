@@ -23,7 +23,6 @@
 <div class="container">
 	<article>
 		<h1>{data.name}</h1>
-		<Image src={`/images/portfolios/${data.featuredImg}`} />
 		<div class="post">
 			{@html data.content}
 		</div>

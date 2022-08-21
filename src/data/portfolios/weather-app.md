@@ -2,10 +2,10 @@
 name: Rain Forecast App
 slug: weather-app
 category: portfolio
-featuredImg: "byu.png"
 stacks: ["react-js", "remote api"]
 date: 2025-10-24
 ---
+![](./images/byu.png)
 
 An app made mainly for getting the days with high chances of rainfall. It also gives the weather forecast of next 5 days.
 

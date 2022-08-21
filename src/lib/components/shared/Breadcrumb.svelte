@@ -14,18 +14,15 @@
 			{#if i + 1 >= links.length}
 				<p>{link.text}</p>
 			{:else}
-				<a href={link.path} class="active">{link.text}</a>
+				<a href={link.path} class="active">{link.text}</a> /
 			{/if}
 		{/each}
 	</div>
 </section>
 
 <style>
-	.breadcrumb {
-	}
 	.container {
 		overflow-wrap: break-word;
-		border: 1px solid var(--clr-accent);
 	}
 	p {
 		display: inline;
@@ -33,14 +30,10 @@
 	}
 	.active {
 		margin: 0;
-		padding: 0.3rem 2rem;
-		text-decoration: none;
-		background-color: var(--white);
-		border-right: 1px solid var(--clr-accent);
-
+		padding: 0.3rem 1rem;
 		text-transform: uppercase;
 	}
-	.active:last-child {
-		border: none;
+	.active:first-child {
+		padding-left: 0;
 	}
 </style>

@@ -1,1 +1,0 @@
-{"type":"data","nodes":[{"data":{"url":"http://sveltekit-prerender/blogs/categories/Dummy","origin":"http://sveltekit-prerender","pathname":"/blogs/categories/Dummy"}},{"data":{"blogs":[{"meta":{"name":"A dummy post lorem ipsum dolor sit amet","slug":"dummy-post","category":"Dummy","date":"17 Aug, 2023"},"path":"/blogs/dummy-post"}],"category":"Dummy"}}]}

@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400|Raleway:400');
 
 .horizontal-section {
+	/* We will make the content display from left to right by flex */
 	display: flex !important;
-	scroll-behavior: smooth !important;
+	/* Making the direction of the flex to row */
+	flex-direction: row !important;
+	/* The overflow in horizontal direction is needed to be hidden  */
 	overflow-y: hidden !important;
 	width: 100%;
 	gap: 0.6rem;
+	scroll-behavior: smooth;
 }
 .horizontal-section::-webkit-scrollbar {
-	/* hide the scrollbar */
+	/* Hide the scrollbar */
 	display: none;
 }
+
 .card {
 	/* setting a width a important, otherwise */
 	/* the section won't be overflowed */
@@ -18,6 +23,11 @@
 	height: 356px;
 	background-color: #fff;
 	padding: 20px;
+}
+
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
 }
 
 /* =================extra bit of styling================== */
@@ -73,9 +83,4 @@ h5 {
 small,
 .text_small {
 	font-size: 0.75rem;
-}
-
-main {
-	max-width: 1024px;
-	margin: 0 auto;
 }

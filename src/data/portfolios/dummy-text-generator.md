@@ -2,10 +2,10 @@
 name: Dummy Text Generator
 slug: dummy-text-generator
 category: portfolio
-featuredImg: "dtg-b.png"
 stacks: ["react-js", "remote api"]
 date: 2020-06-01
 ---
+![](./images/dtg-b.png)
 
 An app to generate dummy text. Useful for testing purposes. It uses a free remote API to generate text.
 

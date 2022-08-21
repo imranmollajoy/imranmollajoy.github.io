@@ -11,6 +11,7 @@ specifiers:
   gh-pages: ^4.0.0
   gray-matter: ^4.0.3
   mdsvex: ^0.10.6
+  mdsvex-relative-images: ^1.0.2
   prettier: ^2.6.2
   prettier-plugin-svelte: ^2.7.0
   svelte: ^3.44.0
@@ -22,6 +23,7 @@ dependencies:
   gh-pages: 4.0.0
   gray-matter: 4.0.3
   mdsvex: 0.10.6_svelte@3.49.0
+  mdsvex-relative-images: 1.0.2
   svelte-image: 0.2.9
 
 devDependencies:
@@ -2133,6 +2135,10 @@ packages:
       graceful-fs: 4.2.10
     dev: false
 
+  /just-camel-case/4.0.2:
+    resolution: {integrity: sha512-df6QI/EIq+6uHe/wtaa9Qq7/pp4wr4pJC/r1+7XhVL6m5j03G6h9u9/rIZr8rDASX7CxwDPQnZjffCo2e6PRLw==}
+    dev: false
+
   /kind-of/6.0.3:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
     engines: {node: '>=0.10.0'}
@@ -2211,6 +2217,13 @@ packages:
 
   /mdn-data/2.0.4:
     resolution: {integrity: sha512-iV3XNKw06j5Q7mi6h+9vbx23Tv7JkjEVgKHW4pimwyDGWm0OIQntJJ+u1C6mg6mK1EaTv42XQ7w76yuzH7M2cA==}
+    dev: false
+
+  /mdsvex-relative-images/1.0.2:
+    resolution: {integrity: sha512-qBqt2T/h3R83dJZexiUB4OJhi8VJhQYO4q9/xFbgqNrHxPi0hpwmMlMm5FHcJ/Ps8ujh53Hz4U5vy/bthzbmeA==}
+    dependencies:
+      just-camel-case: 4.0.2
+      unist-util-visit: 3.1.0
     dev: false
 
   /mdsvex/0.10.6_svelte@3.49.0:
@@ -3155,10 +3168,29 @@ packages:
     engines: {node: '>=12.18'}
     dev: true
 
+  /unist-util-is/5.1.1:
+    resolution: {integrity: sha512-F5CZ68eYzuSvJjGhCLPL3cYx45IxkqXSetCcRgUXtbcm50X2L9oOWQlfUfDdAf+6Pd27YDblBfdtmsThXmwpbQ==}
+    dev: false
+
   /unist-util-stringify-position/2.0.3:
     resolution: {integrity: sha512-3faScn5I+hy9VleOq/qNbAd6pAx7iH5jYBMS9I1HgQVijz/4mv5Bvw5iw1sC/90CODiKo81G/ps8AJrISn687g==}
     dependencies:
       '@types/unist': 2.0.6
+    dev: false
+
+  /unist-util-visit-parents/4.1.1:
+    resolution: {integrity: sha512-1xAFJXAKpnnJl8G7K5KgU7FY55y3GcLIXqkzUj5QF/QVP7biUm0K0O2oqVkYsdjzJKifYeWn9+o6piAK2hGSHw==}
+    dependencies:
+      '@types/unist': 2.0.6
+      unist-util-is: 5.1.1
+    dev: false
+
+  /unist-util-visit/3.1.0:
+    resolution: {integrity: sha512-Szoh+R/Ll68QWAyQyZZpQzZQm2UPbxibDvaY8Xc9SUtYgPsDzx5AWSk++UUt2hJuow8mvwR+rG+LQLw+KsuAKA==}
+    dependencies:
+      '@types/unist': 2.0.6
+      unist-util-is: 5.1.1
+      unist-util-visit-parents: 4.1.1
     dev: false
 
   /universalify/0.1.2:
