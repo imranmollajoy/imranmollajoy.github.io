@@ -1,5 +1,6 @@
 import adapter from '@sveltejs/adapter-static';
 import { mdsvex } from 'mdsvex';
+import image from 'svelte-image';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	extensions: ['.svelte', '.md', '.svx'],
@@ -13,8 +14,9 @@ const config = {
 	},
 	preprocess: [
 		mdsvex({
-			extensions: ['.md']
-		})
+			extensions: ['.md', '.svx']
+		}),
+		image()
 	]
 };
 

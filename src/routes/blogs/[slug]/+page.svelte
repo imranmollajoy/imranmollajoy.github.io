@@ -1,6 +1,7 @@
 <script>
 	import Breadcrumb from '$lib/components/shared/Breadcrumb.svelte';
-
+	import '../../../lib/helpers/prism';
+	import '../../../lib/helpers/prism.css';
 	export let data;
 	let breadcrumb = [
 		{

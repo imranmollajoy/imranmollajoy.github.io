@@ -21,8 +21,11 @@
 </section>
 
 <style>
+	.breadcrumb {
+	}
 	.container {
-		background-color: var(--clr-accent);
+		overflow-wrap: break-word;
+		border: 1px solid var(--clr-accent);
 	}
 	p {
 		display: inline;
@@ -33,8 +36,11 @@
 		padding: 0.3rem 2rem;
 		text-decoration: none;
 		background-color: var(--white);
-		border: 1px solid var(--clr-accent);
-		border-right: none;
+		border-right: 1px solid var(--clr-accent);
+
 		text-transform: uppercase;
+	}
+	.active:last-child {
+		border: none;
 	}
 </style>

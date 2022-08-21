@@ -2,7 +2,7 @@
 name: A Simple Note Taking App
 slug: note-taking-app
 category: portfolio
-featuredImg: "tkn"
+featuredImg: "tkn.png"
 stacks: ["react-js", "local storage"]
 date: 2025-10-24
 ---
