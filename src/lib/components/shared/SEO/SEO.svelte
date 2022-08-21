@@ -1,6 +1,6 @@
 <script>
-	import defaultOgImage from '$lib/assets/home/home-open-graph.jpg';
-	import defaultOgSquareImage from '$lib/assets/home/home-open-graph-square.jpg';
+	import defaultOgImage from '$lib/images/imj.svg';
+	import defaultOgSquareImage from '$lib/images/imj.svg';
 
 	import website from '$lib/config/website';
 	import OpenGraph from './OpenGraph.svelte';
