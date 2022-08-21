@@ -14,6 +14,12 @@
     <loc>https://imranmollajoy.github.io/portfolios</loc>
   </url>
   <url>
+    <loc>https://imranmollajoy.github.io/blogs/categories</loc>
+  </url>
+  <url>
+    <loc>https://imranmollajoy.github.io/blogs/horizontal-scroll-section</loc>
+  </url>
+  <url>
     <loc>https://imranmollajoy.github.io/portfolios/blog-with-svelte-kit-and-contentful</loc>
   </url>
   <url>
@@ -27,12 +33,6 @@
   </url>
   <url>
     <loc>https://imranmollajoy.github.io/portfolios/weather-app</loc>
-  </url>
-  <url>
-    <loc>https://imranmollajoy.github.io/blogs/categories</loc>
-  </url>
-  <url>
-    <loc>https://imranmollajoy.github.io/blogs/horizontal-scroll-section</loc>
   </url>
   <url>
     <loc>https://imranmollajoy.github.io/blogs/categories/Web development</loc>
