@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 // +server.js
-export const GET = async () => {
+export const GET = async ({ url }) => {
 	const allPostFiles = import.meta.glob('../../../data/blogs/**/*.svx');
 	const iterablePostFiles = Object.entries(allPostFiles);
 
@@ -37,6 +38,5 @@ export const GET = async () => {
 			'content-type': 'application/json'
 		}
 	};
-
 	return new Response(JSON.stringify(newSort), responseOptions);
 };
