@@ -1,0 +1,1 @@
+const n=async({url:o})=>{const t=await fetch(`${o.origin}/api/portfolios`),a=await fetch(`${o.origin}/api/blogs`),e=await t.json(),s=await a.json();return{portfolios:e,blogs:s}},i=Object.freeze(Object.defineProperty({__proto__:null,load:n},Symbol.toStringTag,{value:"Module"}));export{i as _,n as l};
