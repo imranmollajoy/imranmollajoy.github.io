@@ -3,8 +3,10 @@
 	import CURVE from '$lib/images/Curve.svg';
 
 	const texts = ['Web developer', 'Web designer', 'Graphic designer', 'UI designer'];
-	$: current = texts[0];
+	$: y = 0;
 </script>
+
+<svelte:window bind:scrollY={y} />
 
 <section>
 	<div class="container">
@@ -22,7 +24,7 @@
 			<a href="#about" class="button">About me</a>
 		</div>
 	</div>
-	<img src={CURVE} alt="" />
+	<img src={CURVE} alt="" style="transform: translate(0,{-y * 0.14}px)" />
 </section>
 
 <style>
@@ -50,11 +52,8 @@
 
 	/* media for phone */
 	@media (max-width: 768px) {
-		section {
-			overflow: hidden;
-		}
 		img {
-			right: -30%;
+			right: 0;
 		}
 	}
 </style>

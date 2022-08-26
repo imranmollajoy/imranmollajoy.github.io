@@ -1,10 +1,13 @@
 <script>
+	$: y = 0;
 	import CURVE from '$lib/images/Curve2.svg';
 </script>
 
+<svelte:window bind:scrollY={y} />
+
 <div class="anchor" id="about">Anchor</div>
 <section>
-	<img src={CURVE} alt="" class="left" />
+	<img src={CURVE} alt="" class="left" style="transform: translate(0,{y * 0.2 - 100}px)" />
 	<div class="container">
 		<h2>About Me</h2>
 		<p>
@@ -28,6 +31,7 @@
 		position: relative;
 		overflow: visible;
 	}
+
 	img {
 		position: absolute;
 		z-index: -1;

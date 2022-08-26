@@ -1,5 +1,4 @@
 <script>
-	import Breadcrumb from '../../lib/components/shared/Breadcrumb.svelte';
 	import Seo from '../../lib/components/shared/SEO/SEO.svelte';
 
 	export let data;
@@ -16,7 +15,6 @@
 </script>
 
 <Seo title="Blogs" />
-<Breadcrumb {links} />
 <section>
 	<div class="container">
 		<h2>Blogs</h2>
