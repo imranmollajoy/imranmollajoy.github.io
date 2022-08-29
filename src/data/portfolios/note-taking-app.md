@@ -3,6 +3,7 @@ name: A Simple Note Taking App
 slug: note-taking-app
 category: portfolio
 stacks: ["react-js", "local storage"]
+featuredImg: "images/tkn.png"
 date: 2025-10-24
 ---
 ![](./images/tkn.png)
