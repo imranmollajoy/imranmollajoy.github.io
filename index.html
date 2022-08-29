@@ -17,15 +17,17 @@
 		<meta property="og:image:width" content="400" data-svelte="svelte-3oc3vr">
 		<meta property="og:image:height" content="400" data-svelte="svelte-3oc3vr">
 		<meta property="og:image:alt" content=" " data-svelte="svelte-3oc3vr">
-	<link href="./_app/immutable/assets/+layout-8e28c093.css" rel="stylesheet">
+	<link href="./_app/immutable/assets/+layout-9e768af2.css" rel="stylesheet">
 	<link href="./_app/immutable/assets/+page-3c4bdf05.css" rel="stylesheet">
-	<link rel="modulepreload" href="./_app/immutable/start-87e7917d.js">
+	<link href="./_app/immutable/assets/PostCard-bb6ea26e.css" rel="stylesheet">
+	<link rel="modulepreload" href="./_app/immutable/start-3c736736.js">
 	<link rel="modulepreload" href="./_app/immutable/chunks/index-67032617.js">
-	<link rel="modulepreload" href="./_app/immutable/chunks/singletons-480585c9.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/singletons-95bb53c0.js">
 	<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper-aa6bc0ce.js">
-	<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-b018bef0.js">
-	<link rel="modulepreload" href="./_app/immutable/chunks/stores-924b8340.js">
-	<link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-2075aa08.js">
+	<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-22a7cf28.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/stores-1bdeecc1.js">
+	<link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-67fa26ef.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/PostCard-f455a67a.js">
 	<link rel="modulepreload" href="./_app/immutable/chunks/SEO-3770f38d.js">
 	<link rel="modulepreload" href="./_app/immutable/modules/pages/_page.js-56469cb3.js">
 	<link rel="modulepreload" href="./_app/immutable/chunks/_page-6cb021ab.js">
@@ -58,13 +60,16 @@
 <div class="anchor" id="portfolio">Anchor</div>
 
 <section><div class="container"><h2>Portfolio</h2>
-		<a href="/portfolios/note-taking-app" class="post"><h5>A Simple Note Taking App</h5>
-				<div class="tags"><div class="badge uppercase">react-js</div><div class="badge uppercase">local storage</div></div>
-			</a><a href="/portfolios/watchnext" class="post"><h5>Movie and Show Tracking App</h5>
-				<div class="tags"><div class="badge uppercase">svelte-kit</div><div class="badge uppercase">remote api</div><div class="badge uppercase">local storage</div></div>
-			</a><a href="/portfolios/weather-app" class="post"><h5>Rain Forecast App</h5>
-				<div class="tags"><div class="badge uppercase">react-js</div><div class="badge uppercase">remote api</div></div>
-			</a>
+		<div class="post-grid"><a href="/portfolios/note-taking-app" class="post-card svelte-11evb77"><img src="/src/data/portfolios/images/tkn.png" alt="" class="image">
+	<div class="texts svelte-11evb77"><div class="badge uppercase">react-js</div><div class="badge uppercase">local storage</div>
+		<h5 class="svelte-11evb77">A Simple Note Taking App</h5></div>
+</a><a href="/portfolios/watchnext" class="post-card svelte-11evb77"><img src="/src/data/portfolios/images/watchnext.png" alt="" class="image">
+	<div class="texts svelte-11evb77"><div class="badge uppercase">svelte-kit</div><div class="badge uppercase">remote api</div>
+		<h5 class="svelte-11evb77">Movie and Show Tracking App</h5></div>
+</a><a href="/portfolios/weather-app" class="post-card svelte-11evb77"><img src="/src/data/portfolios/images/byu.png" alt="" class="image">
+	<div class="texts svelte-11evb77"><div class="badge uppercase">react-js</div><div class="badge uppercase">remote api</div>
+		<h5 class="svelte-11evb77">Rain Forecast App</h5></div>
+</a></div>
 		<a href="/portfolios" class="button button-primary">More</a></div></section>
 
 
@@ -88,19 +93,20 @@
 		<a href="mailto:imj_portfolio.3z5y3@simplelogin.com" class="button">Email me</a></div>
 </div>
 <section><div class="container" id="portfolio"><h2>Blogs</h2>
-		<a href="/blogs/horizontal-scroll-section/" class="post featured"><h5>Make a horizontal scroll section with HTML, CSS and JavaScript</h5>
-				<div class="tags"><div class="badge uppercase">Web development</div></div>
-			</a>
+		<div class="post-grid"><a href="/blogs/horizontal-scroll-section/" class="post-card svelte-11evb77 featured"><img src="/src/data//blogs/horizontal-scroll-section//first.png" alt="" class="image">
+	<div class="texts svelte-11evb77"><div class="badge uppercase">Web development</div>
+		<h5 class="svelte-11evb77">Make a horizontal scroll section with HTML, CSS and JavaScript</h5></div>
+</a></div>
 		<a href="/blogs" class="button button-primary">More</a></div></section>
 
 
-		<script type="module" data-sveltekit-hydrate="1uolwau">
-		import { set_public_env, start } from "./_app/immutable/start-87e7917d.js";
+		<script type="module" data-sveltekit-hydrate="18l7xhg">
+		import { set_public_env, start } from "./_app/immutable/start-3c736736.js";
 
 		set_public_env({});
 
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="1uolwau"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="18l7xhg"]').parentNode,
 			paths: {"base":"","assets":""},
 			route: true,
 			spa: false,
