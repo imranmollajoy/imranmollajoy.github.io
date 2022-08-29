@@ -1,5 +1,7 @@
 <script>
 	import Seo from '../../lib/components/shared/SEO/SEO.svelte';
+	import PostCard from '../../lib/components/shared/PostCard.svelte';
+
 	export let data;
 </script>
 
@@ -7,16 +9,15 @@
 <section>
 	<div class="container">
 		<h2>Portfolios</h2>
-		{#each data.portfolios as p, i}
-			<a href={p.path} class="post">
-				<!-- <img src="" alt={p.meta.name} /> -->
-				<h5>{p.meta.name}</h5>
-				<div class="tags">
-					{#each p.meta.stacks as stack}
-						<div class="badge uppercase">{stack}</div>
-					{/each}
-				</div>
-			</a>
-		{/each}
+		<div class="post-grid">
+			{#each data.portfolios as p, i}
+				<PostCard
+					path={p.path}
+					imgPath={`/src/data/portfolios/${p.meta.featuredImg}`}
+					tags={p.meta.stacks}
+					name={p.meta.name}
+				/>
+			{/each}
+		</div>
 	</div>
 </section>

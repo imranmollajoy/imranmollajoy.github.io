@@ -4,8 +4,8 @@ export const load = async ({ url }) => {
 
 	// get the categories
 	var categories = [];
-	blogs.forEach((element) => {
-		if (!categories.includes(element.meta.category))
+	blogs.forEach((element, index) => {
+		if (!categories.includes(element.meta.category[0]))
 			categories = [...categories, element.meta.category];
 	});
 	console.log(categories);

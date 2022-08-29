@@ -3,6 +3,7 @@ name: Movie and Show Tracking App
 slug: watchnext
 category: portfolio
 stacks: ["svelte-kit", "remote api",'local storage']
+featuredImg: "images/watchnext.png"
 date: 2025-10-24
 ---
 ![](./images/watchnext.png)

@@ -3,6 +3,7 @@ name: Dummy Text Generator
 slug: dummy-text-generator
 category: portfolio
 stacks: ["react-js", "remote api"]
+featuredImg: "images/dtg-b.png"
 date: 2020-06-01
 ---
 ![](./images/dtg-b.png)

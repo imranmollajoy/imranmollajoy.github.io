@@ -1,6 +1,7 @@
 <script>
 	import Seo from '../../lib/components/shared/SEO/SEO.svelte';
-
+	import Image from 'svelte-image';
+	import PostCard from '../../lib/components/shared/PostCard.svelte';
 	export let data;
 	let links = [
 		{
@@ -18,13 +19,16 @@
 <section>
 	<div class="container">
 		<h2>Blogs</h2>
-		{#each data.blogs as blog}
-			<a href={blog.path} class="post" class:featured={blog.meta.featured}>
-				<h4>{blog.meta.name}</h4>
-				<div class="tags">
-					<p class="badge">{blog.meta.category}</p>
-				</div>
-			</a>
-		{/each}
+		<div class="post-grid">
+			{#each data.blogs as blog}
+				<PostCard
+					path={blog.path}
+					imgPath={`/src/data/${blog.path}/${blog.meta.featuredImg}`}
+					tags={blog.meta.category}
+					name={blog.meta.name}
+					featured={blog.meta.featured}
+				/>
+			{/each}
+		</div>
 	</div>
 </section>
