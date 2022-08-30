@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
-// +server.js
-export const GET = async ({ url }) => {
+// api/blogs/+server.js
+export const GET = async ({ url, params }) => {
 	const allPostFiles = import.meta.glob('../../../data/blogs/**/*.svx');
 	const iterablePostFiles = Object.entries(allPostFiles);
 	const allPosts = await Promise.all(
@@ -43,7 +43,6 @@ export const GET = async ({ url }) => {
 	});
 
 	const posts = [...sortedFeaturedPosts, ...sortedRestPosts];
-
 	var blogs = [];
 	posts.forEach((element) => {
 		allImages.forEach((img) => {
@@ -66,5 +65,6 @@ export const GET = async ({ url }) => {
 			'content-type': 'application/json'
 		}
 	};
+
 	return new Response(JSON.stringify(blogs), responseOptions);
 };

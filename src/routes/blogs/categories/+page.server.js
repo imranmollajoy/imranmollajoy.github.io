@@ -8,7 +8,6 @@ export const load = async ({ url }) => {
 		if (!categories.includes(element.meta.category[0]))
 			categories = [...categories, element.meta.category];
 	});
-	console.log(categories);
 	return {
 		categories
 	};

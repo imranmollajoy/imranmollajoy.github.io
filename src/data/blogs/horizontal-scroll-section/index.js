@@ -1,4 +1,4 @@
-import meta from './first.png';
+import meta from './mhss.png';
 
 const data = {
 	meta

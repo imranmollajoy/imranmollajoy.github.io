@@ -7,8 +7,13 @@
 <svelte:window bind:scrollY={y} />
 <!-- style="background-image:url({BG}) ; -->
 <div class="u-full-width">
-	<img src={CURVE} alt="" class="curve" style="transform: translate(0,{-y * 0.07}px)" />
-	<img src={BG} alt="" class="bg" style="transform: translate(0,{-y * 0.17}px)" />
+	<img
+		src={CURVE}
+		alt=""
+		class="curve"
+		style="transform: translate(0,{-y * 0.27 + 300}px) rotate(80deg);"
+	/>
+	<img src={BG} alt="" class="bg" style="transform: translate(0,{-y * 0.1}px)" />
 	<div class="container">
 		<h1>Have something great in mind?</h1>
 		<a href="mailto:imj_portfolio.3z5y3@simplelogin.com" class="button">Email me</a>
@@ -44,7 +49,7 @@
 		position: absolute;
 		top: 0;
 		left: 50%;
-		transform: rotate(30deg);
+		transform: rotate(230deg);
 		z-index: 2;
 	}
 	h1 {

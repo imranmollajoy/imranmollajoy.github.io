@@ -2,6 +2,7 @@
 	import Seo from '../../lib/components/shared/SEO/SEO.svelte';
 	import { base, assets } from '$app/paths';
 	import PostCard from '../../lib/components/shared/PostCard.svelte';
+	import Pagination from '../../lib/components/shared/Pagination.svelte';
 	export let data;
 	let links = [
 		{
@@ -30,5 +31,6 @@
 				/>
 			{/each}
 		</div>
+		<Pagination current={data.currentPage} pages={data.totalPages} />
 	</div>
 </section>

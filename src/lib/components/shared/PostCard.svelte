@@ -48,6 +48,6 @@
 		margin: 0;
 	}
 	.featured {
-		border-left: 4px solid var(--clr-accent);
+		border-bottom: 4px solid var(--clr-accent);
 	}
 </style>

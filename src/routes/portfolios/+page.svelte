@@ -3,7 +3,6 @@
 	import PostCard from '../../lib/components/shared/PostCard.svelte';
 
 	export let data;
-	$: console.log(data);
 </script>
 
 <Seo title="Portfolios" />

@@ -20,6 +20,6 @@
 				/>
 			{/each}
 		</div>
-		<a href="/blogs" class="button button-primary">More</a>
+		<a href="/blogs?page=1" class="button button-primary">More</a>
 	</div>
 </section>
