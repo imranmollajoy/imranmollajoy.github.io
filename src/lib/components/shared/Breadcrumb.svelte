@@ -6,10 +6,11 @@
 		const tokens = path.split('/').filter((t) => t !== '');
 
 		let tokenPath = '';
-		links = tokens.map((t) => {
+		links = tokens.map((t, index) => {
 			tokenPath += '/' + t;
+
 			return {
-				label: t.toLocaleUpperCase(),
+				label: t.split('-').join(' ').toLocaleUpperCase(),
 				href: tokenPath
 			};
 		});

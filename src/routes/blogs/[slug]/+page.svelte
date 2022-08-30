@@ -4,16 +4,16 @@
 	import '$lib/helpers/prism';
 	import '$lib/helpers/prism.css';
 	export let data;
-	const openGraphProps = {
-		article: true,
-		datePublished: data.date,
-		image: data.img,
-		metadescription: data.excerpt,
-		pageTitle: data.name
+
+	const ogImage = {
+		url: data.imageData.meta,
+		alt: data.name
 	};
+	const metadescription = data.excerpt;
+	const datePublished = data.date;
 </script>
 
-<Seo title={data.name} {openGraphProps} />
+<Seo title={data.name} {metadescription} article={true} {datePublished} {ogImage} />
 
 <div class="row">
 	<main class="container">
@@ -23,7 +23,7 @@
 			{/each} -->
 			<h1 class="toc-exclude">{data.name}</h1>
 			<!-- <img src={data.img.default} alt="" /> -->
-			<Image src={data.imageData.meta} />
+			<img src={data.imageData.meta} />
 			<div class="post-body">
 				{@html data.content}
 			</div>
