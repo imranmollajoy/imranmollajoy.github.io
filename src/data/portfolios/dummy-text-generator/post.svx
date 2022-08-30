@@ -6,7 +6,6 @@ stacks: ["react-js", "remote api"]
 featuredImg: "images/dtg-b.png"
 date: 2020-06-01
 ---
-![](./images/dtg-b.png)
 
 An app to generate dummy text. Useful for testing purposes. It uses a free remote API to generate text.
 
