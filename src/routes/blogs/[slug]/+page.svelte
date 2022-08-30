@@ -23,7 +23,7 @@
 			{/each} -->
 			<h1 class="toc-exclude">{data.name}</h1>
 			<!-- <img src={data.img.default} alt="" /> -->
-			<Image src={data.img} />
+			<Image src={data.imageData.meta} />
 			<div class="post-body">
 				{@html data.content}
 			</div>

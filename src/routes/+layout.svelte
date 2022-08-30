@@ -7,7 +7,7 @@
 	import Breadcrumb from '../lib/components/shared/Breadcrumb.svelte';
 	import { page } from '$app/stores';
 	// import '$lib/styles/simple-grid.css';
-	const portfolioMarkdownImages = import.meta.glob('../data/portfolios/images/*.{png,jpg}');
+	const portfolioMarkdownImages = import.meta.glob('../data/portfolios/**/*.{png,jpg}');
 	const postMarkdownImages = import.meta.glob('../data/blogs/**/*.{png,jpg}');
 
 	NProgress.configure({

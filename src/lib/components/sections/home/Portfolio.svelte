@@ -13,10 +13,10 @@
 		<div class="post-grid">
 			{#each portfolios as p, i}
 				<PostCard
-					path={p.path}
-					imgPath={`/src/data/portfolios/${p.meta.featuredImg}`}
-					tags={p.meta.stacks}
-					name={p.meta.name}
+					path={p.post.path}
+					imgPath={p.imgSrc.meta}
+					tags={p.post.meta.stacks}
+					name={p.post.meta.name}
 				/>
 			{/each}
 		</div>

@@ -1,15 +1,17 @@
+/* eslint-disable no-unused-vars */
 export async function load({ params, url }) {
 	const post = await import(`../../../data/blogs/${params.slug}/post.svx`);
-	const { name, category, featuredImg, date, excerpt } = post.metadata;
+	const { name, category, date, excerpt } = post.metadata;
 	const content = post.default.render().html;
 	const origin = url.origin;
-	const imgData = await import(`/src/data/blogs/${params.slug}/${featuredImg}`);
-	const img = imgData.default;
+	const imgDataPromise = import(`../../../data/blogs/${params.slug}/index.js`);
+	const [imageDataResult] = await Promise.all([imgDataPromise]);
+	const { default: imageData } = imageDataResult;
 	return {
 		name,
 		category,
 		origin,
-		img,
+		imageData,
 		date,
 		excerpt,
 		content
