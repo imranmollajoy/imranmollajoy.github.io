@@ -6,6 +6,9 @@ date: 31 Aug, 2022
 featuredImg: "first.png"
 excerpt:  SvelteKit is bleeding edge, blazing fast. Gastby is slow, atleast for me.
 ---
+<script>
+  const ssLink = "/blogs/differences-between-ssg-and-spa"  
+</script>
 
 > Disclaimer: This is my opinion, this is what works for me. 
     
@@ -13,7 +16,7 @@ excerpt:  SvelteKit is bleeding edge, blazing fast. Gastby is slow, atleast for 
 One answer, speed. Not the speed of end-user website, rather the speed of development.
 
 ## Explanation
-Gatsby is an awesome framework. It is a react-based framework, mainly a static site generator, but can also be used as SPA and SSR. Gatsby is feature rich, can be extended with a vast number of plugins. However, Gatsby takes a long time to start up a development server, reloading any changes and sometimes just hangs up my entire system.
+Gatsby is an awesome framework. It is a react-based framework, mainly a [static site generator]({ssLink}), but can also be used as [SPA and SSR]({ssLink}). Gatsby is feature rich, can be extended with a vast number of plugins. However, Gatsby takes a long time to start up a development server, reloading any changes and sometimes just hangs up my entire system.
 
 Whereas SvelteKit is a Svelte based framework for creating website, pretty similar to Gatsby. SvelteKit development server fires up within a seconds, applies any changes instantly. 
 
