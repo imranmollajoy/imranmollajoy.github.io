@@ -1,0 +1,22 @@
+---
+name: Why I chose SvelteKit over Gatsby
+slug: why-i-chose-sveltekit-over-gatsby
+category: ['Web development']
+featured: true
+date: 31 Aug, 2022
+featuredImg: "first.png"
+excerpt:  SvelteKit is bleeding edge, blazing fast. Gastby is slow, atleast for me.
+---
+
+> Disclaimer: This is my opinion, this is what works for me. 
+    
+## Why?
+One answer, speed. Not the speed of end-user website, rather the speed of development.
+
+## Explanation
+Gatsby is an awesome framework. It is a react-based framework, mainly a static site generator, but can also be used as SPA and SSR. Gatsby is feature rich, can be extended with a vast number of plugins. However, Gatsby takes a long time to start up a development server, reloading any changes and sometimes just hangs up my entire system.
+
+Whereas SvelteKit is a Svelte based framework for creating website, pretty similar to Gatsby. SvelteKit development server fires up within a seconds, applies any changes instantly. 
+
+## Conclusion
+Gatsby has many plugins which can do pretty much any functionality you want. I would definitely stick with Gatsby if it wasn't for the speed. SvelteKit is yet in beta phase, so many features like generating a sitemap, dynamic images are not there out of the box. But those can be done with some time and coding. So yeah, SvelteKit, for now.
