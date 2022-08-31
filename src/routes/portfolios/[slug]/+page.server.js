@@ -1,6 +1,7 @@
 export async function load({ params, url }) {
 	const post = await import(`../../../data/portfolios/${params.slug}/post.svx`);
-	const { name } = post.metadata;
+	const { name, slug } = post.metadata;
+	const updatedName = name + ' with Source Code';
 	const content = post.default.render().html;
 	const origin = url.origin;
 	const imgDataPromise = import(`../../../data/portfolios/${params.slug}/index.js`);
@@ -8,6 +9,8 @@ export async function load({ params, url }) {
 	const { default: imageData } = imageDataResult;
 	return {
 		name,
+		updatedName,
+		slug,
 		imageData,
 		origin,
 		content
