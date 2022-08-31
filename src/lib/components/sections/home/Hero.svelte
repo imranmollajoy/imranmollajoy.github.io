@@ -14,9 +14,9 @@
 		<h1>
 			I am an
 			<Typewriter mode="loop" interval={100} delay={200} element="span">
-				<span class="accent"> Web developer </span>
-				<span class="accent"> Web designer </span>
-				<span class="accent"> Graphic designer </span>
+				<span class="type"> Web developer </span>
+				<span class="type"> Web designer </span>
+				<span class="type"> Graphic designer </span>
 			</Typewriter>
 		</h1>
 		<div>
@@ -45,6 +45,10 @@
 		z-index: -2;
 		top: 0;
 		right: 15%;
+	}
+	.type {
+		background-color: var(--clr-accent);
+		color: var(--clr-light);
 	}
 	h1 {
 		transition: all;
