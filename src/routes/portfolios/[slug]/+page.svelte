@@ -4,21 +4,24 @@
 	export let data;
 </script>
 
-<Seo title={data.name} />
+<Seo title={data.updatedName} />
 
 <div class="container">
 	<article>
-		<h1>{data.name}</h1>
+		<h1>{data.updatedName}</h1>
 		<Image src={data.imageData.meta} />
 		<div class="post">
 			{@html data.content}
 		</div>
+		<a href={`https://github.com/imranmollajoy/${data.slug}`} class="button">Source code</a>
+		<a href="mailto:imj_portfolio.3z5y3@simplelogin.com" class="button button-primary">Contact me</a
+		>
 	</article>
 </div>
 
 <style>
 	article {
-		margin-top: 6rem;
+		margin: 6rem 0;
 	}
 	.post {
 		margin-top: 4rem;

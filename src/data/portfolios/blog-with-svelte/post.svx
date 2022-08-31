@@ -1,6 +1,6 @@
 ---
 name: Blog with Svelte Kit and Contentful
-slug: blog-with-svelte-kit
+slug: blog-with-svelte
 category: portfolio
 stacks: ["svelte-kit", "Contentful"]
 featuredImg: "images/blogwithsvelteandcontentful.png"

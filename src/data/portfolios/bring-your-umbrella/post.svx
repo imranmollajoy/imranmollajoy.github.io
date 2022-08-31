@@ -1,6 +1,6 @@
 ---
 name: Rain Forecast App
-slug: weather-app
+slug: bring-your-umbrella
 category: portfolio
 stacks: ["react-js", "remote api"]
 featuredImg: "images/byu.png"
