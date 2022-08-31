@@ -3,14 +3,15 @@ export const load = async ({ url }) => {
 	const rawBlogs = await response.json();
 	let blogs = [];
 	//=================PAGINATION===============
-	const page = url.searchParams.get('page');
+	let page = url.searchParams.get('page');
+	let currentPage = 1;
 	const count = 10;
 	if (page !== null) {
-		blogs = rawBlogs.slice(page * count - count, page * count);
+		currentPage = page;
 	} else {
-		blogs = rawBlogs;
+		currentPage = 1;
 	}
-	const currentPage = page;
+	blogs = rawBlogs.slice(currentPage * count - count, currentPage * count);
 	const totalPages = rawBlogs.length / count;
 	return {
 		blogs,
