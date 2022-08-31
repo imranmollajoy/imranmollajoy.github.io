@@ -36,7 +36,12 @@
 </url>
 <url>
   <loc>https://imranmollajoy.github.io/blogs/horizontal-scroll-section</loc>
-  <lastmod>2022-08-21T18:09:27+00:00</lastmod>
+  <lastmod>2022-08-31T18:09:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://imranmollajoy.github.io/blogs/why-i-chose-sveltekit-over-gatsby</loc>
+  <lastmod>2022-08-31T18:09:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
