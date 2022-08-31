@@ -35,8 +35,8 @@
 	--white: #fff;
 	--black: #131313;
 	--grey: #838383;
-	--cursor-color: var(--clr-accent);
-	--cursor-width: 4px;
+	--cursor-color: var(--clr-dark);
+	--cursor-width: 1rem;
 }
 
 @media (prefers-color-scheme: dark) {
