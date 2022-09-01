@@ -1,7 +1,7 @@
 import website from '$lib/config/website';
 export const GET = async ({ url }) => {
 	const { siteTitle, siteUrl } = website;
-	const response = await fetch(`${url.origin}/api/blogs`);
+	const response = await fetch(`${url.origin}/api/posts`);
 	const posts = await response.json();
 
 	const headers = {
@@ -20,13 +20,13 @@ export const GET = async ({ url }) => {
 
             ${posts
 							.map(
-								(post) =>
+								(p) =>
 									`
         <item>
-          <title>${post.meta.name}</title>
+          <title>${p.post.meta.name}</title>
           <description>A blog built with SvelteKit about tech and stuff!</description>
-          <link>${siteUrl}/posts/${post.meta.slug}/</link>
-          <pubDate>${new Date(post.meta.date)}</pubDate>
+          <link>${siteUrl}/posts/${p.post.meta.slug}/</link>
+          <pubDate>${new Date(p.post.meta.date)}</pubDate>
         </item>
       `
 							)
