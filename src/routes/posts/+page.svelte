@@ -1,25 +1,14 @@
 <script>
 	import Seo from '../../lib/components/shared/SEO/SEO.svelte';
-	import { base, assets } from '$app/paths';
 	import PostCard from '../../lib/components/shared/PostCard.svelte';
 	import Pagination from '../../lib/components/shared/Pagination.svelte';
 	export let data;
-	let links = [
-		{
-			path: '/',
-			text: 'Home'
-		},
-		{
-			path: '/blogs',
-			text: 'Blogs'
-		}
-	];
 </script>
 
-<Seo title="Blogs" />
+<Seo title="Posts" />
 <section>
 	<div class="container">
-		<h2>Blogs</h2>
+		<h2>Posts</h2>
 		<div class="post-grid">
 			{#each data.blogs as blog}
 				<PostCard

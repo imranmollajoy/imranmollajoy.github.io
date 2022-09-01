@@ -1,4 +1,5 @@
 <script>
+	import ImageLoader from './Image/ImageLoader.svelte';
 	export let path;
 	export let imgPath;
 	export let name;
@@ -7,7 +8,7 @@
 </script>
 
 <a href={path} class="post-card" class:featured>
-	<img src={imgPath} alt="" class="image" />
+	<ImageLoader src={imgPath} />
 	<div class="texts">
 		{#each tags as stack, i}
 			{#if i < 2}

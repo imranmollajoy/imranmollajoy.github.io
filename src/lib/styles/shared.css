@@ -18,6 +18,12 @@ article .post-body {
 	display: inline;
 	overflow-wrap: break-word;
 }
+nav.page-outline {
+	padding: 1rem;
+	max-width: 1024px;
+	margin: 0 auto;
+	display: none;
+}
 
 /* Make clicks pass-through */
 #nprogress {

@@ -37,7 +37,6 @@
 		"mdsvex": "^0.10.6",
 		"mdsvex-relative-images": "^1.0.2",
 		"rehype-slug": "^5.0.1",
-		"svelte-image": "^0.2.9",
 		"svelte-typewriter": "^3.0.4"
 	}
 }

@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 // api/blogs/+server.js
 export const GET = async ({ url, params }) => {
-	const allPostFiles = import.meta.glob('../../../data/blogs/**/*.svx');
+	const allPostFiles = import.meta.glob(`../../posts/**/*.svx`);
 	const iterablePostFiles = Object.entries(allPostFiles);
 	const allPosts = await Promise.all(
 		iterablePostFiles.map(async ([path, resolver]) => {
 			const { metadata } = await resolver();
-			const postPath = path.replace('/data', '').replace('post', '').slice(8, -4);
+			const postPath = path.replace('+page', '').slice(6, -4);
 
 			return {
 				meta: metadata,
@@ -14,12 +14,12 @@ export const GET = async ({ url, params }) => {
 			};
 		})
 	);
-	const allImagesFiles = import.meta.glob(`../../../data/blogs/**/index.js`);
+	const allImagesFiles = import.meta.glob(`../../posts/**/index.js`);
 	const iterableImageFiles = Object.entries(allImagesFiles);
 	const allImages = await Promise.all(
 		iterableImageFiles.map(async ([path, resolver]) => {
 			const { default: imageData } = await resolver();
-			const postPath = path.replace('/data', '').replace('index', '').slice(8, -3);
+			const postPath = path.replace('index', '').slice(6, -3);
 			return {
 				imageData,
 				path: postPath

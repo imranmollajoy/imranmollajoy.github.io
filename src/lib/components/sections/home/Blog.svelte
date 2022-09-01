@@ -8,7 +8,7 @@
 
 <section>
 	<div class="container" id="portfolio">
-		<h2>Blogs</h2>
+		<h2>Posts</h2>
 		<div class="post-grid">
 			{#each blogs as blog}
 				<PostCard
@@ -20,6 +20,6 @@
 				/>
 			{/each}
 		</div>
-		<a href="/blogs?page=1" class="button button-primary">More</a>
+		<a href="/posts" class="button button-primary">More</a>
 	</div>
 </section>
