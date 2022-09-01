@@ -8,7 +8,7 @@ layout: blog
 excerpt:  SvelteKit is bleeding edge, blazing fast. Gastby is slow, atleast for me.
 ---
 <script>
-  const ssLink = "/blogs/differences-between-ssg-and-spa"  
+  const ssLink = "/posts/differences-between-ssg-and-spa"  
 </script>
 
 <img src="./thumb.png" />
