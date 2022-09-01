@@ -1,6 +1,6 @@
 <script>
-	import Image from 'svelte-image';
-	import Seo from '../../../lib/components/shared/SEO/SEO.svelte';
+	import ImageLoader from '$lib/components/shared/Image/ImageLoader.svelte';
+	import Seo from '$lib/components/shared/SEO/SEO.svelte';
 	export let data;
 </script>
 
@@ -9,7 +9,7 @@
 <div class="container">
 	<article>
 		<h1>{data.updatedName}</h1>
-		<Image src={data.imageData.meta} />
+		<ImageLoader src={data.imageData.meta} />
 		<div class="post">
 			{@html data.content}
 		</div>

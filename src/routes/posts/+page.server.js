@@ -1,5 +1,5 @@
 export const load = async ({ url }) => {
-	const response = await fetch(`${url.origin}/api/blogs`);
+	const response = await fetch(`${url.origin}/api/posts`);
 	const rawBlogs = await response.json();
 	let blogs = [];
 	//=================PAGINATION===============
