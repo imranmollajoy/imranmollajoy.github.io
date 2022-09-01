@@ -34,5 +34,5 @@ export const GET = async ({ url }) => {
       </channel>
     </rss>`;
 
-	return new Response(body, responseOptions);
+	return new Response(JSON.stringify(body), responseOptions);
 };
