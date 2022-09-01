@@ -8,12 +8,12 @@
 
 	let nativeLoading = false;
 
-	// Determine whether to bypass our intersecting check
-	// onMount(() => {
-	//   if ('loading' in HTMLImageElement.prototype) {
-	//     nativeLoading = true
-	//   }
-	// })
+	//Determine whether to bypass our intersecting check
+	onMount(() => {
+		if ('loading' in HTMLImageElement.prototype) {
+			nativeLoading = true;
+		}
+	});
 </script>
 
 <IntersectionObserver once={true} let:intersecting>

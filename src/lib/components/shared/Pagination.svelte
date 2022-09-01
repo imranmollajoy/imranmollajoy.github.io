@@ -1,7 +1,7 @@
 <script>
 	export let pages = 3;
 	export let current = 2;
-	const hrefBase = '/blogs?page=';
+	const hrefBase = '/posts?page=';
 	let rePages = [];
 	$: reCurrent = parseInt(current);
 	$: for (let i = 0; i < pages; i++) {

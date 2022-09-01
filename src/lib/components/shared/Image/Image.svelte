@@ -1,5 +1,6 @@
 <script>
 	export let src;
+	/** @type String */
 	export let alt;
 
 	import { onMount } from 'svelte';
@@ -18,9 +19,9 @@
 
 <style>
 	img {
-		height: 200px;
+		height: 100px;
 		opacity: 0;
-		transition: opacity 1200ms ease-out;
+		transition: all 1200ms ease-out;
 	}
 	img.loaded {
 		opacity: 1;
