@@ -7,6 +7,9 @@ date: 18 Aug, 2022
 featuredImg: "first.png"
 excerpt: A horizontal section is a section which spreads left to right. It is very elegant and takes less space and can show more data.
 ---
+<script>
+	import HR from "./components/HR.svelte"
+</script>
 
 ## Horizontal Section
 
@@ -167,6 +170,8 @@ hSections.forEach((hSection) => {
 
 Save and test the index.html. It's **working**!
 
+<!-- <HR /> -->
+
 ## Final Code
 Here is the full code.
 
@@ -255,7 +260,14 @@ Here is the full code.
 	display: none;
 }
 
-
+.card {
+	/* setting a width a important, otherwise */
+	/* the section won't be overflowed */
+	min-width: 250px !important;
+	height: 356px;
+	background-color: #fff;
+	padding: 20px;
+}
 /* =================extra bit of styling================== */
 html {
 	font-size: 100%;
