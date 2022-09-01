@@ -25,8 +25,6 @@
 		box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.13);
 		margin-bottom: 2rem;
 		border-radius: 0.4rem;
-		display: flex;
-		flex-direction: column;
 		text-decoration: none;
 		transition: all 0.2s ease-in-out;
 		border: 1px solid var(--clr-accent);
