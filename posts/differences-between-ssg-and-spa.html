@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#0a9898" />
+		<meta http-equiv="content-security-policy" content="">
+	<link href="../_app/immutable/assets/+layout-1b9084d9.css" rel="stylesheet">
+	<link href="../_app/immutable/assets/blog-layout-72052a2a.css" rel="stylesheet">
+	<link rel="modulepreload" href="../_app/immutable/start-122f99a2.js">
+	<link rel="modulepreload" href="../_app/immutable/chunks/index-fd2240df.js">
+	<link rel="modulepreload" href="../_app/immutable/chunks/singletons-5f755bea.js">
+	<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-aa6bc0ce.js">
+	<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-c2917a2c.js">
+	<link rel="modulepreload" href="../_app/immutable/chunks/stores-891d3679.js">
+	<link rel="modulepreload" href="../_app/immutable/components/pages/posts/differences-between-ssg-and-spa/_page.svx-16cb5c7f.js">
+	<link rel="modulepreload" href="../_app/immutable/chunks/blog-layout-256983a8.js">
+	</head>
+	<body>
+		<div>
+
+
+
+
+<section class="breadcrumb"><div class="container svelte-1264do5"><a href="/" class="active svelte-1264do5">Home</a> /<a href="/posts" class="active svelte-1264do5">POSTS</a> /<p class="svelte-1264do5">DIFFERENCES BETWEEN SSG AND SPA</p></div></section>
+<nav class="page-outline"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h2"><a class="page-link page-link-h2" href="#ssr">SSR</a></li><li class="toc-item toc-item-h2"><a class="page-link page-link-h2" href="#ssg">SSG</a></li><li class="toc-item toc-item-h2"><a class="page-link page-link-h2" href="#what-should-you-choose">What should You Choose</a></li></ol></nav>
+
+<section class="container"><h1>Differences between SSG and SSR, also when to use them</h1>
+	<p>30 Aug, 2022</p>
+	<main class="svelte-mlbt6q"><img src="/_app/immutable/assets/thumb2-f1e57964.png">
+<h2 id="ssr">SSR</h2>
+<p>SSR means Server side rendering. In this mode, the requested page gets rendered on the server. </p>
+<p>Building in SSR is fast compared to SSG when dealing with many pages. However it is slower than SSG in client side. SEO can be a little tricky but can do its job when done properly. Useful for app/sites that depends on everchanging data or interactive elements.</p>
+<h2 id="ssg">SSG</h2>
+<p>SSG means Static site generation. The site is rendered once during build time. It is faster than SSR in terms of performance. Useful for blogs, magazines, documentation etc. where data is not dynamic.</p>
+<h2 id="what-should-you-choose">What should You Choose</h2>
+<p>This depends on your use cases. If you are making a simple website like a blog, you should use an SSG. On the other hand, it you want to make am interactive app like a weather app, or an app which requires data fetching by the users, use a SSR.
+Also, many frameworks allow you to use both SSG and SSR side by side, meaning you can use SSR on dynamic parts and SSG on other parts of your site.</p></main>
+</section>
+
+
+		<script type="module" data-sveltekit-hydrate="5lgayl">
+		import { set_public_env, start } from "../_app/immutable/start-122f99a2.js";
+
+		set_public_env({});
+
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="5lgayl"]').parentNode,
+			paths: {"base":"","assets":""},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				node_ids: [0, 6],
+				params: {},
+				routeId: "posts/differences-between-ssg-and-spa"
+			}
+		});
+	</script>
+	<script type="application/json" sveltekit:data-type="server_data">[{"origin":"http://sveltekit-prerender","pathname":"/posts/differences-between-ssg-and-spa"},null]</script></div>
+	</body>
+</html>
