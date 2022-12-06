@@ -1,4 +1,12 @@
 {
+  "src/routes/posts/differences-between-ssg-and-spa/thumb2.png": {
+    "file": "_app/immutable/assets/thumb2-f1e57964.png",
+    "src": "src/routes/posts/differences-between-ssg-and-spa/thumb2.png"
+  },
+  "src/routes/posts/ad-free-alternatives-on-android-and-ios/ad-free.png": {
+    "file": "_app/immutable/assets/ad-free-ef09773e.png",
+    "src": "src/routes/posts/ad-free-alternatives-on-android-and-ios/ad-free.png"
+  },
   "src/routes/posts/horizontal-scroll-section/first.png": {
     "file": "_app/immutable/assets/first-1931ebb5.png",
     "src": "src/routes/posts/horizontal-scroll-section/first.png"
@@ -7,21 +15,9 @@
     "file": "_app/immutable/assets/mhss-784515de.png",
     "src": "src/routes/posts/horizontal-scroll-section/mhss.png"
   },
-  "src/routes/posts/differences-between-ssg-and-spa/thumb2.png": {
-    "file": "_app/immutable/assets/thumb2-f1e57964.png",
-    "src": "src/routes/posts/differences-between-ssg-and-spa/thumb2.png"
-  },
   "src/routes/posts/why-i-chose-sveltekit-over-gatsby/thumb.png": {
     "file": "_app/immutable/assets/thumb-c2bfef12.png",
     "src": "src/routes/posts/why-i-chose-sveltekit-over-gatsby/thumb.png"
-  },
-  "src/routes/portfolios/take-note-app/tkn.png": {
-    "file": "_app/immutable/chunks/tkn-0cd23f61.js",
-    "src": "src/routes/portfolios/take-note-app/tkn.png",
-    "isDynamicEntry": true,
-    "assets": [
-      "_app/immutable/assets/tkn-e380795b.png"
-    ]
   },
   "src/routes/portfolios/bring-your-umbrella/byu.png": {
     "file": "_app/immutable/chunks/byu-f336f51a.js",
@@ -29,6 +25,14 @@
     "isDynamicEntry": true,
     "assets": [
       "_app/immutable/assets/byu-a904fa75.png"
+    ]
+  },
+  "src/routes/portfolios/take-note-app/tkn.png": {
+    "file": "_app/immutable/chunks/tkn-0cd23f61.js",
+    "src": "src/routes/portfolios/take-note-app/tkn.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "_app/immutable/assets/tkn-e380795b.png"
     ]
   },
   "src/routes/portfolios/dummy-text-generator/dtg-b.png": {
@@ -47,14 +51,6 @@
       "_app/immutable/assets/blogwithsvelteandcontentful-359e038f.png"
     ]
   },
-  "src/routes/portfolios/watchnext/watchnext.png": {
-    "file": "_app/immutable/chunks/watchnext-4cf1e8c8.js",
-    "src": "src/routes/portfolios/watchnext/watchnext.png",
-    "isDynamicEntry": true,
-    "assets": [
-      "_app/immutable/assets/watchnext-33204039.png"
-    ]
-  },
   "src/lib/images/Curve.svg": {
     "file": "_app/immutable/assets/Curve-b10bbfce.svg",
     "src": "src/lib/images/Curve.svg"
@@ -62,6 +58,18 @@
   "src/lib/images/Curve2.svg": {
     "file": "_app/immutable/assets/Curve2-3c419bdd.svg",
     "src": "src/lib/images/Curve2.svg"
+  },
+  "src/lib/images/imj.svg": {
+    "file": "_app/immutable/assets/imj-6a755f70.svg",
+    "src": "src/lib/images/imj.svg"
+  },
+  "src/routes/portfolios/watchnext/watchnext.png": {
+    "file": "_app/immutable/chunks/watchnext-4cf1e8c8.js",
+    "src": "src/routes/portfolios/watchnext/watchnext.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "_app/immutable/assets/watchnext-33204039.png"
+    ]
   },
   "src/lib/images/Curve-light.svg": {
     "file": "_app/immutable/assets/Curve-light-5e5a64d2.svg",
@@ -71,12 +79,8 @@
     "file": "_app/immutable/assets/Contact-bg-d509a696.svg",
     "src": "src/lib/images/Contact-bg.svg"
   },
-  "src/lib/images/imj.svg": {
-    "file": "_app/immutable/assets/imj-6a755f70.svg",
-    "src": "src/lib/images/imj.svg"
-  },
   "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.572_svelte@3.53.1+vite@3.2.5/node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-b7ce4a98.js",
+    "file": "_app/immutable/start-232e082c.js",
     "src": "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.572_svelte@3.53.1+vite@3.2.5/node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -103,7 +107,7 @@
     ]
   },
   "src/routes/+layout.svelte": {
-    "file": "_app/immutable/components/pages/_layout.svelte-7570dcdf.js",
+    "file": "_app/immutable/components/pages/_layout.svelte-46051328.js",
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
@@ -118,7 +122,7 @@
       "src/routes/portfolios/watchnext/watchnext.png"
     ],
     "css": [
-      "_app/immutable/assets/_layout-dd84ef70.css"
+      "_app/immutable/assets/_layout-3d59c14b.css"
     ]
   },
   "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.572_svelte@3.53.1+vite@3.2.5/node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
@@ -167,48 +171,48 @@
     ]
   },
   "src/routes/portfolios/blog-with-svelte/+page.svx": {
-    "file": "_app/immutable/components/pages/portfolios/blog-with-svelte/_page.svx-31c2536d.js",
+    "file": "_app/immutable/components/pages/portfolios/blog-with-svelte/_page.svx-1c4178c2.js",
     "src": "src/routes/portfolios/blog-with-svelte/+page.svx",
     "isEntry": true,
     "imports": [
       "_index-e9547ea1.js",
-      "_portfolio-layout-b4f59d4c.js"
+      "_portfolio-layout-91cfb009.js"
     ]
   },
   "src/routes/portfolios/bring-your-umbrella/+page.svx": {
-    "file": "_app/immutable/components/pages/portfolios/bring-your-umbrella/_page.svx-abf5e7fc.js",
+    "file": "_app/immutable/components/pages/portfolios/bring-your-umbrella/_page.svx-c609835d.js",
     "src": "src/routes/portfolios/bring-your-umbrella/+page.svx",
     "isEntry": true,
     "imports": [
       "_index-e9547ea1.js",
-      "_portfolio-layout-b4f59d4c.js"
+      "_portfolio-layout-91cfb009.js"
     ]
   },
   "src/routes/portfolios/dummy-text-generator/+page.svx": {
-    "file": "_app/immutable/components/pages/portfolios/dummy-text-generator/_page.svx-cb47fb9c.js",
+    "file": "_app/immutable/components/pages/portfolios/dummy-text-generator/_page.svx-4d619507.js",
     "src": "src/routes/portfolios/dummy-text-generator/+page.svx",
     "isEntry": true,
     "imports": [
       "_index-e9547ea1.js",
-      "_portfolio-layout-b4f59d4c.js"
+      "_portfolio-layout-91cfb009.js"
     ]
   },
   "src/routes/portfolios/take-note-app/+page.svx": {
-    "file": "_app/immutable/components/pages/portfolios/take-note-app/_page.svx-f0698ce2.js",
+    "file": "_app/immutable/components/pages/portfolios/take-note-app/_page.svx-05018a91.js",
     "src": "src/routes/portfolios/take-note-app/+page.svx",
     "isEntry": true,
     "imports": [
       "_index-e9547ea1.js",
-      "_portfolio-layout-b4f59d4c.js"
+      "_portfolio-layout-91cfb009.js"
     ]
   },
   "src/routes/portfolios/watchnext/+page.svx": {
-    "file": "_app/immutable/components/pages/portfolios/watchnext/_page.svx-5fd1136d.js",
+    "file": "_app/immutable/components/pages/portfolios/watchnext/_page.svx-1d092821.js",
     "src": "src/routes/portfolios/watchnext/+page.svx",
     "isEntry": true,
     "imports": [
       "_index-e9547ea1.js",
-      "_portfolio-layout-b4f59d4c.js"
+      "_portfolio-layout-91cfb009.js"
     ]
   },
   "src/routes/posts/+page.svelte": {
@@ -224,36 +228,39 @@
     ]
   },
   "src/routes/posts/ad-free-alternatives-on-android-and-ios/+page.svx": {
-    "file": "_app/immutable/components/pages/posts/ad-free-alternatives-on-android-and-ios/_page.svx-410de1a9.js",
+    "file": "_app/immutable/components/pages/posts/ad-free-alternatives-on-android-and-ios/_page.svx-68236c86.js",
     "src": "src/routes/posts/ad-free-alternatives-on-android-and-ios/+page.svx",
     "isEntry": true,
     "imports": [
       "_index-e9547ea1.js",
-      "_blog-layout-37f2a860.js"
+      "_blog-layout-42ec7777.js"
     ],
     "css": [
       "_app/immutable/assets/_page-2ec508a3.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/ad-free-ef09773e.png"
     ]
   },
   "src/routes/posts/differences-between-ssg-and-spa/+page.svx": {
-    "file": "_app/immutable/components/pages/posts/differences-between-ssg-and-spa/_page.svx-f674931b.js",
+    "file": "_app/immutable/components/pages/posts/differences-between-ssg-and-spa/_page.svx-974aa5ea.js",
     "src": "src/routes/posts/differences-between-ssg-and-spa/+page.svx",
     "isEntry": true,
     "imports": [
       "_index-e9547ea1.js",
-      "_blog-layout-37f2a860.js"
+      "_blog-layout-42ec7777.js"
     ],
     "assets": [
       "_app/immutable/assets/thumb2-f1e57964.png"
     ]
   },
   "src/routes/posts/horizontal-scroll-section/+page.svx": {
-    "file": "_app/immutable/components/pages/posts/horizontal-scroll-section/_page.svx-1fd4bf6b.js",
+    "file": "_app/immutable/components/pages/posts/horizontal-scroll-section/_page.svx-5e40f2f6.js",
     "src": "src/routes/posts/horizontal-scroll-section/+page.svx",
     "isEntry": true,
     "imports": [
       "_index-e9547ea1.js",
-      "_blog-layout-37f2a860.js"
+      "_blog-layout-42ec7777.js"
     ],
     "css": [
       "_app/immutable/assets/_page-1a43d6e4.css"
@@ -264,12 +271,12 @@
     ]
   },
   "src/routes/posts/why-i-chose-sveltekit-over-gatsby/+page.svx": {
-    "file": "_app/immutable/components/pages/posts/why-i-chose-sveltekit-over-gatsby/_page.svx-7e2a1966.js",
+    "file": "_app/immutable/components/pages/posts/why-i-chose-sveltekit-over-gatsby/_page.svx-2d37453c.js",
     "src": "src/routes/posts/why-i-chose-sveltekit-over-gatsby/+page.svx",
     "isEntry": true,
     "imports": [
       "_index-e9547ea1.js",
-      "_blog-layout-37f2a860.js"
+      "_blog-layout-42ec7777.js"
     ],
     "assets": [
       "_app/immutable/assets/thumb-c2bfef12.png"
@@ -365,8 +372,8 @@
   "__page-dc5b7bcd.js": {
     "file": "_app/immutable/chunks/_page-dc5b7bcd.js"
   },
-  "_portfolio-layout-b4f59d4c.js": {
-    "file": "_app/immutable/chunks/portfolio-layout-b4f59d4c.js",
+  "_portfolio-layout-91cfb009.js": {
+    "file": "_app/immutable/chunks/portfolio-layout-91cfb009.js",
     "imports": [
       "_preload-helper-9b728935.js",
       "_index-e9547ea1.js",
@@ -383,8 +390,8 @@
   "__page-bc9dc9fd.js": {
     "file": "_app/immutable/chunks/_page-bc9dc9fd.js"
   },
-  "_blog-layout-37f2a860.js": {
-    "file": "_app/immutable/chunks/blog-layout-37f2a860.js",
+  "_blog-layout-42ec7777.js": {
+    "file": "_app/immutable/chunks/blog-layout-42ec7777.js",
     "imports": [
       "_index-e9547ea1.js"
     ],
@@ -396,7 +403,7 @@
     "file": "_app/immutable/chunks/_page-02a16c4f.js"
   },
   ".svelte-kit/generated/nodes/0.js": {
-    "file": "_app/immutable/chunks/0-e0a4b5e3.js",
+    "file": "_app/immutable/chunks/0-1bd6e6c6.js",
     "src": ".svelte-kit/generated/nodes/0.js",
     "isDynamicEntry": true,
     "imports": [
@@ -431,7 +438,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/4.js": {
-    "file": "_app/immutable/chunks/4-cf9ba309.js",
+    "file": "_app/immutable/chunks/4-b16f73d2.js",
     "src": ".svelte-kit/generated/nodes/4.js",
     "isDynamicEntry": true,
     "imports": [
@@ -439,7 +446,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/5.js": {
-    "file": "_app/immutable/chunks/5-1953237c.js",
+    "file": "_app/immutable/chunks/5-141bbc29.js",
     "src": ".svelte-kit/generated/nodes/5.js",
     "isDynamicEntry": true,
     "imports": [
@@ -447,7 +454,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/6.js": {
-    "file": "_app/immutable/chunks/6-0c2ce899.js",
+    "file": "_app/immutable/chunks/6-e4673483.js",
     "src": ".svelte-kit/generated/nodes/6.js",
     "isDynamicEntry": true,
     "imports": [
@@ -455,7 +462,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/7.js": {
-    "file": "_app/immutable/chunks/7-f4b8ea9b.js",
+    "file": "_app/immutable/chunks/7-102f190f.js",
     "src": ".svelte-kit/generated/nodes/7.js",
     "isDynamicEntry": true,
     "imports": [
@@ -463,7 +470,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/8.js": {
-    "file": "_app/immutable/chunks/8-d1b25dbc.js",
+    "file": "_app/immutable/chunks/8-96cdf60a.js",
     "src": ".svelte-kit/generated/nodes/8.js",
     "isDynamicEntry": true,
     "imports": [
@@ -480,7 +487,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/10.js": {
-    "file": "_app/immutable/chunks/10-7628884d.js",
+    "file": "_app/immutable/chunks/10-78317b03.js",
     "src": ".svelte-kit/generated/nodes/10.js",
     "isDynamicEntry": true,
     "imports": [
@@ -488,7 +495,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/11.js": {
-    "file": "_app/immutable/chunks/11-3f55af49.js",
+    "file": "_app/immutable/chunks/11-898821b9.js",
     "src": ".svelte-kit/generated/nodes/11.js",
     "isDynamicEntry": true,
     "imports": [
@@ -496,7 +503,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/12.js": {
-    "file": "_app/immutable/chunks/12-ff63cc48.js",
+    "file": "_app/immutable/chunks/12-93cc28a6.js",
     "src": ".svelte-kit/generated/nodes/12.js",
     "isDynamicEntry": true,
     "imports": [
@@ -504,7 +511,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/13.js": {
-    "file": "_app/immutable/chunks/13-b78dd726.js",
+    "file": "_app/immutable/chunks/13-67a819be.js",
     "src": ".svelte-kit/generated/nodes/13.js",
     "isDynamicEntry": true,
     "imports": [
@@ -599,36 +606,36 @@
       "_animationSetup-a0648856.js"
     ]
   },
-  "src/routes/posts/+page.css": {
-    "file": "_app/immutable/assets/_page-b70b746c.css",
-    "src": "src/routes/posts/+page.css"
+  "src/routes/+page.css": {
+    "file": "_app/immutable/assets/_page-58e4f5d9.css",
+    "src": "src/routes/+page.css"
   },
   "src/routes/posts/ad-free-alternatives-on-android-and-ios/+page.css": {
     "file": "_app/immutable/assets/_page-2ec508a3.css",
     "src": "src/routes/posts/ad-free-alternatives-on-android-and-ios/+page.css"
   },
-  "SEO.css": {
-    "file": "_app/immutable/assets/SEO-1b65ce55.css",
-    "src": "SEO.css"
-  },
-  "src/routes/+page.css": {
-    "file": "_app/immutable/assets/_page-58e4f5d9.css",
-    "src": "src/routes/+page.css"
-  },
-  "blog-layout.css": {
-    "file": "_app/immutable/assets/blog-layout-135a48f2.css",
-    "src": "blog-layout.css"
-  },
   "ImageLoader.css": {
     "file": "_app/immutable/assets/ImageLoader-23f61b6d.css",
     "src": "ImageLoader.css"
+  },
+  "src/routes/posts/+page.css": {
+    "file": "_app/immutable/assets/_page-b70b746c.css",
+    "src": "src/routes/posts/+page.css"
   },
   "src/routes/posts/horizontal-scroll-section/+page.css": {
     "file": "_app/immutable/assets/_page-1a43d6e4.css",
     "src": "src/routes/posts/horizontal-scroll-section/+page.css"
   },
+  "blog-layout.css": {
+    "file": "_app/immutable/assets/blog-layout-135a48f2.css",
+    "src": "blog-layout.css"
+  },
+  "SEO.css": {
+    "file": "_app/immutable/assets/SEO-1b65ce55.css",
+    "src": "SEO.css"
+  },
   "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout-dd84ef70.css",
+    "file": "_app/immutable/assets/_layout-3d59c14b.css",
     "src": "src/routes/+layout.css"
   }
 }
