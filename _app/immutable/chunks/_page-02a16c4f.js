@@ -1,0 +1,1 @@
+const s=async({url:o})=>{const e=await(await fetch(`${o.origin}/api/rss`)).json();return console.log(e),{rss:e}},n=Object.freeze(Object.defineProperty({__proto__:null,load:s},Symbol.toStringTag,{value:"Module"}));export{n as _,s as l};
