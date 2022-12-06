@@ -5,7 +5,7 @@ export const load = async ({ url }) => {
 	//=================PAGINATION===============
 	let page = url.searchParams.get('page');
 	let currentPage = 1;
-	const count = 10;
+	const count = 12;
 	if (page !== null) {
 		currentPage = page;
 	} else {

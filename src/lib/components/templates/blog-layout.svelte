@@ -7,18 +7,19 @@
 	// toc is hidden
 </script>
 
-<section class="container">
+<main class="responsive">
 	<h1>{name}</h1>
 	<p>{date}</p>
 	<main>
 		<slot />
 	</main>
-</section>
+</main>
 
 <style>
-	main {
+	/* main {
 		background-color: var(--white);
-		padding: 1rem;
-		margin: -1rem;
-	}
+		padding: 2rem;
+		margin: -2rem;
+		border-radius: 1rem;
+	} */
 </style>

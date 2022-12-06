@@ -7,19 +7,17 @@
 
 <div class="anchor" id="portfolio">Anchor</div>
 
-<section>
-	<div class="container">
-		<h2>Portfolio</h2>
-		<div class="post-grid">
-			{#each portfolios as p, i}
-				<PostCard
-					path={p.post.path}
-					imgPath={p.imgSrc.meta}
-					tags={p.post.meta.stacks}
-					name={p.post.meta.name}
-				/>
-			{/each}
-		</div>
-		<a href="/portfolios" class="button button-primary">More</a>
+<main class="responsive">
+	<h2>Portfolio</h2>
+	<div class="grid">
+		{#each portfolios as p, i}
+			<PostCard
+				path={p.post.path}
+				imgPath={p.imgSrc.meta}
+				tags={p.post.meta.stacks}
+				name={p.post.meta.name}
+			/>
+		{/each}
 	</div>
-</section>
+	<a href="/portfolios" class="button button-primary">More</a>
+</main>

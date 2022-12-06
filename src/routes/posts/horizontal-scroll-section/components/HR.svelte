@@ -70,8 +70,13 @@
 	}
 	.card {
 		min-width: 250px !important;
+		max-width: 300px;
 		height: 356px;
 		background-color: #fff;
 		padding: 20px;
+	}
+	p {
+		word-wrap: normal;
+		overflow-wrap: break-word;
 	}
 </style>

@@ -6,18 +6,16 @@
 </script>
 
 <Seo title="Portfolios" />
-<section>
-	<div class="container">
-		<h2>Portfolios</h2>
-		<div class="post-grid">
-			{#each data.portfolios as p, i}
-				<PostCard
-					path={p.post.path}
-					imgPath={p.imgSrc.meta}
-					tags={p.post.meta.stacks}
-					name={p.post.meta.name}
-				/>
-			{/each}
-		</div>
+<section class="responsive">
+	<h2>Portfolios</h2>
+	<div class="grid">
+		{#each data.portfolios as p, i}
+			<PostCard
+				path={p.post.path}
+				imgPath={p.imgSrc.meta}
+				tags={p.post.meta.stacks}
+				name={p.post.meta.name}
+			/>
+		{/each}
 	</div>
 </section>
