@@ -8,13 +8,17 @@ import rehypeSlug from 'rehype-slug';
 const config = {
 	extensions: ['.svelte', '.md', '.svx'],
 	kit: {
-		adapter: adapter()
+		adapter: adapter({ precompress: true }),
+		prerender: {
+			crawl: true
+		}
 	},
 	preprocess: [
 		mdsvex({
 			extensions: ['.md', '.svx'],
 			layout: {
-				blog: './src/lib/components/templates/blog-layout.svelte'
+				blog: './src/lib/components/templates/blog-layout.svelte',
+				portfolio: './src/lib/components/templates/portfolio-layout.svelte'
 			},
 			remarkPlugins: [relativeImages],
 			rehypePlugins: [

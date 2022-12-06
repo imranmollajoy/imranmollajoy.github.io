@@ -1,12 +1,13 @@
 /* eslint-disable no-unused-vars */
 // +server.js
+export const prerender = true;
 export const GET = async ({ url }) => {
-	const allPostFiles = import.meta.glob('../../../data/portfolios/**/*.svx');
+	const allPostFiles = import.meta.glob('../../portfolios/**/*.svx');
 	const iterablePostFiles = Object.entries(allPostFiles);
 	const allPosts = await Promise.all(
 		iterablePostFiles.map(async ([path, resolver]) => {
 			const { metadata } = await resolver();
-			const postPath = path.replace('/data', '').replace('post', '').slice(8, -4);
+			const postPath = path.replace('+page', '').replace('post', '').slice(6, -4);
 
 			return {
 				meta: metadata,
@@ -14,12 +15,12 @@ export const GET = async ({ url }) => {
 			};
 		})
 	);
-	const allImagesFiles = import.meta.glob(`../../../data/portfolios/**/index.js`);
+	const allImagesFiles = import.meta.glob(`../../portfolios/**/index.js`);
 	const iterableImageFiles = Object.entries(allImagesFiles);
 	const allImages = await Promise.all(
 		iterableImageFiles.map(async ([path, resolver]) => {
 			const { default: imageData } = await resolver();
-			const postPath = path.replace('/data', '').replace('index', '').slice(8, -3);
+			const postPath = path.replace('index', '').slice(6, -3);
 			return {
 				imageData,
 				path: postPath

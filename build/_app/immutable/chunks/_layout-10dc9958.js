@@ -1,1 +1,0 @@
-const o=!0,n=!1,t=async({url:e})=>{const{origin:r,pathname:s}=e;return{origin:r,pathname:s}},a=Object.freeze(Object.defineProperty({__proto__:null,prerender:!0,ssr:!1,load:t},Symbol.toStringTag,{value:"Module"}));export{a as _,t as l,o as p,n as s};

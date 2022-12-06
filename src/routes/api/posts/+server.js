@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-vars */
 // api/blogs/+server.js
+export const prerender = true;
+
 export const GET = async ({ url, params }) => {
 	const allPostFiles = import.meta.glob(`../../posts/**/*.svx`);
 	const iterablePostFiles = Object.entries(allPostFiles);

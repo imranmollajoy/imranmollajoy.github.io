@@ -5,11 +5,11 @@
 @import './settings/icons.css';
 @import './settings/grids.css';
 
-.post-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 1rem;
+.sticky {
+	position: sticky;
+	top: 0;
 }
+
 article .post-body {
 	margin: 2rem -2rem;
 	background-color: var(--white);

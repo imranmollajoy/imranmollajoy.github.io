@@ -1,1 +1,0 @@
-const c=async({url:l,fetch:n})=>{const s=await(await n("/api/posts")).json();let o=[],a=l.searchParams.get("page"),e=1;const t=12;a!==null?e=a:e=1,o=s.slice(e*t-t,e*t);const r=s.length/t;return{blogs:o,currentPage:e,totalPages:r}},p=Object.freeze(Object.defineProperty({__proto__:null,load:c},Symbol.toStringTag,{value:"Module"}));export{p as _,c as l};
