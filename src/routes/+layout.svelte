@@ -8,6 +8,7 @@
 
 	import Breadcrumb from '../lib/components/shared/Breadcrumb.svelte';
 	import { page } from '$app/stores';
+	import Analytics from '../lib/components/shared/Analytics.svelte';
 
 	const portfolioMarkdownImages = import.meta.glob('./portfolios/**/*.{png,jpg}');
 	const postMarkdownImages = import.meta.glob('./blogs/**/*.{png,jpg}');
@@ -27,6 +28,7 @@
 	}
 </script>
 
+<Analytics />
 {#if $page.url.pathname !== '/'}
 	<!-- TODO Isolate navar to seperate component -->
 	<nav class="m l left tiny-padding" id="navigation-rail1">
