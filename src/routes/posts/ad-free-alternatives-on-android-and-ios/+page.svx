@@ -3,7 +3,7 @@ slug: ad-free-alternatives-on-android-and-ios
 name: Ad-free alternatives on Android and iOS
 category: ['Android']
 date: 6 Dec, 2022
-featuredImg: ./thumb2.png
+featuredImg: ./ad-free.png
 layout: blog
 excerpt:  Replace your ad-bomberded video player, music player, pdf reader and so on with ad-free alternatives.
 ---
@@ -11,6 +11,8 @@ excerpt:  Replace your ad-bomberded video player, music player, pdf reader and s
 <script>
     import Section from "../_components/SectionWithLink.svelte"
 </script>
+
+<img src="./ad-free.png" />
 
 Don't you hate it when a video player starts showing ad while you are watching a movie? Or while navigating in your music player to play your favorite music? Well, fear no more! Here are the apps I use (you should use too) on daily basis, which are completely free with no ad whatsoever.
 
@@ -26,11 +28,10 @@ Replaces: Music Player & MP3 Player by InShot inc., Music Player by AppsIDX, Mus
 
 ### Features
 
-1. No ad. 
-2. Metadata editor.
-3. Create Synchronized Lyrics.
-4. Powerful Equalizer.
-5. Gapless playback and so on...
+- Metadata editor.
+- Create Synchronized Lyrics.
+- Powerful Equalizer.
+- Gapless playback and so on...
 
 </Section>
 
@@ -39,11 +40,20 @@ Replaces: Music Player & MP3 Player by InShot inc., Music Player by AppsIDX, Mus
 
 ### Features
 
-1. No ad. 
-2. Supports PDF, EPUB, Microsoft Word (DOC, DOCX, RTF), Kindle (MOBI, AZW3), DJVU, FB2, TXT, ODT and CHM formats..
-3. Auto-detection of books.
-4. Intuitive reading settings.
+- Supports PDF, EPUB, Microsoft Word (DOC, DOCX, RTF), Kindle (MOBI, AZW3), DJVU, FB2, TXT, ODT and CHM formats..
+- Auto-detection of books.
+- Intuitive reading settings.
 
-<i>cloud</i>
+</Section>
+
+<Section title="Web Browser (Brave)" href="https://play.google.com/store/apps/details?id=com.brave.browser" link="Play Store">
+Replaces: Chrome 
+
+Browsing the internet is painful these days because of constant popup and ads served from almost every website. Brave browser has a built-in ad blocker which blocks all the ads and popups.
+
+### Features
+
+- Blocks ads and trackers.
+- Fast loading of webpages, and more.
 
 </Section>

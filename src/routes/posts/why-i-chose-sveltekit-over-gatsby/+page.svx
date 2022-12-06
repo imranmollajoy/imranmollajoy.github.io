@@ -1,4 +1,5 @@
 ---
+draft: true
 name: Why I chose SvelteKit over Gatsby
 slug: why-i-chose-sveltekit-over-gatsby
 category: ['Web development']
