@@ -6,7 +6,7 @@
 
 <Seo title={data.updatedName} />
 
-<div class="container">
+<main class="responsive">
 	<article>
 		<h1>{data.updatedName}</h1>
 		<ImageLoader src={data.imageData.meta} />
@@ -17,7 +17,7 @@
 		<a href="mailto:imj_portfolio.3z5y3@simplelogin.com" class="button button-primary">Contact me</a
 		>
 	</article>
-</div>
+</main>
 
 <style>
 	article {

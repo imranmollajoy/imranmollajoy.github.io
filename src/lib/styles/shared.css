@@ -1,3 +1,10 @@
+@import './settings/navigation.css';
+@import './settings/container.css';
+@import './settings/responsive.css';
+@import './settings/overlays.css';
+@import './settings/icons.css';
+@import './settings/grids.css';
+
 .post-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

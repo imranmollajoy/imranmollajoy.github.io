@@ -15,28 +15,27 @@
 		"postbuild": "npx svelte-sitemap --domain https://imranmollajoy.github.io"
 	},
 	"devDependencies": {
-		"@playwright/test": "^1.25.0",
-		"@sveltejs/adapter-auto": "next",
-		"@sveltejs/kit": "next",
-		"eslint": "^8.16.0",
-		"eslint-config-prettier": "^8.3.0",
-		"eslint-plugin-svelte3": "^4.0.0",
-		"nprogress": "^0.2.0",
-		"prettier": "^2.6.2",
-		"prettier-plugin-svelte": "^2.7.0",
-		"svelte": "^3.44.0",
-		"svelte-sitemap": "^2.5.1",
-		"vite": "^3.0.0"
-	},
-	"type": "module",
-	"dependencies": {
 		"@jsdevtools/rehype-toc": "^3.0.2",
+		"@playwright/test": "^1.28.1",
+		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/adapter-static": "1.0.0-next.39",
+		"@sveltejs/kit": "next",
+		"eslint": "^8.29.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte3": "^4.0.0",
 		"gh-pages": "^4.0.0",
 		"gray-matter": "^4.0.3",
 		"mdsvex": "^0.10.6",
-		"mdsvex-relative-images": "^1.0.2",
-		"rehype-slug": "^5.0.1",
-		"svelte-typewriter": "^3.0.4"
-	}
+		"mdsvex-relative-images": "^1.0.3",
+		"nprogress": "^0.2.0",
+		"prettier": "^2.8.0",
+		"prettier-plugin-svelte": "^2.8.1",
+		"rehype-slug": "^5.1.0",
+		"svelte": "^3.53.1",
+		"svelte-image": "^0.2.9",
+		"svelte-sitemap": "^2.5.3",
+		"svelte-typewriter": "^3.1.4",
+		"vite": "^3.2.5"
+	},
+	"type": "module"
 }

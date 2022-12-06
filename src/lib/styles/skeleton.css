@@ -23,7 +23,7 @@
 - Clearing
 - Media Queries
 */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&family=Raleway:wght@300;400;600&family=Roboto&display=swap');
 :root {
 	--clr-accent: #0a9898;
 	--clr-accent-hover: #15adad;
@@ -37,6 +37,11 @@
 	--grey: #838383;
 	--cursor-color: var(--clr-dark);
 	--cursor-width: 1rem;
+	--speed1: 0.1s;
+	--speed2: 0.2s;
+	--speed3: 0.3s;
+	--speed4: 0.4s;
+	--overlay: rgb(0 0 0 / 0.5);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -71,31 +76,6 @@ blockquote *:only-child {
 *::before {
 	box-sizing: border-box;
 }
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container {
-	position: relative;
-	width: 100%;
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 0 20px;
-	box-sizing: border-box;
-}
-
-/* For devices larger than 400px */
-@media (min-width: 400px) {
-	.container {
-		width: 85%;
-		padding: 0;
-	}
-}
-
-/* For devices larger than 550px */
-@media (min-width: 550px) {
-	.container {
-		width: 80%;
-	}
-}
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -122,10 +102,18 @@ h3,
 h4,
 h5,
 h6 {
-	margin-top: 0;
+	/* margin-top: 0; */
 	margin-bottom: 2rem;
 	font-weight: 300;
 	font-family: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+	margin-top: 4rem;
 }
 h1 {
 	font-size: 4rem;
@@ -190,6 +178,8 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
 	color: var(--clr-accent);
+	cursor: pointer;
+	text-decoration: none;
 }
 a:hover {
 	color: var(--clr-accent-hover);

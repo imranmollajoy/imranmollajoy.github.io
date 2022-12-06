@@ -21,7 +21,7 @@
 <!-- we wont render if we are on home -->
 <!-- on home links.length will be 1 -->
 {#if links.length > 1}
-	<section class="breadcrumb">
+	<section class="breadcrumb responsive">
 		<div class="container">
 			{#each links as link, i}
 				{#if i + 1 >= links.length}

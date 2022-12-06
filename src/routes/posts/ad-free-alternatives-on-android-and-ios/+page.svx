@@ -1,0 +1,49 @@
+---
+slug: ad-free-alternatives-on-android-and-ios
+name: Ad-free alternatives on Android and iOS
+category: ['Android']
+date: 6 Dec, 2022
+featuredImg: ./thumb2.png
+layout: blog
+excerpt:  Replace your ad-bomberded video player, music player, pdf reader and so on with ad-free alternatives.
+---
+
+<script>
+    import Section from "../_components/SectionWithLink.svelte"
+</script>
+
+Don't you hate it when a video player starts showing ad while you are watching a movie? Or while navigating in your music player to play your favorite music? Well, fear no more! Here are the apps I use (you should use too) on daily basis, which are completely free with no ad whatsoever.
+
+<Section title="Video Player (VLC)" href="https://play.google.com/store/apps/details?id=org.videolan.vlc" link="Play Store">
+Replaces: MX Player, MX Player Pro
+
+VLC is a name you may seen in your PC. It is also available for your phone. It has every features your current video player can offer minus the ads.
+
+</Section>
+
+<Section title="Music Player (Musicolet)" href="https://play.google.com/store/apps/details?id=in.krosbits.musicolet" link="Play Store">
+Replaces: Music Player & MP3 Player by InShot inc., Music Player by AppsIDX, Music Player by Mobile_VS and more...
+
+### Features
+
+1. No ad. 
+2. Metadata editor.
+3. Create Synchronized Lyrics.
+4. Powerful Equalizer.
+5. Gapless playback and so on...
+
+</Section>
+
+<Section title="Document Reader (ReadEra)" href="https://play.google.com/store/apps/details?id=org.readera" link="Play Store">
+Replaces: Music Player & MP3 Player by InShot inc., Music Player by AppsIDX, Music Player by Mobile_VS and more...
+
+### Features
+
+1. No ad. 
+2. Supports PDF, EPUB, Microsoft Word (DOC, DOCX, RTF), Kindle (MOBI, AZW3), DJVU, FB2, TXT, ODT and CHM formats..
+3. Auto-detection of books.
+4. Intuitive reading settings.
+
+<i>cloud</i>
+
+</Section>

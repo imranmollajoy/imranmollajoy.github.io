@@ -6,7 +6,7 @@
 <svelte:window bind:scrollY={y} />
 
 <div class="anchor" id="about">Anchor</div>
-<section>
+<main class="responsive">
 	<img src={CURVE} alt="" class="left" style="transform: translate(0,{y * 0.2 - 100}px)" />
 	<div class="container">
 		<h2>About Me</h2>
@@ -21,10 +21,10 @@
 			and UI designing. I primarily use Figma to create my designs.
 		</p>
 	</div>
-</section>
+</main>
 
 <style>
-	section {
+	main {
 		min-height: 95vh;
 		display: flex;
 		align-items: center;

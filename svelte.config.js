@@ -8,12 +8,7 @@ import rehypeSlug from 'rehype-slug';
 const config = {
 	extensions: ['.svelte', '.md', '.svx'],
 	kit: {
-		adapter: adapter(),
-		prerender: {
-			enabled: true,
-			default: true,
-			onError: 'continue'
-		}
+		adapter: adapter()
 	},
 	preprocess: [
 		mdsvex({

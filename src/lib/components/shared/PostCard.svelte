@@ -7,7 +7,7 @@
 	export let featured = false;
 </script>
 
-<a href={path} class="post-card" class:featured>
+<a href={path} class="post-card s12 m6 l4" class:featured>
 	<ImageLoader src={imgPath} />
 	<div class="texts">
 		{#each tags as stack, i}

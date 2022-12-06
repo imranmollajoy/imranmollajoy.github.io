@@ -8,33 +8,25 @@
 
 <svelte:window bind:scrollY={y} />
 
-<section>
-	<div class="container">
-		<h3>Hi there, hello!</h3>
-		<h1>
-			I am an
-			<Typewriter mode="loop" interval={100} delay={200} element="span">
-				<span class="type"> Web developer </span>
-				<span class="type"> Web designer </span>
-				<span class="type"> Graphic designer </span>
-			</Typewriter>
-		</h1>
-		<div>
-			<a href="#portfolio" class="button button-primary">Portfolio</a>
-			<a href="#about" class="button">About me</a>
-		</div>
+<main class="hero-container responsive">
+	<h3>Hi there, hello!</h3>
+	<h1>
+		I am an
+		<Typewriter mode="loop" interval={100} delay={200} element="span">
+			<span class="type"> Web developer </span>
+			<span class="type"> Web designer </span>
+			<span class="type"> Graphic designer </span>
+		</Typewriter>
+	</h1>
+	<div>
+		<a href="#portfolio" class="button button-primary">Portfolio</a>
+		<a href="#about" class="button">About me</a>
 	</div>
-	<img src={CURVE} alt="" style="transform: translate(0,{-y * 0.14}px)" />
-</section>
+</main>
+<img src={CURVE} alt="" style="transform: translate(0,{-y * 0.14}px)" />
 
 <style>
-	section {
-		position: relative;
-		overflow-x: visible;
-		margin: 0;
-		box-sizing: border-box;
-	}
-	.container {
+	.hero-container {
 		min-height: 95vh;
 		display: flex;
 		justify-content: center;

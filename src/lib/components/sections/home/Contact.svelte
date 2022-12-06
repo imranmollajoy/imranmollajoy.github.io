@@ -6,7 +6,7 @@
 
 <svelte:window bind:scrollY={y} />
 <!-- style="background-image:url({BG}) ; -->
-<div class="u-full-width">
+<div class="about-container responsive max">
 	<img
 		src={CURVE}
 		alt=""
@@ -14,14 +14,14 @@
 		style="transform: translate(0,{-y * 0.27 + 300}px) rotate(80deg);"
 	/>
 	<img src={BG} alt="" class="bg" style="transform: translate(0,{-y * 0.1}px)" />
-	<div class="container">
+	<main class="responsive">
 		<h1>Have something great in mind?</h1>
 		<a href="mailto:imj_portfolio.3z5y3@simplelogin.com" class="button">Email me</a>
-	</div>
+	</main>
 </div>
 
 <style>
-	.u-full-width {
+	.about-container {
 		min-height: 50vh;
 		display: flex;
 		justify-content: center;
@@ -33,8 +33,9 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
+		isolation: isolate;
 	}
-	.container {
+	.about-container > main.responsive {
 		z-index: 3;
 	}
 	.bg {
