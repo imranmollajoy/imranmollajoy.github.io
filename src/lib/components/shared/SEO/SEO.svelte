@@ -23,8 +23,8 @@
 	const defaultAlt = ' ';
 
 	export let ogImage = {
-		url: defaultOgImage,
-		alt: defaultAlt
+		url: null,
+		alt: ''
 	};
 	export let ogSquareImage = {
 		url: defaultOgSquareImage,
