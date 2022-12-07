@@ -9,12 +9,12 @@
 	import Breadcrumb from '../lib/components/shared/Breadcrumb.svelte';
 	import { page } from '$app/stores';
 	import Analytics from '../lib/components/shared/Analytics.svelte';
+	import NavRail from '../lib/components/shared/NavRail.svelte';
 
 	const portfolioMarkdownImages = import.meta.glob('./portfolios/**/*.{png,jpg}');
 	const postMarkdownImages = import.meta.glob('./blogs/**/*.{png,jpg}');
 
 	NProgress.configure({
-		// Full list: https://github.com/rstacruz/nprogress#configuration
 		minimum: 0.16,
 		showSpinner: true
 	});
@@ -28,18 +28,12 @@
 	}
 </script>
 
-<Analytics />
 {#if $page.url.pathname !== '/'}
-	<!-- TODO Isolate navar to seperate component -->
-	<nav class="m l left tiny-padding" id="navigation-rail1">
-		<a href="/"
-			><img class="circle" src="/favicon.ico" style="border-radius: 23rem;" alt="logo" /></a
-		>
-		<a href="/"><i>home</i><span>Home</span></a>
-		<a href="/portfolios"><i>code</i><span>Portfolios</span></a>
-		<a href="/posts"><i>widgets</i><span>Blog</span></a>
-	</nav>
+	<NavRail />
 {/if}
+
+<Analytics />
+
 <Breadcrumb path={$page.url.pathname} />
 <slot />
 

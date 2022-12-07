@@ -6,13 +6,19 @@
 	import OpenGraph from './OpenGraph.svelte';
 
 	const { siteTitle, siteUrl } = website;
-
-	export let article = false;
-	export let lastUpdated;
-	export let datePublished;
-	export let metadescription;
-	export let slug;
-	export let title;
+	export let seo = {
+		article: false,
+		datePublished: null,
+		metadescription: '',
+		slug: '',
+		title: ''
+	};
+	export let article = seo.article;
+	export let lastUpdated = seo.lastUpdated;
+	export let datePublished = seo.datePublished;
+	export let metadescription = seo.metadescription;
+	export let slug = seo.slug;
+	export let title = seo.title;
 
 	const defaultAlt = ' ';
 
@@ -27,7 +33,7 @@
 
 	const pageTitle = `${siteTitle} | ${title}`;
 	const url = `${siteUrl}/${slug}`;
-	const openGraphProps = {
+	$: openGraphProps = {
 		article,
 		datePublished,
 		lastUpdated,

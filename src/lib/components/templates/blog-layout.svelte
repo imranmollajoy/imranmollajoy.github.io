@@ -1,13 +1,45 @@
 <script>
+	import { onMount } from 'svelte';
 	import '../../helpers/prism.css';
 	import '../../helpers/prism.js';
+	import ImageLoader from '../shared/Image/ImageLoader.svelte';
+	import SEO from '../shared/SEO/SEO.svelte';
 
 	export let name;
 	export let date;
 	export let featuredImg;
+	export let excerpt;
+	export let slug;
+	let src;
+	$: ogImage = {
+		url: null,
+		alt: ''
+	};
 	// toc is hidden
+	$: seo = {
+		article: true,
+		datePublished: date,
+		metadescription: excerpt,
+		slug,
+		title: name
+	};
+	onMount(async () => {
+		const img = import.meta.glob('/src/routes/posts/**/*.png');
+		for (const path in img) {
+			if (path.includes(featuredImg)) {
+				img[path]().then((mod) => {
+					src = mod.default;
+					ogImage = {
+						alt: `Thumbnail of ${name}`,
+						url: src
+					};
+				});
+			}
+		}
+	});
 </script>
 
+<SEO {seo} {ogImage} />
 <section class="responsive">
 	<div class="grid">
 		<!-- <div class="toc l2 m l">
@@ -17,6 +49,7 @@
 			</div>
 		</div> -->
 		<div class="post-body l7 s12">
+			<ImageLoader {src} />
 			<h1>{name}</h1>
 			<p>{date}</p>
 			<main>

@@ -3,7 +3,7 @@ slug: ad-free-alternatives-on-android-and-ios
 name: Ad-free alternatives on Android and iOS
 category: ['Android']
 date: 6 Dec, 2022
-featuredImg: "./adfree.png"
+featuredImg: "adfree.png"
 layout: blog
 excerpt:  Replace your ad-bomberded video player, music player, pdf reader and so on with ad-free alternatives.
 ---
@@ -12,7 +12,6 @@ excerpt:  Replace your ad-bomberded video player, music player, pdf reader and s
     import Section from "../_components/SectionWithLink.svelte"
 </script>
 
-<img src="./adfree.png" />
 
 Don't you hate it when a video player starts showing ad while you are watching a movie? Or while navigating in your music player to play your favorite music? Well, fear no more! Here are the apps I use (you should use too) on daily basis, which are completely free with no ad whatsoever.
 

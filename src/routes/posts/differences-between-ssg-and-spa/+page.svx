@@ -3,12 +3,11 @@ slug: differences-between-ssg-and-ssr
 name: Differences between SSG and SSR, also when to use them
 category: ['Web development']
 date: 30 Aug, 2022
-featuredImg: ./thumb2.png
+featuredImg: thumb2.png
 layout: blog
 excerpt:  Learn about SSG and SSR, and what you should use.
 ---
 
-<img src="./thumb2.png" />
 
 ## SSR
 SSR means Server side rendering. In this mode, the requested page gets rendered on the server. 

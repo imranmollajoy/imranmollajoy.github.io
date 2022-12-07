@@ -4,7 +4,7 @@ slug: horizontal-scroll-section
 category: ['Web development']
 featured: true
 date: 18 Aug, 2022
-featuredImg: "./mhss.png"
+featuredImg: "mhss.png"
 layout: blog
 excerpt: A horizontal section is a section which spreads left to right. It is very elegant and takes less space and can show more data.
 ---
@@ -12,7 +12,6 @@ excerpt: A horizontal section is a section which spreads left to right. It is ve
 	import HR from "./components/HR.svelte"
 </script>
 
-<img src="./mhss.png" />
 
 ## Horizontal Section
 
