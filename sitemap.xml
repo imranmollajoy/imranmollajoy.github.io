@@ -1,64 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
-  <loc>https://imranmollajoy.github.io/</loc>
-  <lastmod>2022-08-21T18:09:27+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://imranmollajoy.github.io/portfolios/note-taking-app</loc>
-  <lastmod>2022-08-21T18:09:27+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://imranmollajoy.github.io/portfolios/watchnext</loc>
-  <lastmod>2022-08-21T18:09:27+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://imranmollajoy.github.io/portfolios/weather-app</loc>
-  <lastmod>2022-08-21T18:09:27+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://imranmollajoy.github.io/portfolios</loc>
-  <lastmod>2022-08-21T18:09:27+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://imranmollajoy.github.io/posts</loc>
-  <lastmod>2022-08-21T18:09:27+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://imranmollajoy.github.io/posts/horizontal-scroll-section</loc>
-  <lastmod>2022-08-31T18:09:27+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://imranmollajoy.github.io/posts/why-i-chose-sveltekit-over-gatsby</loc>
-  <lastmod>2022-08-31T18:09:27+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://imranmollajoy.github.io/posts/ad-free-alternatives-on-android-and-ios</loc>
-  <lastmod>2022-12-08T18:09:27+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://imranmollajoy.github.io/portfolios/blog-with-svelte-kit-and-contentful</loc>
-  <lastmod>2022-08-21T18:09:27+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://imranmollajoy.github.io/portfolios/dummy-text-generator</loc>
-  <lastmod>2022-08-21T18:09:27+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://imranmollajoy.github.io/googled05a732085505c30</loc>
+  </url>
+  <url>
+    <loc>https://imranmollajoy.github.io</loc>
+  </url>
+  <url>
+    <loc>https://imranmollajoy.github.io/portfolios</loc>
+  </url>
+  <url>
+    <loc>https://imranmollajoy.github.io/posts</loc>
+  </url>
+  <url>
+    <loc>https://imranmollajoy.github.io/rss.xml</loc>
+  </url>
+  <url>
+    <loc>https://imranmollajoy.github.io/portfolios/blog-with-svelte</loc>
+  </url>
+  <url>
+    <loc>https://imranmollajoy.github.io/portfolios/bring-your-umbrella</loc>
+  </url>
+  <url>
+    <loc>https://imranmollajoy.github.io/portfolios/dummy-text-generator</loc>
+  </url>
+  <url>
+    <loc>https://imranmollajoy.github.io/portfolios/take-note-app</loc>
+  </url>
+  <url>
+    <loc>https://imranmollajoy.github.io/portfolios/watchnext</loc>
+  </url>
+  <url>
+    <loc>https://imranmollajoy.github.io/posts/ad-free-alternatives-on-android-and-ios</loc>
+  </url>
+  <url>
+    <loc>https://imranmollajoy.github.io/posts/differences-between-ssg-and-spa</loc>
+  </url>
+  <url>
+    <loc>https://imranmollajoy.github.io/posts/horizontal-scroll-section</loc>
+  </url>
+  <url>
+    <loc>https://imranmollajoy.github.io/posts/why-i-chose-sveltekit-over-gatsby</loc>
+  </url>
 </urlset>
