@@ -9,6 +9,7 @@
 	export let pageTitle;
 	export let siteTitle;
 	export let url;
+	$: console.log(image);
 </script>
 
 <svelte:head>
