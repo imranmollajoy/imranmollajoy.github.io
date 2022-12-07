@@ -1,4 +1,4 @@
-import meta from './ad-free.png';
+import meta from './adfree.png';
 
 const data = {
 	meta

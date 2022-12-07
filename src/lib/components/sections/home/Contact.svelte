@@ -58,7 +58,7 @@
 	}
 	@media (prefers-color-scheme: dark) {
 		h1 {
-			color: var(--clr-light);
+			color: var(--clr-dark);
 		}
 	}
 	/* media for mobile */
