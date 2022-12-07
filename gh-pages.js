@@ -1,5 +1,7 @@
 import { publish } from 'gh-pages';
+import { createSitemap } from 'svelte-sitemap/src/index.js';
 
+createSitemap('https://imranmollajoy.github.io', { debug: true });
 publish(
 	'build', // path to public directory
 	{

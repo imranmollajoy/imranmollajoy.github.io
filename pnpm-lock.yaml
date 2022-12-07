@@ -2861,7 +2861,7 @@ packages:
       blurhash: 1.1.5
       potrace: 2.1.8
       sharp: 0.31.2
-      svelte: 3.53.1
+      svelte: 3.54.0
       svelte-waypoint: 0.1.4
       svgo: 1.3.2
     transitivePeerDependencies:
@@ -2892,6 +2892,11 @@ packages:
 
   /svelte/3.53.1:
     resolution: {integrity: sha512-Q4/hHkktZogGhN5iqxqSi9sjEVoe/NbIxX4hXEHoasTxj+TxEQVAq66LnDMdAZxjmsodkoI5F3slqsS68U7FNw==}
+    engines: {node: '>= 8'}
+    dev: true
+
+  /svelte/3.54.0:
+    resolution: {integrity: sha512-tdrgeJU0hob0ZWAMoKXkhcxXA7dpTg6lZGxUeko5YqvPdJBiyRspGsCwV27kIrbrqPP2WUoSV9ca0gnLlw8YzQ==}
     engines: {node: '>= 8'}
     dev: true
 
