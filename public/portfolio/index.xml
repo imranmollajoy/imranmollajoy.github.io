@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Portfolios on Imran&#39;S Site</title>
+    <link>https://imranmollajoy.github.io/portfolio/</link>
+    <description>Recent content in Portfolios on Imran&#39;S Site</description>
+    <image>
+      <url>https://imranmollajoy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://imranmollajoy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://imranmollajoy.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bring Your Umbrella</title>
+      <link>https://imranmollajoy.github.io/portfolio/bring-your-umbrella/</link>
+      <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://imranmollajoy.github.io/portfolio/bring-your-umbrella/</guid>
+      <description>An app made mainly for getting the days with high chances of rainfall. It also gives the weather forecast of next 5 days.
+Features Days with highest rainfall, highest and lowest temperature. Chances of rainfall Amount of rainfall Chart of rainfall chances Chart of highest and lowest temperature This app was made using ReactJS and CSS. For generating charts, Recharts was used.
+You can find the app by clicking here</description>
+    </item>
+    
+    <item>
+      <title>Take Note App</title>
+      <link>https://imranmollajoy.github.io/portfolio/take-note-app/</link>
+      <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://imranmollajoy.github.io/portfolio/take-note-app/</guid>
+      <description>A simple app to take and save your note. It uses browsers&amp;rsquo; local storage to save your data.
+This app was made using ReactJS and Material UI.
+You can find the app by clicking here</description>
+    </item>
+    
+    <item>
+      <title>Watchnext</title>
+      <link>https://imranmollajoy.github.io/portfolio/watchnext/</link>
+      <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://imranmollajoy.github.io/portfolio/watchnext/</guid>
+      <description>An app which fetch data from TMDB API and display the movies and shows which are trending and popular in the world.
+Features Movies and shows which are trending and popular in the world. Search for movies and shows. add to watchlist of movies and shows. Add to favorite list of movies and shows. This app was made using SvelteKit and CSS.
+You can find the app by clicking here</description>
+    </item>
+    
+    <item>
+      <title>Blog With Svelte</title>
+      <link>https://imranmollajoy.github.io/portfolio/blog-with-svelte/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://imranmollajoy.github.io/portfolio/blog-with-svelte/</guid>
+      <description>This blog was made using SvelteKit and Contentful.
+You can find the blog by clicking here</description>
+    </item>
+    
+    <item>
+      <title>Dummy Text Generator</title>
+      <link>https://imranmollajoy.github.io/portfolio/dummy-text-generator/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://imranmollajoy.github.io/portfolio/dummy-text-generator/</guid>
+      <description>An app to generate dummy text. Useful for testing purposes. It uses a free remote API to generate text.
+The app was made using ReactJS and Material UI.
+You can find the app by clicking here</description>
+    </item>
+    
+  </channel>
+</rss>
