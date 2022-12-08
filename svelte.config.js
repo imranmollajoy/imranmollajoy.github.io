@@ -8,7 +8,7 @@ import rehypeSlug from 'rehype-slug';
 const config = {
 	extensions: ['.svelte', '.md', '.svx'],
 	kit: {
-		adapter: adapter({ precompress: true }),
+		adapter: adapter({ precompress: false }),
 		prerender: {
 			crawl: true
 		}
