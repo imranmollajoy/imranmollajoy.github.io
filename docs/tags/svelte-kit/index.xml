@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>svelte-kit on My New Hugo Site</title>
+    <link>https://imranmollajoy.github.io/tags/svelte-kit/</link>
+    <description>Recent content in svelte-kit on My New Hugo Site</description>
+    <image>
+      <url>https://imranmollajoy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://imranmollajoy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://imranmollajoy.github.io/tags/svelte-kit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Watchnext</title>
+      <link>https://imranmollajoy.github.io/portfolio/watchnext/</link>
+      <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://imranmollajoy.github.io/portfolio/watchnext/</guid>
+      <description>An app which fetch data from TMDB API and display the movies and shows which are trending and popular in the world.
+Features Movies and shows which are trending and popular in the world. Search for movies and shows. add to watchlist of movies and shows. Add to favorite list of movies and shows. This app was made using SvelteKit and CSS.
+You can find the app by clicking here</description>
+    </item>
+    
+    <item>
+      <title>Blog With Svelte</title>
+      <link>https://imranmollajoy.github.io/portfolio/blog-with-svelte/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://imranmollajoy.github.io/portfolio/blog-with-svelte/</guid>
+      <description>This blog was made using SvelteKit and Contentful.
+You can find the blog by clicking here</description>
+    </item>
+    
+  </channel>
+</rss>
