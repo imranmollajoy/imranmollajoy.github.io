@@ -4,8 +4,9 @@
 <main class="responsive">
 	<h2>Portfolio</h2>
   <div class="grid responsive">
-      {{ range  . | first 3 }}
-        {{- partial "post-card.html" (dict "ctx" . ) }}
+    {{ $ports :=  . }}
+      {{ range  $ports | first 3 }}
+        {{ partial "post-card.html" (dict "ctx" . "size" 4) }}
       {{ end }}
     </div>
 	<a href="portfolio" class="button button-primary">More</a>

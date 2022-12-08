@@ -1,11 +1,13 @@
 ---
-layout: portfolio
-name: Rain Forecast App
-slug: bring-your-umbrella
-category: portfolio
+title: "Bring Your Umbrella"
+draft: false
 tags: ["react-js", "remote api"]
 date: 2025-10-24
-featuredImg: "byu.png"
+featuredImg: "./images/featured.png"
+cover:
+    image: "./images/featured.png"
+    alt: Thumbnail of Bring Your Umbrella
+type: portfolio
 ---
 
 An app made mainly for getting the days with high chances of rainfall. It also gives the weather forecast of next 5 days.

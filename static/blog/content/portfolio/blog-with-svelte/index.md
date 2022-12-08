@@ -1,11 +1,13 @@
 ---
-layout: portfolio
-name: Blog with Svelte Kit and Contentful
-slug: blog-with-svelte
-category: portfolio
+title: "Blog With Svelte"
+draft: false
 tags: ["svelte-kit", "Contentful"]
 date: 2020-06-01
-featuredImg: blogwithsvelteandcontentful.png
+featuredImg: "./images/featured.png"
+cover:
+    image: "./images/featured.png"
+    alt: Thumbnail of Blog With Svelte
+type: portfolio
 ---
 
 This blog was made using SvelteKit and Contentful.

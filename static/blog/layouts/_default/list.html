@@ -27,9 +27,7 @@
   {{- end }}
 </header>
 {{- end }}
-{{ range  ( where .Site.RegularPages "Type" "portfolio" | first 3) }}
-    <h4>{{ .Title }}</h4>
-{{ end }}
+
 
 {{- if .Content }}
 <div class="post-content">
@@ -52,10 +50,14 @@
 {{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
 {{- partial "home/hero.html" }}
 
-{{- partial "home/portfolio.html" (dict "ctx" .Site.RegularPages "Type" "portfolio" ) }}
+{{- $ports := (where .Site.RegularPages "Type" "portfolio" ) }}
+{{- partial "home/portfolio.html" (dict "ctx" $ports) }}
+
 {{- partial "home/about.html"  }}
 {{- partial "home/contact.html"   }}
-{{- partial "home/blog.html" (dict "ctx" .Site.RegularPages "Type" "post" )  }}
+
+{{- $posts := (where .Site.RegularPages "Type" "post" ) }}
+{{- partial "home/blog.html" (dict "ctx" $posts )  }}
 {{/*  {{- partial "home_info.html" . }}  */}}
 {{- end }}
 
@@ -74,23 +76,8 @@
 {{- else if $term }}
 {{- $class = "post-entry tag-entry" }}
 {{- end }}
-<article class="{{ $class }} s12 m6 l4">
-  {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }}
-  {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-  <div class="entry-header post-body">
-    <h2>
-      {{- .Title }}
-      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
-    </h2>
-  {{- if (ne (.Param "hideSummary") true) }}
-    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-  {{- end }}
-  {{- if not (.Param "hideMeta") }}
-    {{- partial "post_meta.html" . -}}
-  {{- end }}
-  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"> More</a>
-  </div>
-</article>
+
+{{ partial "post-card.html" (dict "ctx" . "size" 3) }}
 {{- end }}
 </div>
 {{- if gt $paginator.TotalPages 1 }}

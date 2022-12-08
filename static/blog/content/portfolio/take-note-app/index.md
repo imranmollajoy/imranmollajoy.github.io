@@ -1,12 +1,15 @@
 ---
-layout: portfolio
-name: A Simple Note Taking App
-slug: take-note-app
-featuredImg: "tkn.png"
-category: portfolio
+title: "Take Note App"
+draft: false
 tags: ["react-js", "local storage"]
 date: 2025-10-24
+featuredImg: "./images/featured.png"
+cover:
+    image: "./images/featured.png"
+    alt: Thumbnail of Take Note App
+type: portfolio
 ---
+
 
 A simple app to take and save your note. It uses browsers' local storage to save your data.
 

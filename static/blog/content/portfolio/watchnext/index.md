@@ -1,11 +1,13 @@
 ---
-layout: portfolio
-name: Movie and Show Tracking App
-slug: watchnext
-category: portfolio
-tags: ["svelte-kit", "remote api",'local storage']
-featuredImg: "watchnext.png"
+title: "Watchnext"
 date: 2025-10-24
+draft: false
+tags: ["svelte-kit", "remote api",'local storage']
+featuredImg: "./images/featured.png"
+cover:
+    image: "./images/featured.png"
+    alt: Thumbnail of Watchnext
+type: portfolio
 ---
 
 An app which fetch data from TMDB API and display the movies and shows which are trending and popular in the world.
