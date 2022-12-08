@@ -4,19 +4,17 @@
 <main class="hero-container responsive">
 	<h3>Hi there, hello!</h3>
 	<h1>
-		I am an <span class="type"> Graphic designer </span>
-		{{/*  <Typewriter mode="loop" interval={100} delay={200} element="span">
-			<span class="type"> Web developer </span>
-			<span class="type"> Web designer </span>
-			<span class="type"> Graphic designer </span>
-		</Typewriter>  */}}
+		I am an <span id="type"> Graphic designer </span>
 	</h1>
 	<div>
 		<a href="#portfolio" class="button button-primary">Portfolio</a>
 		<a href="#about" class="button">About me</a>
 	</div>
 </main>
-{{/*  <img src={CURVE} alt="" style="transform: translate(0,-y * 0.14px)" />  */}}
+
+
+{{ $src:="./images/Curve.svg"}}
+<img src="{{   $src  }}" alt="" id="para1" />
 
 <style>
 	.hero-container {
@@ -25,7 +23,7 @@
 		justify-content: center;
 		flex-direction: column;
 	}
-	.hero-container img {
+	.hero-container +  img {
 		position: absolute;
 		z-index: -2;
 		top: 0;
@@ -41,8 +39,9 @@
 
 	/* media for phone */
 	@media (max-width: 768px) {
-	.hero-container img {
+	.hero-container + img {
 			right: 0;
 		}
 	}
 </style>
+

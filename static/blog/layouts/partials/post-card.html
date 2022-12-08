@@ -1,7 +1,11 @@
 {{ with .ctx }}
-{{$class := "featured"}}
-<a aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}" class="post-card s12 m6 l4 {{ $class }} ">
-	{{/*  <ImageLoader src={imgPath} />  */}}
+{{ $class := "" }}
+
+{{- if eq .Params.Weight 2}}
+	{{ $class = "featured" }}
+{{- end}}
+<a aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}" class="post-card s12 m6 l{{ $.size }} {{ $class }} ">
+  <img loading="lazy" src="{{ (path.Join .RelPermalink .Params.cover.image) | absURL }}">
 	<div class="texts">
 		{{- if .Params.Tags}}
 			{{ range .Params.Tags }}

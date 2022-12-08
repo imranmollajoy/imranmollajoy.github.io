@@ -1,11 +1,13 @@
 ---
-layout: portfolio
-name: Dummy Text Generator
-slug: dummy-text-generator
-category: portfolio
+title: "Dummy Text Generator"
+draft: false
 tags: ["react-js", "remote api"]
 date: 2020-06-01
-featuredImg: "dtg-b.png"
+featuredImg: "./images/featured.png"
+cover:
+    image: "./images/featured.png"
+    alt: Thumbnail of Dummy Text Generator
+type: portfolio
 ---
 
 An app to generate dummy text. Useful for testing purposes. It uses a free remote API to generate text.

@@ -14,7 +14,7 @@
 			<PostCard
 				path={p.post.path}
 				imgPath={p.imgSrc.meta}
-				tags={p.post.meta.stacks}
+				tags={p.post.meta.tags}
 				name={p.post.meta.name}
 			/>
 		{/each}

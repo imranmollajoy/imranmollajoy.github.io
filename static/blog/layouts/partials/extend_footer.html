@@ -1,0 +1,56 @@
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+<script>
+	var app = document.getElementById('type');
+	var typewriter = new Typewriter(app, {
+  loop: true,
+  delay: 75,
+});
+
+typewriter
+  .pauseFor(250)
+  .typeString('Web developer')
+  .pauseFor(700)
+  .deleteChars(9)
+  .pauseFor(1000)
+  .pasteString('<strong class="type">designer</strong>')
+  .pauseFor(3000)
+  .deleteAll()
+  .pauseFor(1000)
+  .pasteString('<span class="type"><strong>Graphic</strong></span>')
+  .pauseFor(400)
+  .typeString(' designer')
+  .pauseFor(2000) 
+  .start();
+
+
+  var img1 = document.getElementById("para1");
+  var img2 = document.getElementById("para2");
+  var img3 = document.getElementById("para3");
+  var img4 = document.getElementById("para4");
+  
+  new simpleParallax(img1,{
+	delay: 0,
+    orientation: 'down',
+    scale: 1.5,
+    overflow: true,	
+});
+  new simpleParallax(img2,{
+	delay: 0,
+    orientation: 'up',
+    scale: 1.2,
+    overflow: true,	
+});
+  new simpleParallax(img3,{
+	delay: 0,
+    orientation: 'down',
+    scale: 1.1,
+    overflow: true,	
+});
+  new simpleParallax(img4,{
+	delay: 0,
+    orientation: 'down',
+    scale: 1.5,
+    overflow: false,	
+});
+</script>
