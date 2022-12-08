@@ -1,0 +1,13 @@
+{{ with .ctx }}
+
+<main class="responsive">
+	<h2>Posts</h2>
+	<div class="grid responsive">
+      {{ range  . | first 3 }}
+        {{- partial "post-card.html" (dict "ctx" . ) }}
+      {{ end }}
+    </div>
+	<a href="post" class="button button-primary">More</a>
+</main>
+
+{{ end }}
