@@ -1,0 +1,24 @@
+{{- define "main" }}
+<main class="responsive">
+{{- if .Title }}
+<section class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- if .Description }}
+    <div class="post-description">
+        {{ .Description }}
+    </div>
+    {{- end }}
+</section>
+{{- end }}
+<ul class="terms-tags">
+    {{- $type := .Type }}
+    {{- range $key, $value := .Data.Terms.Alphabetical }}
+    {{- $name := .Name }}
+    {{- $count := .Count }}
+    {{- with site.GetPage (printf "/%s/%s" $type $name) }}
+        <a href="{{ .Permalink }}" class="badge uppercase">{{ .Name }} - {{ $count }} </a>
+    {{- end }}
+    {{- end }}
+</ul>
+</main>
+{{- end }}{{/* end main */ -}}

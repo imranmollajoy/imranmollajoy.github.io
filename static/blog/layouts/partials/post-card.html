@@ -7,11 +7,15 @@
 <a aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}" class="post-card s12 m6 l{{ $.size }} {{ $class }} ">
   <img loading="lazy" src="{{ (path.Join .RelPermalink .Params.cover.image) | absURL }}">
 	<div class="texts">
-		{{- if .Params.Tags}}
-			{{ range .Params.Tags }}
+			{{ $data := .Params.Tags}}
+			{{- if ne .Params.Type "portfolio"}}
+				{{ $data = .Params.Categories }}
+				{{- else }}
+				{{ $data = .Params.Tags }}
+			{{- end }}
+			{{ range $data }}
 	  		  <div class="badge uppercase">{{ . }}</div>
 			{{ end }}
-		{{- end}}
 		<h5>{{ .Title }}</h5>
 	</div>
 </a>

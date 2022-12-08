@@ -137,3 +137,6 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
+taxonomies:
+   tag : "tags"
+   category : "categories"
