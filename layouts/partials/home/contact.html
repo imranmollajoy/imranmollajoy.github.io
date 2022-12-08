@@ -1,7 +1,7 @@
 
 
 <svelte:window bind:scrollY={y} />
-<div class="about-container responsive max">
+<div class="contact-container responsive max">
 	<img
 		src="./images/Curve-light.svg"
 		alt=""
@@ -14,53 +14,3 @@
 		<a href="mailto:imj_portfolio.3z5y3@simplelogin.com" class="button">Email me</a>
 	</main>
 </div>
-
-<style>
-	.about-container {
-		min-height: 50vh;
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		background-color: var(--clr-accent);
-		margin-top: 10rem;
-		position: relative;
-		overflow: hidden;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-attachment: fixed;
-		isolation: isolate;
-	}
-	.about-container > main.responsive {
-		z-index: 3;
-	}
-	.about-container .bg {
-		position: absolute;
-		top: 0;
-		object-fit: cover;
-		height: 100vh;
-		width: 100%;
-		z-index: 1;
-	}
-	.about-container .curve {
-		position: absolute;
-		top: 0;
-		left: 50%;
-		transform: rotate(230deg);
-		z-index: 2;
-	}
-	.about-container h1 {
-		color: var(--clr-light);
-	}
-	@media (prefers-color-scheme: dark) {
-	.about-container	h1 {
-			color: var(--clr-dark);
-		}
-	}
-	/* media for mobile */
-	@media (max-width: 425px) {
-	.about-container	.curve {
-			transform: rotate(15deg);
-			left: 40%;
-		}
-	}
-</style>

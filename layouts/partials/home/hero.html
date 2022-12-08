@@ -16,32 +16,3 @@
 {{ $src:="./images/Curve.svg"}}
 <img src="{{   $src  }}" alt="" id="para1" />
 
-<style>
-	.hero-container {
-		min-height: 95vh;
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-	}
-	.hero-container +  img {
-		position: absolute;
-		z-index: -2;
-		top: 0;
-		right: 15%;
-	}
-	.hero-container .type {
-		background-color: var(--clr-accent);
-		color: var(--clr-light);
-	}
-	.hero-container h1 {
-		transition: all;
-	}
-
-	/* media for phone */
-	@media (max-width: 768px) {
-	.hero-container + img {
-			right: 0;
-		}
-	}
-</style>
-
