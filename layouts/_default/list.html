@@ -5,8 +5,10 @@
 {{- else }} {{/* if not profileMode */}}
 
 {{- if not .IsHome | and .Title }}
-<header class="page-header">
-  {{- partial "breadcrumbs.html" . }}
+{{- partial "breadcrumbs.html" . }}
+
+<main class="responsive">
+<section class="page-header">
   <h1>
     {{ .Title }}
     {{- if and (or (eq .Kind `term`) (eq .Kind `section`)) (.Param "ShowRssButtonInSectionTermList") }}
@@ -25,7 +27,7 @@
     {{ .Description | markdownify }}
   </div>
   {{- end }}
-</header>
+</section>
 {{- end }}
 
 
@@ -77,7 +79,7 @@
 {{- $class = "post-entry tag-entry" }}
 {{- end }}
 
-{{ partial "post-card.html" (dict "ctx" . "size" 3) }}
+{{ partial "post-card.html" (dict "ctx" . "size" 4) }}
 {{- end }}
 </div>
 {{- if gt $paginator.TotalPages 1 }}
@@ -105,5 +107,5 @@
 {{- end }}
 
 {{- end }}{{/* end profileMode */}}
-
+</main>
 {{- end }}{{- /* end main */ -}}
