@@ -25,8 +25,7 @@ A horizontal section is a section which spreads left to right. It is very elegan
 
 Create three files, index.html, index.css and index.js. Name theme to your liking. Just be sure to link them properly in the index.html file. Then open the index.html file in your favorite code editor. Add the following code to the index.html file:
 
-```html
-
+```
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -77,7 +76,7 @@ Open the CSS file, add the following code:
 ```
 Now let's add the content we want to display in the horizontal section.
     
-```html
+```
 <!-- main start -->
 <!-- The horizontal section -->
 <section class="horizontal-section">
@@ -179,7 +178,7 @@ Save and test the index.html. It's **working**!
 ## Final Code
 Here is the full code.
 
-```html
+```
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">

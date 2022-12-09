@@ -42,20 +42,12 @@
 
 {{- /* includes */}}
 
-
-{{- /* include `an-old-hope` if hljs is on */}}
-{{- $isHLJSdisabled := (site.Params.assets.disableHLJS | default false) }}
-{{- $hljs := (cond ($isHLJSdisabled) (".chroma { background-color: unset !important;}" | resources.FromString "assets/css/hljs-blank.css") (resources.Get "css/hljs/an-old-hope.min.css")) }}
-
-{{- /* order is important */}}
-{{- $core := (slice  $hljs ) | resources.Concat "assets/css/core.css" | resources.Minify }}
-
 {{- /* order is important */}}
 {{- $extended := (resources.Match "css/extended/*.css") | resources.Concat "assets/css/extended.css" | resources.Minify }}
 
 {{- /* bundle all required css */}}
 {{- /* Add extended css after theme style */ -}}
-{{- $stylesheet := (slice $extended $core ) | resources.Concat "assets/css/stylesheet.css" }}
+{{- $stylesheet := (slice $extended  ) | resources.Concat "assets/css/stylesheet.css" }}
 
 
 {{- if not site.Params.assets.disableFingerprinting }}
