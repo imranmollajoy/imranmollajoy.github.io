@@ -13,7 +13,7 @@ jobs:
       - name: Wiat for deploy process
         # Deplot usuallu takes 43sec 
         run: sleep 50s
-         shell: bash
+        shell: bash
 
       - name: Send HTTP GET request
         # Example: `curl http://www.google.com/ping?sitemap=https://www.example.com/sitemap.xml`
