@@ -12,13 +12,23 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 24 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://imranmollajoy.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Pros of Using Open Source Softwares</title>
+      <link>https://imranmollajoy.github.io/post/pros-of-using-open-source-softwares/</link>
+      <pubDate>Sat, 19 Nov 2022 21:25:05 +0600</pubDate>
+      
+      <guid>https://imranmollajoy.github.io/post/pros-of-using-open-source-softwares/</guid>
+      <description>Open source software is software that is distributed with a license that allows users to freely use, modify, and distribute the software. Unlike proprietary software, which is owned and controlled by a single company or person, open source software is developed and maintained by a community of volunteers who are dedicated to improving the software and making it as useful and user-friendly as possible.
+The concept of open source software originated in the late 1980s, when a group of software developers began collaborating on a project to create a free, open source operating system called Linux.</description>
+    </item>
+    
+    <item>
       <title>Ad Free Alternatives on Android and iOS</title>
       <link>https://imranmollajoy.github.io/post/ad-free-alternatives-android-ios/</link>
       <pubDate>Thu, 08 Dec 2022 19:21:48 +0600</pubDate>
       
       <guid>https://imranmollajoy.github.io/post/ad-free-alternatives-android-ios/</guid>
       <description>Don&amp;rsquo;t you hate it when a video player starts showing ad while you are watching a movie? Or while navigating in your music player to play your favorite music? Well, fear no more! Here are the apps I use (you should use too) on daily basis, which are completely free with no ad whatsoever.
-Video Player (VLC) Replaces: MX Player, MX Player Pro
+Video Player (VLC) #Replaces: MX Player, MX Player Pro
 VLC is a name you may seen in your PC.</description>
     </item>
     
@@ -29,8 +39,8 @@ VLC is a name you may seen in your PC.</description>
       
       <guid>https://imranmollajoy.github.io/portfolio/bring-your-umbrella/</guid>
       <description>An app made mainly for getting the days with high chances of rainfall. It also gives the weather forecast of next 5 days.
-Features Days with highest rainfall, highest and lowest temperature. Chances of rainfall Amount of rainfall Chart of rainfall chances Chart of highest and lowest temperature This app was made using ReactJS and CSS. For generating charts, Recharts was used.
-You can find the app by clicking here</description>
+Features # Days with highest rainfall, highest and lowest temperature. Chances of rainfall Amount of rainfall Chart of rainfall chances Chart of highest and lowest temperature This app was made using ReactJS and CSS. For generating charts, Recharts was used.
+You can find the app by clicking here </description>
     </item>
     
     <item>
@@ -41,7 +51,7 @@ You can find the app by clicking here</description>
       <guid>https://imranmollajoy.github.io/portfolio/take-note-app/</guid>
       <description>A simple app to take and save your note. It uses browsers&amp;rsquo; local storage to save your data.
 This app was made using ReactJS and Material UI.
-You can find the app by clicking here</description>
+You can find the app by clicking here </description>
     </item>
     
     <item>
@@ -51,8 +61,8 @@ You can find the app by clicking here</description>
       
       <guid>https://imranmollajoy.github.io/portfolio/watchnext/</guid>
       <description>An app which fetch data from TMDB API and display the movies and shows which are trending and popular in the world.
-Features Movies and shows which are trending and popular in the world. Search for movies and shows. add to watchlist of movies and shows. Add to favorite list of movies and shows. This app was made using SvelteKit and CSS.
-You can find the app by clicking here</description>
+Features # Movies and shows which are trending and popular in the world. Search for movies and shows. add to watchlist of movies and shows. Add to favorite list of movies and shows. This app was made using SvelteKit and CSS.
+You can find the app by clicking here </description>
     </item>
     
     <item>
@@ -61,8 +71,8 @@ You can find the app by clicking here</description>
       <pubDate>Fri, 09 Dec 2022 16:15:22 +0600</pubDate>
       
       <guid>https://imranmollajoy.github.io/post/create-horizontal-scroll-section-html-css-js/</guid>
-      <description>Horizontal Section A horizontal section is a section which spreads left to right. It is very elegant and takes less space and can show more data.
-Making a horizontal section Create three files, index.html, index.css and index.js. Name theme to your liking. Just be sure to link them properly in the index.html file. Then open the index.html file in your favorite code editor. Add the following code to the index.html file:</description>
+      <description>Horizontal Section #A horizontal section is a section which spreads left to right. It is very elegant and takes less space and can show more data.
+Making a horizontal section #Create three files, index.html, index.css and index.js. Name theme to your liking. Just be sure to link them properly in the index.html file. Then open the index.html file in your favorite code editor. Add the following code to the index.</description>
     </item>
     
     <item>
@@ -71,9 +81,9 @@ Making a horizontal section Create three files, index.html, index.css and index.
       <pubDate>Thu, 08 Dec 2022 19:26:52 +0600</pubDate>
       
       <guid>https://imranmollajoy.github.io/post/differences-between-ssg-and-spa/</guid>
-      <description>SSR SSR means Server side rendering. In this mode, the requested page gets rendered on the server.
+      <description>SSR #SSR means Server side rendering. In this mode, the requested page gets rendered on the server.
 Building in SSR is fast compared to SSG when dealing with many pages. However it is slower than SSG in client side. SEO can be a little tricky but can do its job when done properly. Useful for app/sites that depends on everchanging data or interactive elements.
-SSG SSG means Static site generation. The site is rendered once during build time.</description>
+SSG #SSG means Static site generation.</description>
     </item>
     
     <item>
@@ -83,7 +93,7 @@ SSG SSG means Static site generation. The site is rendered once during build tim
       
       <guid>https://imranmollajoy.github.io/portfolio/blog-with-svelte/</guid>
       <description>This blog was made using SvelteKit and Contentful.
-You can find the blog by clicking here</description>
+You can find the blog by clicking here </description>
     </item>
     
     <item>
@@ -94,7 +104,7 @@ You can find the blog by clicking here</description>
       <guid>https://imranmollajoy.github.io/portfolio/dummy-text-generator/</guid>
       <description>An app to generate dummy text. Useful for testing purposes. It uses a free remote API to generate text.
 The app was made using ReactJS and Material UI.
-You can find the app by clicking here</description>
+You can find the app by clicking here </description>
     </item>
     
     

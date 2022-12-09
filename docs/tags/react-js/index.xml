@@ -18,8 +18,8 @@
       
       <guid>https://imranmollajoy.github.io/portfolio/bring-your-umbrella/</guid>
       <description>An app made mainly for getting the days with high chances of rainfall. It also gives the weather forecast of next 5 days.
-Features Days with highest rainfall, highest and lowest temperature. Chances of rainfall Amount of rainfall Chart of rainfall chances Chart of highest and lowest temperature This app was made using ReactJS and CSS. For generating charts, Recharts was used.
-You can find the app by clicking here</description>
+Features # Days with highest rainfall, highest and lowest temperature. Chances of rainfall Amount of rainfall Chart of rainfall chances Chart of highest and lowest temperature This app was made using ReactJS and CSS. For generating charts, Recharts was used.
+You can find the app by clicking here </description>
     </item>
     
     <item>
@@ -30,7 +30,7 @@ You can find the app by clicking here</description>
       <guid>https://imranmollajoy.github.io/portfolio/take-note-app/</guid>
       <description>A simple app to take and save your note. It uses browsers&amp;rsquo; local storage to save your data.
 This app was made using ReactJS and Material UI.
-You can find the app by clicking here</description>
+You can find the app by clicking here </description>
     </item>
     
     <item>
@@ -41,7 +41,7 @@ You can find the app by clicking here</description>
       <guid>https://imranmollajoy.github.io/portfolio/dummy-text-generator/</guid>
       <description>An app to generate dummy text. Useful for testing purposes. It uses a free remote API to generate text.
 The app was made using ReactJS and Material UI.
-You can find the app by clicking here</description>
+You can find the app by clicking here </description>
     </item>
     
   </channel>
