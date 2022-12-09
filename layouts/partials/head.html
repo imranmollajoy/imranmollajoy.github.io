@@ -9,7 +9,9 @@
 
 {{- /* Title */}}
 <title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ site.Title }}</title>
-
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&family=Raleway:wght@300;400;600&family=Roboto&display=swap');
+</style>
 {{- /* Meta */}}
 {{- if .IsHome }}
 {{ with site.Params.keywords -}}<meta name="keywords" content="{{- range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}">{{ end }}
@@ -40,12 +42,20 @@
 
 {{- /* includes */}}
 
+
+{{- /* include `an-old-hope` if hljs is on */}}
+{{- $isHLJSdisabled := (site.Params.assets.disableHLJS | default false) }}
+{{- $hljs := (cond ($isHLJSdisabled) (".chroma { background-color: unset !important;}" | resources.FromString "assets/css/hljs-blank.css") (resources.Get "css/hljs/an-old-hope.min.css")) }}
+
+{{- /* order is important */}}
+{{- $core := (slice  $hljs ) | resources.Concat "assets/css/core.css" | resources.Minify }}
+
 {{- /* order is important */}}
 {{- $extended := (resources.Match "css/extended/*.css") | resources.Concat "assets/css/extended.css" | resources.Minify }}
 
 {{- /* bundle all required css */}}
 {{- /* Add extended css after theme style */ -}}
-{{- $stylesheet := (slice $extended) | resources.Concat "assets/css/stylesheet.css" }}
+{{- $stylesheet := (slice $extended $core ) | resources.Concat "assets/css/stylesheet.css" }}
 
 
 {{- if not site.Params.assets.disableFingerprinting }}

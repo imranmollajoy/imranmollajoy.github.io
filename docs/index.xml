@@ -13,10 +13,10 @@
     <lastBuildDate>Fri, 24 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://imranmollajoy.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ad Free Alternatives on Android and iOS</title>
-      <link>https://imranmollajoy.github.io/post/ad-free-alternatives-on-android-and-ios/</link>
+      <link>https://imranmollajoy.github.io/post/ad-free-alternatives-android-ios/</link>
       <pubDate>Thu, 08 Dec 2022 19:21:48 +0600</pubDate>
       
-      <guid>https://imranmollajoy.github.io/post/ad-free-alternatives-on-android-and-ios/</guid>
+      <guid>https://imranmollajoy.github.io/post/ad-free-alternatives-android-ios/</guid>
       <description>Don&amp;rsquo;t you hate it when a video player starts showing ad while you are watching a movie? Or while navigating in your music player to play your favorite music? Well, fear no more! Here are the apps I use (you should use too) on daily basis, which are completely free with no ad whatsoever.
 Video Player (VLC) Replaces: MX Player, MX Player Pro
 VLC is a name you may seen in your PC.</description>
@@ -53,6 +53,16 @@ You can find the app by clicking here</description>
       <description>An app which fetch data from TMDB API and display the movies and shows which are trending and popular in the world.
 Features Movies and shows which are trending and popular in the world. Search for movies and shows. add to watchlist of movies and shows. Add to favorite list of movies and shows. This app was made using SvelteKit and CSS.
 You can find the app by clicking here</description>
+    </item>
+    
+    <item>
+      <title>Create a horizontal scroll section with HTML,CSS and JS</title>
+      <link>https://imranmollajoy.github.io/post/create-horizontal-scroll-section-html-css-js/</link>
+      <pubDate>Fri, 09 Dec 2022 16:15:22 +0600</pubDate>
+      
+      <guid>https://imranmollajoy.github.io/post/create-horizontal-scroll-section-html-css-js/</guid>
+      <description>Horizontal Section A horizontal section is a section which spreads left to right. It is very elegant and takes less space and can show more data.
+Making a horizontal section Create three files, index.html, index.css and index.js. Name theme to your liking. Just be sure to link them properly in the index.html file. Then open the index.html file in your favorite code editor. Add the following code to the index.html file:</description>
     </item>
     
     <item>

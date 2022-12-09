@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://imranmollajoy.github.io/post/ad-free-alternatives-on-android-and-ios/</loc>
+    <loc>https://imranmollajoy.github.io/post/ad-free-alternatives-android-ios/</loc>
     <lastmod>2022-12-08T19:21:48+06:00</lastmod>
   </url><url>
     <loc>https://imranmollajoy.github.io/portfolio/bring-your-umbrella/</loc>
@@ -35,10 +35,28 @@
     <loc>https://imranmollajoy.github.io/portfolio/watchnext/</loc>
     <lastmod>2025-10-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://imranmollajoy.github.io/post/differences-between-ssg-and-spa/</loc>
-    <lastmod>2022-12-08T19:26:52+06:00</lastmod>
+    <loc>https://imranmollajoy.github.io/categories/</loc>
+    <lastmod>2022-12-09T16:15:22+06:00</lastmod>
+  </url><url>
+    <loc>https://imranmollajoy.github.io/post/create-horizontal-scroll-section-html-css-js/</loc>
+    <lastmod>2022-12-09T16:15:22+06:00</lastmod>
+  </url><url>
+    <loc>https://imranmollajoy.github.io/tags/css/</loc>
+    <lastmod>2022-12-09T16:15:22+06:00</lastmod>
+  </url><url>
+    <loc>https://imranmollajoy.github.io/tags/html/</loc>
+    <lastmod>2022-12-09T16:15:22+06:00</lastmod>
+  </url><url>
+    <loc>https://imranmollajoy.github.io/tags/js/</loc>
+    <lastmod>2022-12-09T16:15:22+06:00</lastmod>
   </url><url>
     <loc>https://imranmollajoy.github.io/post/</loc>
+    <lastmod>2022-12-09T16:15:22+06:00</lastmod>
+  </url><url>
+    <loc>https://imranmollajoy.github.io/categories/web-development/</loc>
+    <lastmod>2022-12-09T16:15:22+06:00</lastmod>
+  </url><url>
+    <loc>https://imranmollajoy.github.io/post/differences-between-ssg-and-spa/</loc>
     <lastmod>2022-12-08T19:26:52+06:00</lastmod>
   </url><url>
     <loc>https://imranmollajoy.github.io/tags/alternative-of-apps/</loc>
@@ -48,9 +66,6 @@
     <lastmod>2022-12-08T19:21:48+06:00</lastmod>
   </url><url>
     <loc>https://imranmollajoy.github.io/tags/android-alternative-apps/</loc>
-    <lastmod>2022-12-08T19:21:48+06:00</lastmod>
-  </url><url>
-    <loc>https://imranmollajoy.github.io/categories/</loc>
     <lastmod>2022-12-08T19:21:48+06:00</lastmod>
   </url><url>
     <loc>https://imranmollajoy.github.io/portfolio/blog-with-svelte/</loc>
