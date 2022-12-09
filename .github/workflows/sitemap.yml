@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Wiat for deploy process
+      - name: Waitt for deploy process
         # Deplot usuallu takes 43sec 
         run: sleep 50s
         shell: bash
