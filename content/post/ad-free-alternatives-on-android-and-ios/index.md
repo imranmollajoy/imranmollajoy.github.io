@@ -1,14 +1,19 @@
 ---
-title: "Ad Free Alternatives on Android and iOS"
+title: Ad Free Alternatives on Android and iOS
 date: 2022-12-08T19:21:48+06:00
 draft: false
-tags: ["alternative of apps","android alternative apps"]
-categories: ["Android"]
+tags:
+  - alternative of apps
+  - android alternative apps
+categories:
+  - Android
 type: post
 cover:
-    image: "./images/featured.png"
-    alt: Thumbnail of Ad Free Alternatives on Android and Ios
+  image: ./images/featured.png
+  alt: Thumbnail of Ad Free Alternatives on Android and Ios
 weight: 2
+slug: ad-free-alternatives-android-ios
+preview: /content/post/ad-free-alternatives-on-android-and-ios/images/featured.png
 ---
 
 Don't you hate it when a video player starts showing ad while you are watching a movie? Or while navigating in your music player to play your favorite music? Well, fear no more! Here are the apps I use (you should use too) on daily basis, which are completely free with no ad whatsoever.
