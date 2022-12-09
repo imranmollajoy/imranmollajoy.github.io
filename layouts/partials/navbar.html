@@ -3,10 +3,10 @@
     <button class="circle transparent material-symbols-outlined" data-ui="#left-menu">
     menu
     </button>
-    {{- $label_text := (site.Params.label.text | default site.Title) }}
+    {{/*  {{- $label_text := (site.Params.label.text | default site.Title) }}
     <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)"  class="max center-align">
         <h5>{{ (site.Title) }}</h5>
-    </a>
+    </a>  */}}
     <a href="/search"><i class="material-symbols-outlined">search</i> Search</a>
     <button id="theme-toggle" accesskey="t" title="(Alt + T)" class="none transparent">
          <span id="darkIcon">{{ partial "icon.html" (dict "ctx" "dark_mode") }}</span> 
