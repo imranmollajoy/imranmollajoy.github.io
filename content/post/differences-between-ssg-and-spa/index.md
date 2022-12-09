@@ -1,5 +1,5 @@
 ---
-title: "Differences Between Ssg and Spa"
+title: "Differences Between SSG and SPA"
 date: 2022-12-08T19:26:52+06:00
 draft: false
 tags: []
