@@ -1,8 +1,14 @@
 {{- define "main" }}
 
-{{ partial "breadcrumbs.html" . }}
-<main class="post-single responsive">
-  <section class="post-header">
+<div class="grid no-gap">
+  {{- if (.Param "ShowToc") }}
+  <div class="s12 l2">
+    {{- partial "toc.html" . }}
+  </div>
+  {{- end }}
+  <div class="post-single responsive s12 l6">
+  {{ partial "breadcrumbs.html" . }}
+  <section class="post-header padding">
     <h1 class="post-title">
       {{ .Title }}
       {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
@@ -26,10 +32,6 @@
   {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
   {{/*  {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}  */}}
   <img loading="lazy" src="{{ (path.Join .RelPermalink .Params.cover.image) | absURL }}" class="single-featured-img">
-
-  {{- if (.Param "ShowToc") }}
-  {{- partial "toc.html" . }}
-  {{- end }}
 
   {{- if .Content }}
   <div class="post-content">
@@ -57,7 +59,11 @@
   {{- if (.Param "comments") }}
   {{- partial "comments.html" . }}
   {{- end }}
-</main>
+</div>
+  <div class="s12 l3"></div>
+
+
+</div>
 {{- end }}{{/* end main */}}
 
 

@@ -2,7 +2,9 @@ baseURL: https://imranmollajoy.github.io
 languageCode: en-us
 title: Imran's Site
 theme: "PaperMod"
-paginate: 5
+paginate: 6
+
+ShowAllPagesInArchive: true
 
 enableRobotsTXT: true
 buildDrafts: true
@@ -40,8 +42,8 @@ params:
   comments: false
   hidemeta: false
   hideSummary: false
-  showtoc: false
-  tocopen: false
+  showtoc: true
+  tocopen: true
 
   assets:
     # disableHLJS: true # to disable highlight.js
@@ -137,3 +139,9 @@ markup:
 taxonomies:
    tag : "tags"
    category : "categories"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary

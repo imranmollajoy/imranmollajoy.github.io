@@ -2,13 +2,6 @@
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
 <script>
-  var icons = document.getElementsByTagName("i");
-  for (let i = 0; i < icons.length; i++) {
-    var target = icons[i];
-     if(!target.className.includes("material-symbols-outlined")){
-        target.classList.add("material-symbols-outlined");
-    }
-} 
 	var app = document.getElementById('type');
 	var typewriter = new Typewriter(app, {
   loop: true,

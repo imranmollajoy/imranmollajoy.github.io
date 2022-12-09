@@ -7,8 +7,9 @@
     <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)"  class="max center-align">
         <h5>{{ (site.Title) }}</h5>
     </a>
+    <a href="search"><i class="material-symbols-outlined">search</i> Search</a>
     <button id="theme-toggle" accesskey="t" title="(Alt + T)" class="none transparent">
-        <i class="material-symbols-outlined" id="darkIcon">dark_mode</i>
+         <span id="darkIcon">{{ partial "icon.html" (dict "ctx" "dark_mode") }}</span> 
      </button>
   </nav>
 </header>
@@ -16,19 +17,27 @@
 <div class="modal left" id="left-menu">
   <header class="fixed">
     <nav>
-      <img class="circle" src="favicon.ico">
+      {{/*  <img class="circle" src="favicon.ico">  */}}
       <div class="max">
-        <h6>{{ site.Title }}</h6>
+        <h5>{{ site.Title }}</h5>
         {{/*  <div>v2.3.0</div>  */}}
       </div>
       <button class="transparent circle" data-ui="#left-menu">
-        <i>close</i>
+       {{ partial "icon.html" (dict "ctx" "close") }}
       </button>
     </nav>
   </header>
   <a class="row round" data-ui="#left-menu" href="/">
-    <i>home</i>
+    {{ partial "icon.html" (dict "ctx" "home") }}
     <span>Home</span>
+  </a>
+  <a class="row round" data-ui="#left-menu" href="/portfolio">
+    {{ partial "icon.html" (dict "ctx" "receipt_long") }}
+    <span>Portfolio</span>
+  </a>
+  <a class="row round" data-ui="#left-menu" href="/post">
+    {{ partial "icon.html" (dict "ctx" "article") }}
+    <span>Blog</span>
   </a>
   <div class="small-divider"></div>
         {{- $currentPage := . }}
