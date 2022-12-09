@@ -1,8 +1,8 @@
 {{- define "main" }}
 
+{{ partial "breadcrumbs.html" . }}
 <main class="post-single responsive">
   <section class="post-header">
-    {{ partial "breadcrumbs.html" . }}
     <h1 class="post-title">
       {{ .Title }}
       {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}

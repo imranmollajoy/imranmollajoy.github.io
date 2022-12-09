@@ -71,20 +71,14 @@
 
 {{- if (not site.Params.disableThemeToggle) }}
 <script>
-    var dark = document.getElementById("darkIcon")
-    var light = document.getElementById("lightIcon")
-    dark.style.display = "none"
-    light.style.display = "block"
     document.getElementById("theme-toggle").addEventListener("click", () => {
         if (document.body.className.includes("dark")) {
             document.body.classList.remove('dark');
-            dark.style.display = "none"
-            light.style.display = "block"
+            document.getElementById("darkIcon").classList.remove('active');
             localStorage.setItem("pref-theme", 'light');
         } else {
             document.body.classList.add('dark');
-            dark.style.display = "block"
-            light.style.display = "none"
+            document.getElementById("darkIcon").classList.add('active');
             localStorage.setItem("pref-theme", 'dark');
         }
     })
