@@ -2,7 +2,8 @@ name: Ping Google about updated sitemap
 
 on:
   push:
-    branches: [ source ]
+    if: "contains(github.event.head_commit.message, 'deploy')"
+      branches: [ source ]
 
 jobs:
   ping:
