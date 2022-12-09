@@ -1,6 +1,6 @@
 {{- define "main" }}
 
-<div class="grid no-gap">
+<div class="grid">
   {{- if (.Param "ShowToc") }}
   <div class="s12 l2">
     {{- partial "toc.html" . }}
@@ -59,7 +59,7 @@
   {{- if (.Param "comments") }}
   {{- partial "comments.html" . }}
   {{- end }}
-</div>
+  </div>
   <div class="s12 l3"></div>
 
 
