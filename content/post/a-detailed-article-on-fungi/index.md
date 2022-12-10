@@ -7,10 +7,10 @@ tags:
 category: Science
 type: post
 cover:
-  image: ./images/featured.png
+  # image: ./images/featured.png
   alt: Thumbnail of A Detailed Article on Fungi
 slug: detailed-article-fungi
-weight: 9
+weight: 99
 description: Fungi are a diverse group of organisms such as yeasts, molds, and mushrooms. They play an important role in the ecosystem.
 
 ---

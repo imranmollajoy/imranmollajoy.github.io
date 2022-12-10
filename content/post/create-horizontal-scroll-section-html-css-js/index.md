@@ -12,6 +12,7 @@ cover:
     alt: Thumbnail of Create Horizontal Scroll Section Html Css Js
 slug: create-horizontal-scroll-section-html-css-js
 description: Learn how to use HTML, CSS, and JavaScript to create a horizontal scrolling section on your website.
+weight: 1
 ---
 
 ## Horizontal Section

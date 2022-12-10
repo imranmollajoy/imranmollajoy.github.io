@@ -11,6 +11,7 @@ cover:
     image: "./images/featured.png"
     alt: Thumbnail of Differences Between Ssg and Spa
 description: Confused about choosing between SSG or SSR? Learn about them in this article
+weight: 9
 ---
 
 ## Introduction
