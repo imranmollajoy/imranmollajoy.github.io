@@ -464,6 +464,7 @@ body {
 	--white: #fff;
 	--black: #131313;
 	--grey: #838383;
+	--translucent: rgba(255, 255, 255, 0.1);
 	--border: rgb(238, 238, 238);
 	--cursor-color: var(--clr-dark);
 	--cursor-width: 1rem;
@@ -481,6 +482,7 @@ body.dark {
 	--black: #fff;
 	--grey: #494949;
 	--border: rgb(51, 51, 51);
+	--translucent: rgba(0, 0, 0, 0.11);
 }
 
 img {
@@ -1346,7 +1348,7 @@ footer.fixed {
 	border-radius: 0;
 }
 .padding {
-	padding: 1rem;
+	padding: 2rem;
 }
 
 /* header.fixed::before,
@@ -2418,10 +2420,6 @@ nav.bottom > .modal {
 	}
 }
 
-.post-content {
-	padding: 1rem;
-	background-color: var(--white);
-}
 .post-title {
 	margin-top: 1rem;
 }
@@ -2432,7 +2430,9 @@ nav.bottom > .modal {
 	display: block;
 	clear: both;
 	padding-inline: 1rem;
-	padding-block: 4rem;
+	padding-block-end: 2rem;
+	margin-top: 2rem;
+	transition: all 0.2s ease-in;
 }
 .read h4,
 .read h5 {
@@ -2443,7 +2443,8 @@ nav.bottom > .modal {
 		width: 220px;
 		margin-right: 30px;
 		float: left;
-		margin-left: -40px;
+		margin-left: -140px;
+		margin-top: 0;
 	}
 }
 @media only screen and (min-width: 993px) {
@@ -2452,5 +2453,23 @@ nav.bottom > .modal {
 		margin-right: 30px;
 		float: left;
 		margin-left: -140px;
+		margin-top: 0;
 	}
+}
+
+.post-header .header-image {
+	/* z-index: -2; */
+}
+.post-header h1.big-text {
+	position: absolute;
+	z-index: -1;
+	font-size: 35rem;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	line-height: 0.6;
+	font-weight: 900;
+	color: var(--translucent);
+	user-select: none;
+	max-width: 100%;
 }

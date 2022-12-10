@@ -1,8 +1,12 @@
 {{- define "main" }}
 
 {{ partial "breadcrumbs.html" . }}
-<section class="responsive grid">
-  <section class="l6 m12 s12">
+<section class="post-header responsive grid">
+  <h1 class="big-text">
+
+    {{ .Title }}
+  </h1>
+  <section class="header-image l6 m12 s12">
   {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
   {{/*  {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}  */}}
   {{- if .Params.cover.image }}
@@ -11,7 +15,7 @@
   <img loading="lazy" src="{{ (path.Join "/featured.png") | absURL }}" />
   {{- end}}
   </section>
-    <section class="post-header padding l5 m8 s12">
+    <section class="header-texts padding l5 m8 s12">
     {{- $tags := .Params.Taxonomies.tag | default "category" }}
     <div>
       {{- range ($.GetTerms $tags) }}
@@ -52,7 +56,7 @@
   {{- end }}
   <div class="post-single responsive s12 m8 l6">
   {{- if .Content }}
-  <div class="post-content">
+  <div class="post-content padding">
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
