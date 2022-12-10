@@ -46,7 +46,6 @@ params:
   tocopen: true
   mainSections:
   - post
-  - portfolio
 
   assets:
     # disableHLJS: true # to disable highlight.js

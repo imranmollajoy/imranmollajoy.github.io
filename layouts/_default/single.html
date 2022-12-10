@@ -1,5 +1,6 @@
 {{- define "main" }}
 
+{{ partial "breadcrumbs.html" . }}
 <div class="grid">
   {{- if (.Param "ShowToc") }}
   <div class="s12 m4 l3">
@@ -7,7 +8,6 @@
   </div>
   {{- end }}
   <div class="post-single responsive s12 m8 l6">
-  {{ partial "breadcrumbs.html" . }}
   <section class="post-header padding">
     <h1 class="post-title">
       {{ .Title }}

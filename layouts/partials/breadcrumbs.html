@@ -1,5 +1,5 @@
 {{- if (.Param "ShowBreadCrumbs") -}}
-<main class="breadcrumbs responsive">
+<main class="breadcrumbs max padding">
     {{- $url := replace .Parent.Permalink (printf "%s" site.BaseURL) "" }}
     {{- $lang_url := strings.TrimPrefix (printf "%s/" .Lang) $url -}}
 
