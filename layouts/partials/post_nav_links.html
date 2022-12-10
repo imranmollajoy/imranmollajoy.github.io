@@ -1,6 +1,6 @@
 {{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 {{- if and (gt (len $pages) 1) (in $pages . ) }}
-<nav class="paginav row">
+<nav class="paginav padding">
   {{- with $pages.Next . }}
   <a class="prev max" href="{{ .Permalink }}">
     <span class="title">« {{ i18n "prev_page" }}</span>
