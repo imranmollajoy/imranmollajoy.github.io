@@ -5,7 +5,7 @@ draft: false
 tags: 
     - OSS
     - Pros
-category: Uncategorized
+category: Comparison
 type: post
 cover:
     image: "./images/featured.png"
@@ -30,6 +30,18 @@ In addition, open source software is often more secure than proprietary software
 
 Furthermore, using open source software can help support the development of a more diverse and decentralized technology ecosystem. Because open source software is not controlled by a single company, it is less susceptible to monopolies and the potential negative effects that can result from a lack of competition. This can help promote innovation and prevent a single company or group from gaining too much control over the technology landscape.
 
+## Sould You Avoid Closed Source Software?
+
+There are several reasons why one should avoid using proprietary software.
+
+First, proprietary software is typically more expensive than open-source alternatives. Because proprietary software is owned and controlled by a single entity, typically a commercial software vendor, who charges a license fee for its use. This can make it more expensive to acquire and maintain proprietary software, especially for large organizations with many users.
+
+Second, proprietary software is often less flexible and customizable than open-source software. This is because the source code of proprietary software is not publicly available, which means that users cannot modify or extend the software to meet their specific needs. In contrast, open-source software typically allows users to view and modify the source code, which can make it more adaptable and customizable.
+
+Third, proprietary software can be less secure than open-source software. The source code of proprietary software is not publicly available, so security vulnerabilities or defects may not be discovered and addressed as quickly as they would be in open-source software. Additionally, because proprietary software is owned and controlled by a single entity, there is a greater risk of security breaches or malicious attacks.
+
+Overall, while there may be some benefits to using proprietary software, such as access to certain features or support from the vendor, the potential drawbacks of proprietary software, such as higher costs, less flexibility, and lower security, make it advisable to avoid it whenever possible. Open-source software can often provide equivalent or better functionality at a lower cost and with greater flexibility and security.
+
 ## Some OSS You Should Use
 
 - [GIMP (Photo editor)](https://www.gimp.org/)
@@ -37,7 +49,6 @@ Furthermore, using open source software can help support the development of a mo
 - [VLC (Media player)](https://www.videolan.org/vlc/)
 - [LibreOffice (Office suit)](https://www.libreoffice.org/)
 - [ARCH LINUX](https://archlinux.org/)
-
 ## Conclusion
 
 Open source software offers a number of advantages that make it a valuable tool for individuals and organizations. It is typically more reliable, flexible, and secure than proprietary software, and it can help support the development of a more diverse and decentralized technology ecosystem. For these reasons, more and more people and organizations are turning to open source software as a viable alternative to proprietary software.
