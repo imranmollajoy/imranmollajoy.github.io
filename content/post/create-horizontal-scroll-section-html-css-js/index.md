@@ -7,8 +7,7 @@ tags:
   - css
   - html
   - js
-categories:
-  - Web development
+category: Web development
 type: post
 cover:
     image: "./images/featured.png"

@@ -16,7 +16,7 @@
 {{- $scratch.Add "meta" (slice .) }}
 {{- end }}  */}}
 
-{{- $tags := .Params.Taxonomies.tag | default "categories" }}
+{{- $tags := .Params.Taxonomies.tag | default "category" }}
     <div>
       {{- range ($.GetTerms $tags) }}
       <a href="{{ .Permalink }}" class="category badge uppercase">{{ .LinkTitle }}</a>

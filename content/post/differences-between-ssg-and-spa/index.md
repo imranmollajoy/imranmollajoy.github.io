@@ -2,8 +2,8 @@
 title: "Differences Between SSG and SPA"
 date: 2022-12-08T19:26:52+06:00
 draft: false
-tags: []
-category: ""
+tags: ["ssg vs spa"]
+category: "Comparison"
 type: post
 cover:
     image: "./images/featured.png"

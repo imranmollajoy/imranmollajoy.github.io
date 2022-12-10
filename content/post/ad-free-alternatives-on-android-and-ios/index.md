@@ -5,8 +5,7 @@ draft: false
 tags:
   - alternative of apps
   - android alternative apps
-categories:
-  - Android
+category: Android
 type: post
 cover:
   image: ./images/featured.png

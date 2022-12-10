@@ -1,0 +1,10 @@
+ {{ $related := .Site.RegularPages.Related . }}
+    {{- if $related }}
+    <div class="toc">
+    <h4>Related</h4>
+    {{ range $related | first 3 }}
+        {{ partial "post-card-noimg.html" . }}
+    {{ end }}
+    </div>
+    {{- end }}
+
