@@ -13,7 +13,6 @@ cover:
   image: ./images/featured.png
   alt: Thumbnail of Ad Free Alternatives on Android and Ios
 weight: 1
-slug: ad-free-alternatives-android-ios
 preview: /content/post/ad-free-alternatives-on-android-and-ios/images/featured.png
 description: Tired of dealing with ads and pop-ups in your video and music players, or when reading documents on your phone? Try using ad-free apps listed here.
 ---
