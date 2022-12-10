@@ -2,9 +2,11 @@
     {{- if $related }}
     <div class="toc">
     <h4>Related</h4>
+        <div class="grid">
     {{ range $related | first 3 }}
-        {{ partial "post-card-noimg.html" . }}
+        {{ partial "related_post_card.html" . }}
     {{ end }}
+        </div>
     </div>
     {{- end }}
 

@@ -1,0 +1,6 @@
+<a href="{{ .RelPermalink }}" class="related_post_card l12 m6 s6">
+  <img loading="lazy" src="{{ (path.Join .RelPermalink .Params.cover.image) | absURL }}" />
+  <div class="content">
+   <h6> {{ .Title }}</h6>
+   </div>
+</a>

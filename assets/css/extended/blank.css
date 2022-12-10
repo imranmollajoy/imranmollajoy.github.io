@@ -1345,6 +1345,9 @@ footer.fixed {
 	background-color: inherit;
 	border-radius: 0;
 }
+.padding {
+	padding: 1rem;
+}
 
 /* header.fixed::before,
 footer.fixed::before {
@@ -1993,11 +1996,17 @@ main.about img {
 .post-card p {
 	margin: 0;
 }
-.post-card-noimg {
+.related_post_card {
 	display: block;
+	border-radius: 0.8rem;
+	background-color: var(--white);
 	margin-bottom: 1rem;
+}
+.related_post_card .content {
 	padding: 1rem;
-	border-bottom: 1px solid var(--border);
+}
+.related_post_card .content h6 {
+	margin: 0;
 }
 .featured {
 	border-bottom: 4px solid var(--clr-accent);
