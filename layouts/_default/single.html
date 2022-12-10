@@ -31,8 +31,11 @@
   </section>
   {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
   {{/*  {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}  */}}
-  <img loading="lazy" src="{{ (path.Join .RelPermalink .Params.cover.image) | absURL }}" class="single-featured-img">
-
+  {{- if .Params.cover.image }}
+  <img loading="lazy" src="{{ (path.Join .RelPermalink .Params.cover.image) | absURL }}" />
+  {{- else }}
+  <img loading="lazy" src="{{ (path.Join "/featured.png") | absURL }}" />
+  {{- end}}
   {{- if .Content }}
   <div class="post-content">
     {{- if not (.Param "disableAnchoredHeadings") }}
