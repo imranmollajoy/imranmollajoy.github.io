@@ -10,9 +10,9 @@
   {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
   {{/*  {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}  */}}
   {{- if .Params.cover.image }}
-  <img loading="lazy" src="{{ (path.Join .RelPermalink .Params.cover.image) | absURL }}" />
+  <img loading="lazy" src="{{ (path.Join .RelPermalink .Params.cover.image) | absURL }}"  alt="Thumbnail of {{ .Title }}"/>
   {{- else }}
-  <img loading="lazy" src="{{ (path.Join "/featured.png") | absURL }}" />
+  <img loading="lazy" src="{{ (path.Join "/featured.png") | absURL }}"  alt="Thumbnail of {{ .Title }}"/>
   {{- end}}
   </section>
     <section class="header-texts padding l5 m8 s12">
