@@ -5,6 +5,8 @@ draft: false
 tags:
   - alternative of apps
   - android alternative apps
+  - tips
+  - software
 category: Android
 type: post
 cover:
