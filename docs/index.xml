@@ -12,6 +12,15 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 24 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://imranmollajoy.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Create a horizontal scroll section with HTML,CSS and JS</title>
+      <link>https://imranmollajoy.github.io/post/create-horizontal-scroll-section-html-css-js/</link>
+      <pubDate>Fri, 09 Dec 2022 16:15:22 +0600</pubDate>
+      
+      <guid>https://imranmollajoy.github.io/post/create-horizontal-scroll-section-html-css-js/</guid>
+      <description>Learn how to use HTML, CSS, and JavaScript to create a horizontal scrolling section on your website.</description>
+    </item>
+    
+    <item>
       <title>Ad Free Alternatives on Android and iOS</title>
       <link>https://imranmollajoy.github.io/post/ad-free-alternatives-android-ios/</link>
       <pubDate>Thu, 08 Dec 2022 19:21:48 +0600</pubDate>
@@ -21,7 +30,7 @@
     </item>
     
     <item>
-      <title>How to create strong, unique passwords and why it matters?</title>
+      <title>How to create strong, unique passwords and why it matters</title>
       <link>https://imranmollajoy.github.io/post/how-to-create-strong-unique-passwords/</link>
       <pubDate>Thu, 20 Oct 2022 18:35:39 +0600</pubDate>
       
@@ -30,21 +39,12 @@
     </item>
     
     <item>
-      <title>Updating Your OS and Software: Why It Matters.</title>
+      <title>BACKUP YOUR DATA NOW!</title>
       <link>https://imranmollajoy.github.io/post/data-backup-importance-how-to/</link>
       <pubDate>Sat, 10 Dec 2022 19:02:37 +0600</pubDate>
       
       <guid>https://imranmollajoy.github.io/post/data-backup-importance-how-to/</guid>
       <description>Learn the importance of regularly backing up your data to protect against loss and ensure that your important information is safe and secure.</description>
-    </item>
-    
-    <item>
-      <title>A Detailed Article on Fungi</title>
-      <link>https://imranmollajoy.github.io/post/detailed-article-fungi/</link>
-      <pubDate>Sat, 10 Dec 2022 15:11:05 +0600</pubDate>
-      
-      <guid>https://imranmollajoy.github.io/post/detailed-article-fungi/</guid>
-      <description>Fungi are a diverse group of organisms such as yeasts, molds, and mushrooms. They play an important role in the ecosystem.</description>
     </item>
     
     <item>
@@ -63,6 +63,24 @@
       
       <guid>https://imranmollajoy.github.io/post/importance-of-keeping-everything-updated/</guid>
       <description>Waste of bandwidth or a necessity?</description>
+    </item>
+    
+    <item>
+      <title>Differences Between SSG and SPA</title>
+      <link>https://imranmollajoy.github.io/post/differences-between-ssg-and-spa/</link>
+      <pubDate>Thu, 08 Sep 2022 19:26:52 +0600</pubDate>
+      
+      <guid>https://imranmollajoy.github.io/post/differences-between-ssg-and-spa/</guid>
+      <description>Confused about choosing between SSG or SSR? Learn about them in this article</description>
+    </item>
+    
+    <item>
+      <title>A Detailed Article on Fungi</title>
+      <link>https://imranmollajoy.github.io/post/detailed-article-fungi/</link>
+      <pubDate>Sat, 10 Dec 2022 15:11:05 +0600</pubDate>
+      
+      <guid>https://imranmollajoy.github.io/post/detailed-article-fungi/</guid>
+      <description>Fungi are a diverse group of organisms such as yeasts, molds, and mushrooms. They play an important role in the ecosystem.</description>
     </item>
     
     <item>
@@ -96,24 +114,6 @@ You can find the app by clicking here </description>
       <description>An app which fetch data from TMDB API and display the movies and shows which are trending and popular in the world.
 Features # Movies and shows which are trending and popular in the world. Search for movies and shows. add to watchlist of movies and shows. Add to favorite list of movies and shows. This app was made using SvelteKit and CSS.
 You can find the app by clicking here </description>
-    </item>
-    
-    <item>
-      <title>Create a horizontal scroll section with HTML,CSS and JS</title>
-      <link>https://imranmollajoy.github.io/post/create-horizontal-scroll-section-html-css-js/</link>
-      <pubDate>Fri, 09 Dec 2022 16:15:22 +0600</pubDate>
-      
-      <guid>https://imranmollajoy.github.io/post/create-horizontal-scroll-section-html-css-js/</guid>
-      <description>Learn how to use HTML, CSS, and JavaScript to create a horizontal scrolling section on your website.</description>
-    </item>
-    
-    <item>
-      <title>Differences Between SSG and SPA</title>
-      <link>https://imranmollajoy.github.io/post/differences-between-ssg-and-spa/</link>
-      <pubDate>Thu, 08 Sep 2022 19:26:52 +0600</pubDate>
-      
-      <guid>https://imranmollajoy.github.io/post/differences-between-ssg-and-spa/</guid>
-      <description>Confused about choosing between SSG or SSR? Learn about them in this article</description>
     </item>
     
     <item>
