@@ -4,9 +4,8 @@ description: ""
 date: 2022-12-09T16:15:22+06:00
 draft: false
 tags:
-  - css
-  - html
-  - js
+  - tutorial
+  - how-to
 category: Web development
 type: post
 cover:

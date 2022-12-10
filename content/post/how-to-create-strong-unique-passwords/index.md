@@ -3,8 +3,9 @@ title: How to create strong, unique passwords and why it matters?
 date: 2022-10-20T18:35:39+06:00
 draft: false
 tags: 
-    - Untagged
-category: Uncategorized
+    - tips
+    - software
+category: Security
 type: post
 cover:
     image: "./images/featured.png"
