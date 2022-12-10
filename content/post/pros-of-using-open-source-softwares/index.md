@@ -8,7 +8,7 @@ tags:
 category: Comparison
 type: post
 cover:
-    image: "./images/featured.png"
+    # image: "./images/featured.png"
     alt: Thumbnail of Pros of Using Open Source Softwares
 slug: pros-of-using-open-source-softwares
 weight: 9

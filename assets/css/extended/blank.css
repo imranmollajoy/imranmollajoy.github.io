@@ -2005,7 +2005,7 @@ main.about img {
 .related_post_card .content {
 	padding: 1rem;
 }
-.related_post_card .content h6 {
+.related_post_card .content h5 {
 	margin: 0;
 }
 .featured {
@@ -2281,7 +2281,7 @@ nav.bottom > .modal {
 
 @media only screen and (min-width: 601px) {
 	.toc {
-		top: 12rem !important;
+		top: 4rem !important;
 		position: sticky;
 	}
 }

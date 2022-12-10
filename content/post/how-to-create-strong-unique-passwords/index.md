@@ -1,5 +1,5 @@
 ---
-title: How to create strong, unique passwords and why it matters? 
+title: How to create strong, unique passwords and why it matters
 date: 2022-10-20T18:35:39+06:00
 draft: false
 tags: 
