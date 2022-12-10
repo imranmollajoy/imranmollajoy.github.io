@@ -2279,7 +2279,7 @@ nav.bottom > .modal {
 	padding-right: 2rem;
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 601px) {
 	.toc {
 		top: 12rem !important;
 		position: sticky;
@@ -2304,8 +2304,11 @@ nav.bottom > .modal {
 }
 
 .toc .inner {
-	margin: 0 2rem;
+	margin: 0;
 	padding: 1rem 2rem;
+}
+.toc ul {
+	max-width: 100%;
 }
 .toc li {
 	margin-bottom: 1rem;
