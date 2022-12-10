@@ -1,7 +1,7 @@
 {{ with .ctx }}
 {{ $class := "" }}
 
-{{- if eq .Params.Weight 2}}
+{{- if eq .Params.Weight 1}}
 	{{ $class = "featured" }}
 {{- end}}
 <a aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}" class="post-card s12 m6 l{{ $.size }} {{ $class }} ">

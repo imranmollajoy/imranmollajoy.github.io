@@ -10,6 +10,6 @@ cover:
     image: "./images/featured.png"
     alt: Thumbnail of {{ replace .Name "-" " " | title }}
 slug: {{ .Name }}
-weight: 1
+weight: 9
 ---
 

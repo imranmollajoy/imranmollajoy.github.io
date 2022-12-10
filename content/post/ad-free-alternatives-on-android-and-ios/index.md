@@ -10,7 +10,7 @@ type: post
 cover:
   image: ./images/featured.png
   alt: Thumbnail of Ad Free Alternatives on Android and Ios
-weight: 2
+weight: 1
 slug: ad-free-alternatives-android-ios
 preview: /content/post/ad-free-alternatives-on-android-and-ios/images/featured.png
 ---
