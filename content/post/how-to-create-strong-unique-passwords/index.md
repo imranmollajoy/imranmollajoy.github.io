@@ -12,6 +12,7 @@ cover:
     alt: Thumbnail of How to Create Strong Unique Passwords
 slug: how-to-create-strong-unique-passwords
 weight: 1
+description: Weak and guessable passwords can lead you to unmeasurable destruction. Let's make your passwords stronger!
 ---
 
 Creating strong, unique passwords is an essential part of protecting your online accounts and personal information. Unfortunately, many people still use simple, easily guessable passwords, leaving themselves vulnerable to hackers and identity theft. In this article, we'll discuss why it's important to use strong, unique passwords and offer some tips for creating them.

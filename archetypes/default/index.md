@@ -11,5 +11,6 @@ cover:
     alt: Thumbnail of {{ replace .Name "-" " " | title }}
 slug: {{ .Name }}
 weight: 9
+description: ""
 ---
 

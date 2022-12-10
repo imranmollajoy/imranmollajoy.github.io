@@ -1,20 +1,23 @@
 ---
 title: "Differences Between SSG and SPA"
-date: 2022-12-08T19:26:52+06:00
+date: 2022-09-08T19:26:52+06:00
 draft: false
-tags: ["ssg vs spa"]
+tags: 
+    -   server-side rendering
+    -   static site seneration
 category: "Comparison"
 type: post
 cover:
     image: "./images/featured.png"
     alt: Thumbnail of Differences Between Ssg and Spa
+description: Confused about choosing between SSG or SSR? Learn about them in this article
 ---
 
 ## Introduction
 
 Server-side rendering (SSR) and static site generation (SSG) are two different approaches to web development that are used for different purposes. In this article, we will explore the differences between SSR and SSG, their respective advantages and disadvantages, and how to decide which approach is best for your specific project. 
 
-## What is Server-side rendering (SSR)?
+## What is Server-side Rendering (SSR)?
 
 Server-side rendering (SSR) is a technique in which a web page is rendered on the server in response to a user's request. This means that when a user visits a website, their browser sends a request to the server, and the server responds by generating and sending back the HTML code for the page. The browser then interprets and displays the HTML to the user.
 
