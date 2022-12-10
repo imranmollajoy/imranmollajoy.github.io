@@ -44,6 +44,9 @@ params:
   hideSummary: false
   showtoc: true
   tocopen: true
+  mainSections:
+  - post
+  - portfolio
 
   assets:
     # disableHLJS: true # to disable highlight.js
@@ -117,9 +120,9 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: categories
-      name: categories
-      url: /categories/
+    - identifier: category
+      name: category
+      url: /category/
       weight: 10
     - identifier: tags
       name: tags
@@ -138,10 +141,26 @@ markup:
     # style: monokai
 taxonomies:
    tag : "tags"
-   category : "categories"
+   category : "category"
 
 outputs:
   home:
     - HTML
     - RSS
     - JSON # is necessary
+
+related:
+  threshold: 80
+  includeNewer: true
+  toLower: false
+  indices:
+    - name: category
+      weight: 150
+    - name: author
+      toLower: true
+      weight: 30
+    - name: tags
+      weight: 100
+    - name: date
+      weight: 10
+      pattern: '2006'

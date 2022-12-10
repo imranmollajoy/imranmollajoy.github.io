@@ -2,7 +2,7 @@
 
 <div class="grid">
   {{- if (.Param "ShowToc") }}
-  <div class="s12 l2">
+  <div class="s12 l3">
     {{- partial "toc.html" . }}
   </div>
   {{- end }}
@@ -51,16 +51,18 @@
     {{- if (.Param "ShowPostNavLinks") }}
     {{- partial "post_nav_links.html" . }}
     {{- end }}
-    {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+    {{/*  {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
     {{- partial "share_icons.html" . -}}
-    {{- end }}
+    {{- end }}  */}}
   </footer>
 
   {{- if (.Param "comments") }}
   {{- partial "comments.html" . }}
   {{- end }}
   </div>
-  <div class="s12 l3"></div>
+  <div class="s12 l3">
+    {{ partial "related.html"  . }}
+  </div>
 
 
 </div>

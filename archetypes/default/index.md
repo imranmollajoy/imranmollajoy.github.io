@@ -4,8 +4,7 @@ date: {{ .Date }}
 draft: false
 tags: 
     - Untagged
-categories:
-    -   Uncategorized
+category: Uncategorized
 type: post
 cover:
     image: "./images/featured.png"

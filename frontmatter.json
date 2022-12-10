@@ -40,8 +40,8 @@
         },
         {
           "title": "Categories",
-          "name": "categories",
-          "type": "categories"
+          "name": "category",
+          "type": "category"
         },
         {
           "title": "type",
@@ -98,7 +98,7 @@
     "remote api",
     "svelte-kit"
   ],
-  "frontMatter.taxonomy.categories": [
+  "frontMatter.taxonomy.category": [
     "Android"
   ]
 }

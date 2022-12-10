@@ -1993,6 +1993,12 @@ main.about img {
 .post-card p {
 	margin: 0;
 }
+.post-card-noimg {
+	display: block;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	border-bottom: 1px solid var(--border);
+}
 .featured {
 	border-bottom: 4px solid var(--clr-accent);
 }
@@ -2256,7 +2262,7 @@ nav.bottom > .modal {
 	font-weight: 700;
 }
 .toc {
-	border: 1px solid var(--border);
+	/* border: 1px solid var(--border); */
 	background: var(--code-bg);
 	border-radius: var(--radius);
 	padding: 0.4rem;
@@ -2398,4 +2404,13 @@ nav.bottom > .modal {
 	#searchResults li:active {
 		transform: none;
 	}
+}
+
+.post-content {
+	padding: 1rem;
+	background-color: var(--white);
+}
+
+.top-nav {
+	border-bottom: 1px solid var(--clr-accent);
 }

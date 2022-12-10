@@ -9,13 +9,14 @@
 	<div class="texts">
 			{{ $data := .Params.Tags}}
 			{{- if ne .Params.Type "portfolio"}}
-				{{ $data = .Params.Categories }}
+				{{ $data = .Params.Category }}
+			  		  <div class="badge uppercase">{{ $data }}</div>
 				{{- else }}
 				{{ $data = .Params.Tags }}
+				{{ range $data }}
+	  		 		 <div class="badge uppercase">{{ . }}</div>
+				{{ end }}
 			{{- end }}
-			{{ range $data }}
-	  		  <div class="badge uppercase">{{ . }}</div>
-			{{ end }}
 		<h5>{{ .Title }}</h5>
 	</div>
 </a>
