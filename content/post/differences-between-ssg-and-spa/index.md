@@ -44,6 +44,8 @@ Static site generation (SSG) is a technique in which a website is pre-rendered a
 
 SSG has a number of advantages compared to server-side rendering (SSR). One advantage is that it is faster in terms of performance. Because the website is pre-rendered as static HTML files, there is no need for the server to generate and send back the HTML code for each page. This means that the pages can be served to users more quickly, which can improve the user experience and reduce loading times.
 
+{{< read "/post/create-horizontal-scroll-section-html-css-js" "Create a horizontal scroll section in HTML" >}}
+
 Another advantage of SSG is that it is simpler and easier to implement and maintain. Because the website is pre-rendered as static HTML files, there is no need for complex server-side infrastructure or code, such as a web application framework, database, or server-side rendering library. This can make it easier to develop and maintain the website, and can reduce the cost and complexity of the project.
 
 Additionally, SSG can be more suitable for search engine optimization (SEO). Because the website is pre-rendered as static HTML files, search engines can easily access and crawl the page content, which can improve the website's ranking in search results and increase its visibility.
