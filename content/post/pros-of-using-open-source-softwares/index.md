@@ -12,6 +12,7 @@ cover:
     alt: Thumbnail of Pros of Using Open Source Softwares
 slug: pros-of-using-open-source-softwares
 weight: 9
+description: Open source is cool, here's why.
 ---
 
 Open source software is software that is distributed with a license that allows users to freely use, modify, and distribute the software. Unlike proprietary software, which is owned and controlled by a single company or person, open source software is developed and maintained by a community of volunteers who are dedicated to improving the software and making it as useful and user-friendly as possible.
