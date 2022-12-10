@@ -26,6 +26,9 @@ Operating system and software updates are released by the manufacturers of your 
 
 One of the main reasons to keep your operating system and software up to date is for the security benefits. As mentioned earlier, updates often include security patches that address known vulnerabilities in your devices and software. By installing these updates, you can help protect your personal information and online accounts from being accessed by hackers and other cybercriminals.
 
+{{< read "/post/how-to-create-strong-unique-passwords" "Why you should use strong and unique password" >}}
+
+
 In addition to security patches, updates can also include new security features and improvements. For example, a new operating system update might include a more secure password manager, or a software update might add two-factor authentication for added security. Without updating, you can not take advantage of these new security features and stay one step ahead of potential threats.
 
 ## The performance and functionality benefits
