@@ -2422,7 +2422,9 @@ nav.bottom > .modal {
 	padding: 1rem;
 	background-color: var(--white);
 }
-
+.post-title {
+	margin-top: 1rem;
+}
 .top-nav {
 	border-bottom: 1px solid var(--clr-accent);
 }

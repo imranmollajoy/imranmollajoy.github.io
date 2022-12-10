@@ -297,4 +297,8 @@ hSections.forEach((hSection) => {
 
 ```
 
+{{< read "/post/differences-between-ssg-and-spa" "What is Static Site Generation?" >}}
+
+
 In conclusion, we have successfully created a horizontal section with scrollable cards using HTML, CSS, and JavaScript. By using a combination of flexbox layout and overflow-wrapping, we were able to create a responsive and user-friendly design that allows the user to easily scroll through the cards and view all of the content. This can be used to create engaging and interactive user interfaces.
+

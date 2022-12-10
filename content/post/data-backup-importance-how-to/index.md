@@ -23,6 +23,8 @@ In today's digital world, our personal and professional lives are often tied to 
 
 Backing up your data is an important part of protecting yourself against the potential loss of this important information. By regularly backing up your data, you can create a secure, offsite copy of your data that you can use to restore your files and documents in the event of a disaster. This can save you time, money, and frustration and help ensure that your data is always safe and accessible.
 
+
+
 ## Tips for backing up your data effectively
 
 Backing up your data can seem daunting, but it doesn't have to be. Here are some tips for backing up your data effectively:
