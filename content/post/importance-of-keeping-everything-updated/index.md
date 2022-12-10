@@ -1,5 +1,5 @@
 ---
-title: The importance of keeping your operating system and software up to date
+title: The importance of keeping your OS and software updated
 date: 2022-11-06T18:52:47+06:00
 draft: false
 tags: 
@@ -13,6 +13,7 @@ cover:
     alt: Thumbnail of Importance of Keeping Everything Updated
 slug: importance-of-keeping-everything-updated
 weight: 9
+description: Waste of bandwidth or a necessity? 
 ---
 
 In today's digital world, keeping your operating system and software up to date is crucial for protecting your personal information, devices, and online accounts. Operating system and software updates often include security patches and improvements that help keep your information safe from hackers and other online threats. In addition to the security benefits, keeping your operating system and software up to date can also improve the performance and functionality of your devices.
