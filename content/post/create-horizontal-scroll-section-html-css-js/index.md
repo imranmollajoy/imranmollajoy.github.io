@@ -18,11 +18,11 @@ slug: create-horizontal-scroll-section-html-css-js
 
 ## Horizontal Section
 
-A horizontal section is a section which spreads left to right. It is very elegant and takes less space and can show more data.
+A horizontal section is a type of layout in which the content is arranged from left to right, rather than from top to bottom. This design can be elegant and visually appealing, and it can also save space by allowing more content to be displayed on the screen at once. Horizontal sections are commonly used in web design to create menus, galleries, or other types of content that can be easily scrolled through by the user. To create a horizontal section, you can use CSS styles such as ```display: flex;``` and ```flex-wrap: wrap;``` to control the layout and appearance of the content.
 
 ## Making a horizontal section
 
-Create three files, index.html, index.css and index.js. Name theme to your liking. Just be sure to link them properly in the index.html file. Then open the index.html file in your favorite code editor. Add the following code to the index.html file:
+Create three files: index.html, index.css, and index.js. Name them to your liking, but make sure to link them properly in the index.html file. Then, open the index.html file in your favorite code editor and add the following code:
 
 ```
 <!DOCTYPE html>
@@ -73,7 +73,7 @@ Open the CSS file, add the following code:
 }
 
 ```
-Now let's add the content we want to display in the horizontal section.
+Now that we have the basic structure in place, let's add the content that we want to display in the horizontal section of the page.
     
 ```
 <!-- main start -->
@@ -126,7 +126,7 @@ Now let's add the content we want to display in the horizontal section.
 
 ```
 
-Now let's style the cards.
+Now that we have added the content, let's focus on styling the cards to make them look more attractive and professional. We can use CSS styles to control the layout, colors, fonts, and other aspects of the cards' appearance. 
 
 ```css
 .card {
@@ -139,11 +139,11 @@ Now let's style the cards.
 }
 
 ```
-Nice. Now open the index.html in your browser. You can see the result. The section is horizontal, and the contents are overflowing which are hidden.
+Great! Now, open the index.html file in your web browser to see the result. You'll notice that the section is horizontal and that the contents are overflowing and hidden.
 
 
 ### Adding scroll functionality
-But you can't scroll to view rest of them. This is where we need a little bit of javascript. Open index.js and add the following...
+But you can't scroll to view rest of them. This is where we need a little bit of javascript. Open the index.js file and add the following code
 
 ```javascript
 // get all classes .horizontal-section, assign it to const hSection
@@ -175,7 +175,7 @@ Save and test the index.html. It's **working**!
 
 
 ## Final Code
-Here is the full code.
+Here is the complete code for the index.html, index.css, and index.js files, which you can use to create a horizontal section with scrollable cards:
 
 ```
 <!-- index.html -->
@@ -297,3 +297,5 @@ hSections.forEach((hSection) => {
 });
 
 ```
+
+In conclusion, we have successfully created a horizontal section with scrollable cards using HTML, CSS, and JavaScript. By using a combination of flexbox layout and overflow-wrapping, we were able to create a responsive and user-friendly design that allows the user to easily scroll through the cards and view all of the content. This can be used to create engaging and interactive user interfaces.
