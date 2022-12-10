@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Uncategorized on Imran&#39;s Site</title>
+    <link>https://imranmollajoy.github.io/category/uncategorized/</link>
+    <description>Recent content in Uncategorized on Imran&#39;s Site</description>
+    <image>
+      <url>https://imranmollajoy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://imranmollajoy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Nov 2022 21:25:05 +0600</lastBuildDate><atom:link href="https://imranmollajoy.github.io/category/uncategorized/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pros of Using Open Source Softwares</title>
+      <link>https://imranmollajoy.github.io/post/pros-of-using-open-source-softwares/</link>
+      <pubDate>Sat, 19 Nov 2022 21:25:05 +0600</pubDate>
+      
+      <guid>https://imranmollajoy.github.io/post/pros-of-using-open-source-softwares/</guid>
+      <description>Open source software is software that is distributed with a license that allows users to freely use, modify, and distribute the software. Unlike proprietary software, which is owned and controlled by a single company or person, open source software is developed and maintained by a community of volunteers who are dedicated to improving the software and making it as useful and user-friendly as possible.
+The concept of open source software originated in the late 1980s, when a group of software developers began collaborating on a project to create a free, open source operating system called Linux.</description>
+    </item>
+    
+  </channel>
+</rss>
