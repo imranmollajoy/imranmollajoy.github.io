@@ -14,11 +14,11 @@
 			{{ $data := .Params.Tags}}
 			{{- if ne .Params.Type "portfolio"}}
 				{{ $data = .Params.Category }}
-			  		  <div class="badge uppercase">{{ $data }}</div>
+			  		  <div class="badge uppercase {{ $data | urlize }} no-border">{{ $data }}</div>
 				{{- else }}
 				{{ $data = .Params.Tags }}
 				{{ range $data }}
-	  		 		 <div class="badge uppercase">{{ . }}</div>
+	  		 		 <div class="badge uppercase ">{{ . }}</div>
 				{{ end }}
 			{{- end }}
 		<h5>{{ .Title }}</h5>

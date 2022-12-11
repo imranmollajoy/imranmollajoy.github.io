@@ -1,25 +1,29 @@
 {{- define "main" }}
-
+    {{- $tags := .Params.Taxonomies.tag | default "category" }}
+    {{- $cat := "android" }}
+{{- range ($.GetTerms $tags) }}
+  {{ $cat = .LinkTitle }}
+      {{- end }}
 {{ partial "breadcrumbs.html" . }}
-<section class="post-header responsive grid">
+<section class="post-header responsive grid {{ $cat | urlize }}-container">
   <h1 class="big-text">
 
     {{ .Title }}
   </h1>
-  <section class="header-image l6 m12 s12">
+  <div class="header-image l6 m12 s12">
   {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
   {{/*  {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}  */}}
   {{- if .Params.cover.image }}
   <img loading="lazy" src="{{ (path.Join .RelPermalink .Params.cover.image) | absURL }}"  alt="Thumbnail of {{ .Title }}"/>
-  {{- else }}
-  <img loading="lazy" src="{{ (path.Join "/featured.png") | absURL }}"  alt="Thumbnail of {{ .Title }}"/>
+  {{/*  {{- else }}
+  <img loading="lazy" src="{{ (path.Join "/featured.png") | absURL }}"  alt="Thumbnail of {{ .Title }}"/>  */}}
   {{- end}}
-  </section>
-    <section class="header-texts padding l5 m8 s12">
-    {{- $tags := .Params.Taxonomies.tag | default "category" }}
+  </div>
+    <div class="header-texts padding l5 m8 s12">
+      <div>
     <div>
       {{- range ($.GetTerms $tags) }}
-      <a href="{{ .Permalink }}" class="category badge uppercase">{{ .LinkTitle }}</a>
+      <a href="{{ .Permalink }}" class="category badge uppercase {{ .LinkTitle | urlize }} no-border">{{ .LinkTitle }}</a>
       {{- end }}
     </div>
     {{- if ne .Params.type "portfolio"}}
@@ -43,10 +47,11 @@
       </h5>
     </div>
     {{- end }}
-  </section>
+  </div>
+  </div>
 </section>
 
-<div class="grid" style="background-color: var(--white);">
+<div class="grid" style="background-color: var(--surface);">
   {{- if (.Param "ShowToc") }}
   <div class="s12 m4 l3">
     {{- partial "toc.html" . }}
