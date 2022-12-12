@@ -91,4 +91,16 @@ var final = `
 	${classes}
 `;
 
-console.log(final);
+function genClass(name) {
+	return `
+	.${name}{
+		color: var(--on-${name}) !important;
+		background-color: var(--${name}) !important
+	} 
+	.${name}-container{
+		color: var(--on-${name}-container) !important; 
+		background-color: var(--${name}-container) !important
+	}
+	`;
+}
+console.log(genClass('tertiary'));

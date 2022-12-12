@@ -5,7 +5,8 @@
   {{ $cat = .LinkTitle }}
       {{- end }}
 {{ partial "breadcrumbs.html" . }}
-<section class="post-header responsive grid {{ $cat | urlize }}-container">
+{{/*  {{ $cat | urlize }}  */}}
+<section class="post-header responsive grid primary-container">
   <h1 class="big-text">
 
     {{ .Title }}
@@ -23,7 +24,8 @@
       <div>
     <div>
       {{- range ($.GetTerms $tags) }}
-      <a href="{{ .Permalink }}" class="category badge uppercase {{ .LinkTitle | urlize }} no-border">{{ .LinkTitle }}</a>
+      {{/*  {{ .LinkTitle | urlize }}  */}}
+      <a href="{{ .Permalink }}" class="category badge uppercase primary no-border">{{ .LinkTitle }}</a>
       {{- end }}
     </div>
     {{- if ne .Params.type "portfolio"}}
@@ -51,7 +53,7 @@
   </div>
 </section>
 
-<div class="grid" style="background-color: var(--surface);">
+<div class="grid" >
   {{- if (.Param "ShowToc") }}
   <div class="s12 m4 l3">
     {{- partial "toc.html" . }}
@@ -95,6 +97,16 @@
 
 
 </div>
+
+  {{- if .Params.cover.image }}
+<script defer lang="text/javascript">
+    var img =   {{ (path.Join .RelPermalink .Params.cover.image) | absURL }};
+
+    window.onload = async function(){
+      let theme =  await ui("theme", img);
+    };
+  </script>
+  {{- end}}
 {{- end }}{{/* end main */}}
 
 

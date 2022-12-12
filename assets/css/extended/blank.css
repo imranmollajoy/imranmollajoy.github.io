@@ -599,7 +599,22 @@ body.dark {
 	--uncategorized-container: #005141;
 	--on-uncategorized-container: #7df8d5;
 }
-
+.primary {
+	color: var(--on-primary) !important;
+	background-color: var(--primary) !important;
+}
+.primary-container {
+	color: var(--on-primary-container) !important;
+	background-color: var(--primary-container) !important;
+}
+.tertiary {
+	color: var(--on-tertiary) !important;
+	background-color: var(--tertiary) !important;
+}
+.tertiary-container {
+	color: var(--on-tertiary-container) !important;
+	background-color: var(--tertiary-container) !important;
+}
 .android {
 	color: var(--on-android) !important;
 	background-color: var(--android) !important;
@@ -2610,8 +2625,9 @@ nav.bottom > .modal {
 	display: block;
 	clear: both;
 	padding-inline: 1rem;
-	padding-block-end: 2rem;
-	margin-top: 2rem;
+	padding-block: 2rem;
+	border-radius: 1rem;
+	margin-block: 2rem;
 	transition: all 0.2s ease-in;
 }
 .read h4,
