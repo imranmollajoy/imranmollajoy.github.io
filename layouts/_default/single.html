@@ -25,7 +25,7 @@
     <div>
       {{- range ($.GetTerms $tags) }}
       {{/*  {{ .LinkTitle | urlize }}  */}}
-      <a href="{{ .Permalink }}" class="category badge uppercase primary no-border">{{ .LinkTitle }}</a>
+      <a href="{{ .Permalink }}" class="category badge uppercase no-border {{ .LinkTitle | urlize }} ">{{ .LinkTitle }}</a>
       {{- end }}
     </div>
     {{- if ne .Params.type "portfolio"}}
@@ -99,14 +99,22 @@
 </div>
 
   {{- if .Params.cover.image }}
-<script defer lang="text/javascript">
+<script lang="text/javascript">
     var img =   {{ (path.Join .RelPermalink .Params.cover.image) | absURL }};
 
     window.onload = async function(){
       let theme =  await ui("theme", img);
+      if (localStorage.getItem("pref-theme") === "dark") {
+        await ui("mode","dark");
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       await ui("mode","light");
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+       await ui("mode","dark");
+    }
     };
   </script>
   {{- end}}
+
 {{- end }}{{/* end main */}}
 
 
