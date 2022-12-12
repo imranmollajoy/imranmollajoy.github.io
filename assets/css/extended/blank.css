@@ -493,6 +493,13 @@ body {
 	--surface-tint: #006a6a;
 	--outline-variant: #bec9c8;
 	--scrim: #000000;
+
+	--elevate1: 0 0.2rem 0.2rem 0 rgb(0 0 0 / 0.14), 0 0.1rem 0.5rem 0 rgb(0 0 0 / 0.12),
+		0 0.3rem 0.1rem -0.2rem rgb(0 0 0 / 0.2);
+	--elevate2: 0 0.6rem 1rem 0 rgb(0 0 0 / 0.14), 0 0.1rem 1.8rem 0 rgb(0 0 0 / 0.12),
+		0 0.3rem 0.5rem -0.1rem rgb(0 0 0 / 0.3);
+	--elevate3: 0 1rem 1.6rem 0 rgb(0 0 0 / 0.14), 0 0.1rem 3.1rem 0 rgb(0 0 0 / 0.12),
+		0 0.3rem 0.9rem 0 rgb(0 0 0 / 0.4);
 }
 body.dark {
 	/* dark */
@@ -1575,6 +1582,22 @@ footer.fixed::before {
 .small-divider {
 	margin: 0.8rem 0 !important;
 }
+.no-elevate {
+	box-shadow: none !important;
+}
+
+.small-elevate,
+.elevate {
+	box-shadow: var(--elevate1) !important;
+}
+
+.medium-elevate {
+	box-shadow: var(--elevate2) !important;
+}
+
+.large-elevate {
+	box-shadow: var(--elevate3) !important;
+}
 .modal > header,
 .modal > footer {
 	padding: 0;
@@ -2202,6 +2225,9 @@ main.about img {
 .related_post_card .content h5 {
 	margin: 0;
 }
+.related_post_card img {
+	border-radius: 1rem;
+}
 .featured {
 	border-bottom: 4px solid var(--primary);
 }
@@ -2619,7 +2645,7 @@ nav.bottom > .modal {
 	margin-top: 1rem;
 }
 .top-nav {
-	border-bottom: 1px solid var(--primary);
+	/* border-bottom: 1px solid var(--primary); */
 }
 .read {
 	display: block;
