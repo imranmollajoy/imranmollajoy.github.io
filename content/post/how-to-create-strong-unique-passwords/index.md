@@ -47,6 +47,8 @@ A password manager is a tool that helps you create and store strong, unique pass
 
 The role of password managers is to help users create and store strong, unique passwords for all of their online accounts. Instead of using the same simple, easily guessable password for multiple accounts, a password manager generates random, secure passwords and stores them securely, so users don't have to remember them all. This can save time and help ensure that users are using strong, unique passwords for all of their accounts.
 
+{{< read "/post/passkeys-now-available-in-chrome" "You won't need any passwords in Chrome" >}}
+
 There are many password managers available, both commercial and open source. Open source password managers are a good option for those who want a secure, reliable password manager without the cost of a commercial product. I recommend using [Bitwarden](https://bitwarden.com/) , fully open source, always free for personal use without any limitation. 
 
 ## Conclusion
