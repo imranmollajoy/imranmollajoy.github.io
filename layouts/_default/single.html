@@ -94,11 +94,9 @@
 
 
 </div>
-<section class=" max">
     {{- if (.Param "ShowPostNavLinks") }}
     {{- partial "post_nav_links.html" . }}
     {{- end }}
-</section>
 
   {{- if .Params.cover.image }}
 <script lang="text/javascript">
@@ -116,6 +114,30 @@
     };
   </script>
   {{- end}}
+
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		pagenav = document.querySelector('.pagenav');
+
+		if (pagenav) {
+			var last_scroll_top = 0;
+			window.addEventListener('scroll', function () {
+				let scroll_top = window.scrollY;
+				if (scroll_top < last_scroll_top) {
+           pagenav.classList.add('translate-origin');
+  				pagenav.classList.remove('translate-posi');
+				} else {
+         pagenav.classList.add('translate-posi');
+				pagenav.classList.remove('translate-origin');
+				}
+				last_scroll_top = scroll_top;
+			});
+			// window.addEventListener
+		}
+		// if
+	});
+</script>
+
 
 {{- end }}{{/* end main */}}
 
