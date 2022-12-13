@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Dec 2022 23:04:28 +0600</lastBuildDate><atom:link href="https://imranmollajoy.github.io/category/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Dec 2022 12:20:51 +0600</lastBuildDate><atom:link href="https://imranmollajoy.github.io/category/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web development</title>
+      <link>https://imranmollajoy.github.io/category/web-development/</link>
+      <pubDate>Tue, 13 Dec 2022 12:20:51 +0600</pubDate>
+      
+      <guid>https://imranmollajoy.github.io/category/web-development/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Technology</title>
       <link>https://imranmollajoy.github.io/category/technology/</link>
@@ -35,15 +44,6 @@
       <pubDate>Sat, 10 Dec 2022 15:11:05 +0600</pubDate>
       
       <guid>https://imranmollajoy.github.io/category/science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Web development</title>
-      <link>https://imranmollajoy.github.io/category/web-development/</link>
-      <pubDate>Fri, 09 Dec 2022 16:15:22 +0600</pubDate>
-      
-      <guid>https://imranmollajoy.github.io/category/web-development/</guid>
       <description></description>
     </item>
     
