@@ -1,21 +1,21 @@
-# name: Ping Google about updated sitemap
+name: Ping Google about updated sitemap
 
-# on:
-#   push:
-#     branches: [ source ]
+on:
+  push:
+    branches: [ source ]
 
-# jobs:
-#   ping:
-#     name: Ping Google
-#     if: "contains(github.event.head_commit.message, 'deploy')"
-#     runs-on: ubuntu-latest
+jobs:
+  ping:
+    name: Ping Google
+    if: "contains(github.event.head_commit.message, 'deploy+ping google')"
+    runs-on: ubuntu-latest
 
-#     steps:
-#       - name: Waitt for deploy process
-#         # Deplot usuallu takes 43sec 
-#         run: sleep 50s
-#         shell: bash
+    steps:
+      - name: Waitt for deploy process
+        # Deplot usuallu takes 43sec 
+        run: sleep 50s
+        shell: bash
 
-#       - name: Send HTTP GET request
-#         # Example: `curl http://www.google.com/ping?sitemap=https://www.example.com/sitemap.xml`
-#         run: curl http://www.google.com/ping?sitemap=https://imranmollajoy.github.io/sitemap.xml
+      - name: Send HTTP GET request
+        # Example: `curl http://www.google.com/ping?sitemap=https://www.example.com/sitemap.xml`
+        run: curl http://www.google.com/ping?sitemap=https://imranmollajoy.github.io/sitemap.xml
