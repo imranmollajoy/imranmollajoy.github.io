@@ -1,18 +1,20 @@
 {{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 {{- if and (gt (len $pages) 1) (in $pages . ) }}
-<nav class="pagenav grid padding">
+{{- $classes := " s12 m6 l6 secondary-container padding rounded elevate " }}
+<nav class="pagenav grid">
   {{- with $pages.Next . }}
-  <a class="prev s12 m6 l6" href="{{ .Permalink }}">
-    <span class="title">« {{ i18n "prev_page" }}</span>
-    <br>
+  <a class="prev {{ $classes }}" href="{{ .Permalink }}">
+    <span class="title">     
+       {{ partial "icon.html" (dict "ctx" "navigate_before") }}
     <span>{{- .Name -}}</span>
   </a>
   {{- end }}
   {{- with $pages.Prev . }}
-  <a class="next s12 m6 l6" href="{{ .Permalink }}">
-    <span class="title">{{ i18n "next_page" }} »</span>
-    <br>
+  <a class="next {{ $classes }}" href="{{ .Permalink }}">
     <span>{{- .Name -}}</span>
+    <span class="title">
+      {{ partial "icon.html" (dict "ctx" "navigate_next") }}
+    </span>
   </a>
   {{- end }}
 </nav>
