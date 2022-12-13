@@ -1557,8 +1557,8 @@ footer.fixed {
 .padding {
 	padding: 2rem;
 }
-.rounded {
-	border-radius: 1rem;
+.round {
+	border-radius: 1rem !important;
 }
 /* header.fixed::before,
 footer.fixed::before {

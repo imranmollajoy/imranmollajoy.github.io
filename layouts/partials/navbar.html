@@ -1,3 +1,5 @@
+{{- $currentPage := . }}
+{{- $page_url:= $currentPage.Permalink | absLangURL }}
 <header class="autohide top-nav fixed primary-container medium-elevate">
   <nav>
     <button class="circle transparent material-symbols-outlined" data-ui="#left-menu">
@@ -27,26 +29,24 @@
       </button>
     </nav>
   </header>
-  <a class="row round" data-ui="#left-menu" href="/">
+  <a  data-ui="#left-menu" href="/" {{- if eq ("/" | absLangURL) $page_url }} class="active row round" {{- else }} class="row round" {{- end }}>
     {{ partial "icon.html" (dict "ctx" "home") }}
     <span>Home</span>
   </a>
-  <a class="row round" data-ui="#left-menu" href="/portfolio">
+  <a class="row round" data-ui="#left-menu" href="/portfolio" {{- if eq $page_url ("portfolio/" | absLangURL)  }} class="active row round" {{- else }} class="row round" {{- end }}>
     {{ partial "icon.html" (dict "ctx" "receipt_long") }}
     <span>Portfolio</span>
   </a>
-  <a class="row round" data-ui="#left-menu" href="/post">
+  <a class="row round" data-ui="#left-menu" href="/post" {{- if eq ("post" | absLangURL) $page_url }} class="active row round" {{- else }} class="row round" {{- end }}>
     {{ partial "icon.html" (dict "ctx" "article") }}
     <span>Blog</span>
   </a>
   <div class="small-divider"></div>
-        {{- $currentPage := . }}
             {{- range site.Menus.main }}
             {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
-            {{- $page_url:= $currentPage.Permalink | absLangURL }}
             {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
                 <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
-                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }} class="row round" data-ui="#left-menu"  {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
+                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}  data-ui="#left-menu"  {{- if eq $menu_item_url $page_url }} class="active row round" {{- else }} class="row round" {{- end }}>
                     <span class="capitalize">
                         {{- .Pre }}
                         {{- .Name -}}
