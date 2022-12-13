@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Dec 2022 16:15:22 +0600</lastBuildDate><atom:link href="https://imranmollajoy.github.io/category/web-development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Dec 2022 12:20:51 +0600</lastBuildDate><atom:link href="https://imranmollajoy.github.io/category/web-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create A Reusable Button Component for Svelte</title>
+      <link>https://imranmollajoy.github.io/post/create-button-component-for-svelte/</link>
+      <pubDate>Tue, 13 Dec 2022 12:20:51 +0600</pubDate>
+      
+      <guid>https://imranmollajoy.github.io/post/create-button-component-for-svelte/</guid>
+      <description>Robust and flexible button component for your Svelte/SvelteKit project</description>
+    </item>
+    
     <item>
       <title>Create a horizontal scroll section with HTML,CSS and JS</title>
       <link>https://imranmollajoy.github.io/post/create-horizontal-scroll-section-html-css-js/</link>
