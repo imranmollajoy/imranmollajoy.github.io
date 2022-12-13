@@ -201,10 +201,10 @@ button {
 ```
 <script>
     //  'small' , 'normal' , 'large'
-	export let size 'normal';
+	export let size = 'normal';
 
     //   'primary', 'secondary', 'neutral' 
-	export let variant'primary';
+	export let variant = 'primary';
 	export let invert = false;
 	export let outline = false;
 	export let flat = false;
