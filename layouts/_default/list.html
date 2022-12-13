@@ -88,19 +88,23 @@
 <footer class="page-footer">
   <nav class="pagination">
     {{- if $paginator.HasPrev }}
-    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
-      «&nbsp;{{ i18n "prev_page" }}&nbsp;
+    <a class="prev button" href="{{ $paginator.Prev.URL | absURL }}">
+      {{ partial "icon.html" (dict "ctx" "navigate_before") }}
+      {{ i18n "prev_page" }}&nbsp;
       {{- if (.Param "ShowPageNums") }}
       {{- sub $paginator.PageNumber 1 }}/{{ $paginator.TotalPages }}
       {{- end }}
     </a>
     {{- end }}
     {{- if $paginator.HasNext }}
-    <a class="next" href="{{ $paginator.Next.URL | absURL }}">
+    <a class="next button" href="{{ $paginator.Next.URL | absURL }}">
+      <span>
       {{- i18n "next_page" }}&nbsp;
       {{- if (.Param "ShowPageNums") }}
       {{- add 1 $paginator.PageNumber }}/{{ $paginator.TotalPages }}
-      {{- end }}&nbsp;»
+      {{- end }}
+      </span>
+      {{ partial "icon.html" (dict "ctx" "navigate_next") }}
     </a>
     {{- end }}
   </nav>

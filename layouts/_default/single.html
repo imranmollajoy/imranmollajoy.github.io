@@ -77,9 +77,6 @@
       <a href="{{ .Permalink }}" class="badge uppercase">{{ .LinkTitle }}</a>
       {{- end }}
     </ul>
-    {{- if (.Param "ShowPostNavLinks") }}
-    {{- partial "post_nav_links.html" . }}
-    {{- end }}
     {{/*  {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
     {{- partial "share_icons.html" . -}}
     {{- end }}  */}}
@@ -97,6 +94,11 @@
 
 
 </div>
+<section class=" max">
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . }}
+    {{- end }}
+</section>
 
   {{- if .Params.cover.image }}
 <script lang="text/javascript">
