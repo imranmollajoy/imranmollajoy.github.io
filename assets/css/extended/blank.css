@@ -2716,11 +2716,14 @@ nav.bottom > .modal {
 	opacity: 0.1;
 	max-height: 100%;
 }
+footer.footer {
+	padding-top: 8rem;
+}
 .pagenav {
 	position: fixed;
 	bottom: 0;
-	transform: translateY(100%);
 	width: 100%;
+	z-index: 12;
 }
 .pagenav a {
 }

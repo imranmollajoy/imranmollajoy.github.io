@@ -66,7 +66,6 @@
 <script>
 	document.addEventListener('DOMContentLoaded', function () {
 		el_autohide = document.querySelector('.autohide');
-		pagenav = document.querySelector('.pagenav');
 
 		// add padding-top to bady (if necessary)
 		navbar_height = document.querySelector('.top-nav').offsetHeight;
@@ -80,14 +79,10 @@
 					el_autohide.classList.remove('translate-nega');
 					el_autohide.classList.add('translate-origin');
 
-           pagenav.classList.add('translate-origin');
-  				pagenav.classList.remove('translate-posi');
 				} else {
 					el_autohide.classList.remove('translate-origin');
 					el_autohide.classList.add('translate-nega');
 
-         pagenav.classList.add('translate-posi');
-				pagenav.classList.remove('translate-origin');
 				}
 				last_scroll_top = scroll_top;
 			});
