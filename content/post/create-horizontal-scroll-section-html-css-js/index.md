@@ -5,6 +5,7 @@ draft: false
 tags:
   - tutorial
   - how-to
+  - web-dev
 category: Web development
 type: post
 cover:

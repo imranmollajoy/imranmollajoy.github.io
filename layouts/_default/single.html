@@ -38,7 +38,7 @@
     </div>
     {{- end }}
     {{- end }}
-    <h1 class="post-title">
+    <h1 class="post-title" id="post-title">
       {{ .Title }}
       {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
     </h1>
@@ -136,6 +136,12 @@
 		}
 		// if
 	});
+
+  var wordsContainer = document.getElementById("post-title")
+  var words = wordsContainer.innerText;
+  var firstWord = words.replace(/ .*/,'');
+  var final = words.replace(firstWord,`<span class="primary">${firstWord}</span>`);
+  wordsContainer.innerHTML = final;
 </script>
 
 

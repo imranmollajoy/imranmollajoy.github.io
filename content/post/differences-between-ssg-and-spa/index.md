@@ -5,6 +5,7 @@ draft: false
 tags: 
     -   server-side rendering
     -   static site seneration
+    -   web-dev
 category: "Comparison"
 type: post
 cover:
