@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>how-to on Imran&#39;s Site</title>
+    <link>https://imranmollajoy.github.io/tags/how-to/</link>
+    <description>Recent content in how-to on Imran&#39;s Site</description>
+    <image>
+      <url>https://imranmollajoy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://imranmollajoy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Dec 2022 12:20:51 +0600</lastBuildDate><atom:link href="https://imranmollajoy.github.io/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create A Reusable Button Component for Svelte</title>
+      <link>https://imranmollajoy.github.io/post/create-button-component-for-svelte/</link>
+      <pubDate>Tue, 13 Dec 2022 12:20:51 +0600</pubDate>
+      
+      <guid>https://imranmollajoy.github.io/post/create-button-component-for-svelte/</guid>
+      <description>Robust and flexible button component for your Svelte/SvelteKit project</description>
+    </item>
+    
+    <item>
+      <title>Create a horizontal scroll section with HTML,CSS and JS</title>
+      <link>https://imranmollajoy.github.io/post/create-horizontal-scroll-section-html-css-js/</link>
+      <pubDate>Fri, 09 Dec 2022 16:15:22 +0600</pubDate>
+      
+      <guid>https://imranmollajoy.github.io/post/create-horizontal-scroll-section-html-css-js/</guid>
+      <description>Learn how to use HTML, CSS, and JavaScript to create a horizontal scrolling section on your website.</description>
+    </item>
+    
+  </channel>
+</rss>
