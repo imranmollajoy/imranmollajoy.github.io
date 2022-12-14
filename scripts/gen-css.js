@@ -103,4 +103,4 @@ function genClass(name) {
 	}
 	`;
 }
-console.log(genClass('secondary'));
+console.log(genClass('error'));
