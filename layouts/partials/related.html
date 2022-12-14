@@ -1,6 +1,6 @@
  {{ $related := .Site.RegularPages.Related . }}
     {{- if $related }}
-    <div class="toc">
+    <div >
     <h4>Related</h4>
         <div class="grid">
     {{ range $related | first 5 }}

@@ -1,6 +1,6 @@
 <a href="{{ .RelPermalink }}" class="related_post_card l12 m6 s12">
-  {{- if .Params.cover.image }}
   <div class=" l m">
+    {{- if .Params.cover.image }}
   <img loading="lazy" src="{{ (path.Join .RelPermalink .Params.cover.image) | absURL }}" alt="Thumbnail of {{ .Title }}"/>
   {{- else }}
   <img loading="lazy" src="{{ (path.Join "/featured.png") | absURL }}"  alt="Thumbnail of {{ .Title }}"/>

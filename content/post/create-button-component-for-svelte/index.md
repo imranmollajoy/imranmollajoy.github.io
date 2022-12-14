@@ -6,6 +6,7 @@ tags:
     - tutorial
     - how-to
     - svelte
+    - web-dev
 category: Web development
 type: post
 cover:
