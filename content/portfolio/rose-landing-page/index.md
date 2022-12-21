@@ -10,6 +10,7 @@ cover:
     image: "./images/featured.png"
     alt: Thumbnail of Rose Landing Page
 type: portfolio
+weight: 1
 ---
 
 [View on Dribbble](https://dribbble.com/shots/20190114-Landing-Page-for-Rose)

@@ -8,6 +8,7 @@ cover:
     image: "./images/featured.png"
     alt: Thumbnail of Dummy Text Generator
 type: portfolio
+weight: 2
 ---
 
 An app to generate dummy text. Useful for testing purposes. It uses a free remote API to generate text.

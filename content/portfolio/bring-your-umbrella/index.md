@@ -8,6 +8,7 @@ cover:
     image: "./images/featured.png"
     alt: Thumbnail of Bring Your Umbrella
 type: portfolio
+weight: 2
 ---
 
 An app made mainly for getting the days with high chances of rainfall. It also gives the weather forecast of next 5 days.

@@ -8,6 +8,7 @@ cover:
     image: "./images/featured.png"
     alt: Thumbnail of Blog With Svelte
 type: portfolio
+weight: 2
 ---
 
 This blog was made using SvelteKit and Contentful.

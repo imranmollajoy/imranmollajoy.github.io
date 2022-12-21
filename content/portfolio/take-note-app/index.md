@@ -8,6 +8,7 @@ cover:
     image: "./images/featured.png"
     alt: Thumbnail of Take Note App
 type: portfolio
+weight: 2
 ---
 
 
