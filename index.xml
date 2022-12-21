@@ -12,6 +12,15 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 24 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://imranmollajoy.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Rose Landing Page</title>
+      <link>https://imranmollajoy.github.io/portfolio/rose-landing-page/</link>
+      <pubDate>Wed, 21 Dec 2022 23:56:03 +0600</pubDate>
+      
+      <guid>https://imranmollajoy.github.io/portfolio/rose-landing-page/</guid>
+      <description>View on Dribbble </description>
+    </item>
+    
+    <item>
       <title>Create A Reusable Button Component for Svelte</title>
       <link>https://imranmollajoy.github.io/post/create-button-component-for-svelte/</link>
       <pubDate>Tue, 13 Dec 2022 12:20:51 +0600</pubDate>
@@ -45,6 +54,49 @@
       
       <guid>https://imranmollajoy.github.io/post/how-to-create-strong-unique-passwords/</guid>
       <description>Weak and guessable passwords can lead you to unmeasurable destruction. Let&amp;#39;s make your passwords stronger!</description>
+    </item>
+    
+    <item>
+      <title>Bring Your Umbrella</title>
+      <link>https://imranmollajoy.github.io/portfolio/bring-your-umbrella/</link>
+      <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://imranmollajoy.github.io/portfolio/bring-your-umbrella/</guid>
+      <description>An app made mainly for getting the days with high chances of rainfall. It also gives the weather forecast of next 5 days.
+Features # Days with highest rainfall, highest and lowest temperature. Chances of rainfall Amount of rainfall Chart of rainfall chances Chart of highest and lowest temperature This app was made using ReactJS and CSS. For generating charts, Recharts was used.
+You can find the app by clicking here </description>
+    </item>
+    
+    <item>
+      <title>Take Note App</title>
+      <link>https://imranmollajoy.github.io/portfolio/take-note-app/</link>
+      <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://imranmollajoy.github.io/portfolio/take-note-app/</guid>
+      <description>A simple app to take and save your note. It uses browsers&amp;rsquo; local storage to save your data.
+This app was made using ReactJS and Material UI.
+You can find the app by clicking here </description>
+    </item>
+    
+    <item>
+      <title>Blog With Svelte</title>
+      <link>https://imranmollajoy.github.io/portfolio/blog-with-svelte/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://imranmollajoy.github.io/portfolio/blog-with-svelte/</guid>
+      <description>This blog was made using SvelteKit and Contentful.
+You can find the blog by clicking here </description>
+    </item>
+    
+    <item>
+      <title>Dummy Text Generator</title>
+      <link>https://imranmollajoy.github.io/portfolio/dummy-text-generator/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://imranmollajoy.github.io/portfolio/dummy-text-generator/</guid>
+      <description>An app to generate dummy text. Useful for testing purposes. It uses a free remote API to generate text.
+The app was made using ReactJS and Material UI.
+You can find the app by clicking here </description>
     </item>
     
     <item>
@@ -102,28 +154,6 @@
     </item>
     
     <item>
-      <title>Bring Your Umbrella</title>
-      <link>https://imranmollajoy.github.io/portfolio/bring-your-umbrella/</link>
-      <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://imranmollajoy.github.io/portfolio/bring-your-umbrella/</guid>
-      <description>An app made mainly for getting the days with high chances of rainfall. It also gives the weather forecast of next 5 days.
-Features # Days with highest rainfall, highest and lowest temperature. Chances of rainfall Amount of rainfall Chart of rainfall chances Chart of highest and lowest temperature This app was made using ReactJS and CSS. For generating charts, Recharts was used.
-You can find the app by clicking here </description>
-    </item>
-    
-    <item>
-      <title>Take Note App</title>
-      <link>https://imranmollajoy.github.io/portfolio/take-note-app/</link>
-      <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://imranmollajoy.github.io/portfolio/take-note-app/</guid>
-      <description>A simple app to take and save your note. It uses browsers&amp;rsquo; local storage to save your data.
-This app was made using ReactJS and Material UI.
-You can find the app by clicking here </description>
-    </item>
-    
-    <item>
       <title>Watchnext</title>
       <link>https://imranmollajoy.github.io/portfolio/watchnext/</link>
       <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
@@ -131,36 +161,6 @@ You can find the app by clicking here </description>
       <guid>https://imranmollajoy.github.io/portfolio/watchnext/</guid>
       <description>An app which fetch data from TMDB API and display the movies and shows which are trending and popular in the world.
 Features # Movies and shows which are trending and popular in the world. Search for movies and shows. add to watchlist of movies and shows. Add to favorite list of movies and shows. This app was made using SvelteKit and CSS.
-You can find the app by clicking here </description>
-    </item>
-    
-    <item>
-      <title>Rose Landing Page</title>
-      <link>https://imranmollajoy.github.io/portfolio/rose-landing-page/</link>
-      <pubDate>Wed, 21 Dec 2022 23:56:03 +0600</pubDate>
-      
-      <guid>https://imranmollajoy.github.io/portfolio/rose-landing-page/</guid>
-      <description>View on Dribbble </description>
-    </item>
-    
-    <item>
-      <title>Blog With Svelte</title>
-      <link>https://imranmollajoy.github.io/portfolio/blog-with-svelte/</link>
-      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://imranmollajoy.github.io/portfolio/blog-with-svelte/</guid>
-      <description>This blog was made using SvelteKit and Contentful.
-You can find the blog by clicking here </description>
-    </item>
-    
-    <item>
-      <title>Dummy Text Generator</title>
-      <link>https://imranmollajoy.github.io/portfolio/dummy-text-generator/</link>
-      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://imranmollajoy.github.io/portfolio/dummy-text-generator/</guid>
-      <description>An app to generate dummy text. Useful for testing purposes. It uses a free remote API to generate text.
-The app was made using ReactJS and Material UI.
 You can find the app by clicking here </description>
     </item>
     
