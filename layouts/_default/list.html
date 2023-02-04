@@ -61,6 +61,10 @@
 
 {{- $posts := (where .Site.RegularPages "Type" "post" ) }}
 {{- partial "home/blog.html" (dict "ctx" $posts )  }}
+
+
+{{- $games := .Site.Data.games  }}
+{{- partial "home/games.html" (dict "ctx" $games) }}
 {{/*  {{- partial "home_info.html" . }}  */}}
 {{- end }}
 
