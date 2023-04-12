@@ -1,0 +1,41 @@
+{
+	"name": "imranmollajoy.github.io",
+	"version": "1.0.1",
+	"scripts": {
+		"dev": "vite dev",
+		"dev:host": "vite dev --host",
+		"build": "vite build",
+		"package": "svelte-kit package",
+		"preview": "vite preview",
+		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
+		"format": "prettier --write --plugin-search-dir=. .",
+		"deploy": "node ./gh-pages.js",
+		"generate:manifest": "node ./generate-manifest.js"
+	},
+	"devDependencies": {
+		"@skeletonlabs/skeleton": "^1.1.0",
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-static": "next",
+		"@sveltejs/adapter-vercel": "next",
+		"@sveltejs/kit": "next",
+		"@tailwindcss/typography": "^0.5.9",
+		"autoprefixer": "^10.4.7",
+		"eslint": "^8.21.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"gh-pages": "^4.0.0",
+		"marked": "^4.0.18",
+		"mdsvex": "^0.10.6",
+		"nprogress": "^0.2.0",
+		"postcss": "^8.4.14",
+		"postcss-load-config": "^4.0.1",
+		"prettier": "^2.7.1",
+		"prettier-plugin-svelte": "^2.7.0",
+		"svelte": "latest",
+		"svelte-preprocess": "^4.10.7",
+		"tailwindcss": "^3.1.5",
+		"typescript": "^4.0.0",
+		"vite": "latest"
+	},
+	"type": "module"
+}

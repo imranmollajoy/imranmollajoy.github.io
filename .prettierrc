@@ -2,15 +2,5 @@
 	"useTabs": true,
 	"singleQuote": true,
 	"trailingComma": "none",
-	"printWidth": 100,
-	"overrides": [
-		{
-			"files": [
-				"*.html"
-			],
-			"options": {
-				"parser": "go-template"
-			}
-		}
-	]
+	"printWidth": 100
 }
