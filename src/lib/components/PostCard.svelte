@@ -1,5 +1,5 @@
 <script>
-	import { slide } from 'svelte/transition';
+	import { scale, slide } from 'svelte/transition';
 
 	export let href;
 	export let img;
@@ -8,7 +8,7 @@
 	export let category;
 </script>
 
-<a class="block card card-hover variant-filled-primary" {href} transition:slide|local>
+<a class="block card card-hover variant-filled-primary" {href}>
 	{#if img}
 		<header>
 			<img

@@ -104,3 +104,27 @@ function genClass(name) {
 	}
 	`;
 }
+
+const posts = [
+	{
+		cat: 'OK'
+	},
+	{
+		cat: 'OK'
+	},
+	{
+		cat: 'OK'
+	},
+	{
+		cat: 'hmmm'
+	},
+	{
+		cat: 'oh'
+	}
+];
+
+function getUniqueCats() {
+	return [...new Set(posts.map((post) => post.cat))];
+}
+
+console.log(getUniqueCats());

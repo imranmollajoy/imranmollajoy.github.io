@@ -16,6 +16,9 @@
 	import type { PopupSettings } from '@skeletonlabs/skeleton';
 	import Navigation from '$lib/components/Navigation.svelte';
 
+	export let data;
+	const categories = data.categories;
+
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
 	let popupSettings: PopupSettings = {
@@ -50,6 +53,10 @@
 								<a href="/"> <span>Homepage</span></a>
 								<a href="/posts"> <span>Blog</span></a>
 								<hr class="my-4" />
+								<h4>Blog</h4>
+								{#each categories as cat}
+									<a href="/posts/category/{cat}"> <span>{cat}</span></a>
+								{/each}
 							</li>
 						</ul>
 					</nav>
