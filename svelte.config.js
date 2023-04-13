@@ -5,7 +5,12 @@ import relativeImages from 'mdsvex-relative-images';
 const config = {
 	extensions: ['.svelte', '.md', '.svx'],
 	kit: {
-		adapter: adapter({ strict: false })
+		adapter: adapter({
+			pages: 'build',
+			assets: 'build',
+			fallback: 'index.html',
+			precompress: false
+		})
 	},
 	preprocess: [
 		mdsvex({
