@@ -16,7 +16,6 @@
 	import type { PopupSettings } from '@skeletonlabs/skeleton';
 	import Navigation from '$lib/components/Navigation.svelte';
 	export let data;
-	export const prerender = true;
 
 	const categories = data.categories;
 
