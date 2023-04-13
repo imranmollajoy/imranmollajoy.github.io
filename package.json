@@ -13,6 +13,7 @@
 		"generate:manifest": "node ./generate-manifest.js"
 	},
 	"devDependencies": {
+		"@floating-ui/dom": "^1.2.6",
 		"@skeletonlabs/skeleton": "^1.1.0",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/adapter-static": "next",
@@ -26,6 +27,7 @@
 		"gh-pages": "^4.0.0",
 		"marked": "^4.0.18",
 		"mdsvex": "^0.10.6",
+		"mdsvex-relative-images": "^1.0.3",
 		"nprogress": "^0.2.0",
 		"postcss": "^8.4.14",
 		"postcss-load-config": "^4.0.1",

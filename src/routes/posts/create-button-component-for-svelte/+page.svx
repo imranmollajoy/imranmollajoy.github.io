@@ -17,15 +17,26 @@ weight: 1
 description: 'Robust and flexible button component for your Svelte/SvelteKit project'
 ---
 
+<script>
+  import Button from "./Button.svelte"
+  import InteractiveButtonContainer from "./InteractiveButtonContainer.svelte"
+</script>
+
+![](./images/featured.png)
 Creating a button component for Svelte can be a quick and easy way to add custom, reusable buttons to your Svelte application. In this article, we'll go through the steps to create a simple button component that you can use in your own Svelte projects.
 
 We will use TypeScript and SASS to create the button component (Recommended, you will get autocompletion). However, if you prefer to use JavaScript and CSS, code for that will also be included in the article. You can copy the code which works best for you and your project.
+
+
+## Final result
+
+<InteractiveButtonContainer />
 
 ## Usages
 
 Save the copied code to in your components folder, preferably in src/lib/components, as Button.svelte
 
-```
+```svelte
 <script>
     import Button from "path/to/Button.svelte"
 </script>
@@ -48,7 +59,7 @@ Extending the button component is also easy. For example, if you want to add a n
 
 ### TS and SASS Version
 
-```
+```svelte
 <script lang="ts">
     export let size: String | 'small' | 'normal' | 'large' = 'normal';
     export let variant: String | 'primary' | 'secondary' | 'neutral' = 'primary';
@@ -199,7 +210,7 @@ button {
 
 ### JS and CSS Version
 
-```
+```svelte
 <script>
     //  'small' , 'normal' , 'large'
 	export let size = 'normal';

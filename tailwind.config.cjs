@@ -6,9 +6,7 @@ const config = {
 		// 2. Append the path for the Skeleton NPM package and files:
 		require('path').join(require.resolve('@skeletonlabs/skeleton'), '../**/*.{html,js,svelte,ts}')
 	],
-	theme: {
-		extend: {}
-	},
+	theme: {},
 	plugins: [
 		// 3. Append the Skeleton plugin to the end of this list
 		require('@tailwindcss/typography'),
