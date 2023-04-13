@@ -1,3 +1,3 @@
-<div class="container p-10 space-y-4">
+<div class="container">
 	<slot />
 </div>

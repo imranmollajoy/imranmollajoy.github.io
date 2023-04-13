@@ -1,20 +1,57 @@
 <script>
+	import PostCard from '../lib/components/PostCard.svelte';
+
 	import Button from '$lib/components/Button.svelte';
 	import Container from '$lib/components/Container.svelte';
 	import { Avatar } from '@skeletonlabs/skeleton';
 	export let data;
 
-	const { latestPost } = data.posts;
+	const { latestPost, popular, latest, picks } = data.posts;
 </script>
 
-<Container>
-	<article class="card variant-filled-surface p-4">
-		<h3 class="mb-2">Card title</h3>
-		<p class="mb-4">
-			Some quick example text to build on the card title and make up the bulk of the card's content.
-		</p>
-		<button type="button" class="btn variant-ghost-primary"> Button </button>
-	</article>
+<div class="homepage container mt-8 backgroundg-surface">
+	<section class="latest-single space-y-4 my-168">
+		<h2>Latest Post</h2>
+		<PostCard
+			title={latestPost.title}
+			category={latestPost.category}
+			href={latestPost.path}
+			description={latestPost.description}
+		/>
+	</section>
+	<section class="latest space-y-4 my-16">
+		<h2 class="mb-4">Latest</h2>
+		<div class="grid mt-2">
+			{#each latest as { title, description, path, category } (path)}
+				<PostCard {title} {category} href={path} {description} />
+			{/each}
+		</div>
+	</section>
+	<section class="popular space-y-4 my-16">
+		<h2 class="mb-4">Popular</h2>
+		<div class="grid mt-2">
+			{#each popular as { title, description, path, category } (path)}
+				<PostCard {title} {category} href={path} {description} />
+			{/each}
+		</div>
+	</section>
+	<section class="random space-y-4 my-16">
+		<h2 class="mb-4">Random</h2>
+		<div class="grid mt-2">
+			{#each picks as { title, description, path, category } (path)}
+				<PostCard {title} {category} href={path} {description} />
+			{/each}
+		</div>
+	</section>
+</div>
 
-	<a href={latestPost.path} class="card">{latestPost.title}</a>
-</Container>
+<style>
+	.homepage {
+		max-width: 1280px;
+	}
+	.grid {
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
+	}
+</style>

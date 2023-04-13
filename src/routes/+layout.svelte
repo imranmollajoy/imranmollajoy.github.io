@@ -2,47 +2,62 @@
 	import '../theme.postcss';
 	import '@skeletonlabs/skeleton/styles/all.css';
 	import '../app.postcss';
-
+	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { page } from '$app/stores';
-	import { AppBar, AppShell, Drawer, drawerStore } from '@skeletonlabs/skeleton';
+	import {
+		AppBar,
+		AppShell,
+		Drawer,
+		drawerStore,
+		LightSwitch,
+		storePopup,
+		popup
+	} from '@skeletonlabs/skeleton';
+	import type { PopupSettings } from '@skeletonlabs/skeleton';
 	import Navigation from '$lib/components/Navigation.svelte';
 
-	$: classesSidebar = $page.url.pathname === '/' ? 'w-0' : 'w-0 lg:w-64';
-	function drawerOpen() {
-		drawerStore.open({});
-	}
+	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+
+	let popupSettings: PopupSettings = {
+		// Set the event as: click | hover | hover-click | focus | focus-click
+		event: 'click',
+		// Provide a matching 'data-popup' value.
+		target: 'goto'
+	};
 </script>
 
-<Drawer>
-	<Navigation />
-</Drawer>
-<AppShell slotSidebarLeft="bg-surface-500/5 {classesSidebar}" slotSidebarRight="w-0 lg:w-64">
+<AppShell>
 	<svelte:fragment slot="header">
-		<AppBar>
+		<AppBar background="bg-surface-100n space-y-4 p-4 shadow-xl">
 			<svelte:fragment slot="lead">
 				<div class="flex items-center">
-					<button class="lg:hidden btn btn-sm mr-4" on:click={drawerOpen}>
-						<span>
-							<svg viewBox="0 0 100 80" class="fill-token w-4 h-4">
-								<rect width="100" height="20" />
-								<rect y="30" width="100" height="20" />
-								<rect y="60" width="100" height="20" />
-							</svg>
-						</span>
-					</button>
-					<strong class="text-xl uppercase">Skeleton</strong>
+					<strong class="text-xl uppercase">Imjoy</strong>
 				</div>
+			</svelte:fragment>
+			<svelte:fragment slot="trail">
+				<button
+					class="btn variant-ringed-primary hover:variant-soft-primary"
+					use:popup={popupSettings}>Explore</button
+				>
+				<div
+					class="card p-4 w-60 shadow-xl"
+					data-popup="goto"
+					style="left: -62.414px; top: 49.8012px; opacity: 0; pointer-events: none; display: block;"
+				>
+					<nav class="list-nav">
+						<ul>
+							<li>
+								<a href="/"> <span>Homepage</span></a>
+								<a href="/posts"> <span>Blog</span></a>
+								<hr class="my-4" />
+							</li>
+						</ul>
+					</nav>
+					<div class="arrow bg-surface-100-800-token" style="left: 116px; top: -4px;" />
+				</div>
+				<LightSwitch />
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
-	<svelte:fragment slot="sidebarLeft">
-		<Navigation />
-	</svelte:fragment>
-	<svelte:fragment slot="sidebarRight">Sidebar Right</svelte:fragment>
-	<svelte:fragment slot="pageHeader">Page Header</svelte:fragment>
-	<!-- Router Slot -->
 	<slot />
-	<!-- ---- / ---- -->
-	<svelte:fragment slot="pageFooter">Page Footer</svelte:fragment>
-	<svelte:fragment slot="footer">Footer</svelte:fragment>
 </AppShell>
