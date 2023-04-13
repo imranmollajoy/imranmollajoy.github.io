@@ -1,11 +1,11 @@
 import preprocess from 'svelte-preprocess';
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
 import { mdsvex } from 'mdsvex';
 import relativeImages from 'mdsvex-relative-images';
 const config = {
 	extensions: ['.svelte', '.md', '.svx'],
 	kit: {
-		adapter: adapter()
+		adapter: adapter({ strict: false })
 	},
 	preprocess: [
 		mdsvex({

@@ -15,8 +15,9 @@
 	} from '@skeletonlabs/skeleton';
 	import type { PopupSettings } from '@skeletonlabs/skeleton';
 	import Navigation from '$lib/components/Navigation.svelte';
-
 	export let data;
+	export const prerender = true;
+
 	const categories = data.categories;
 
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
@@ -51,7 +52,6 @@
 						<ul>
 							<li>
 								<a href="/"> <span>Homepage</span></a>
-								<a href="/posts"> <span>Blog</span></a>
 								<hr class="my-4" />
 								<h4>Blog</h4>
 								{#each categories as cat}
