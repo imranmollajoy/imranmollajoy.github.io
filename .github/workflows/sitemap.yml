@@ -2,7 +2,7 @@ name: Ping Google about updated sitemap
 
 on:
   push:
-    branches: [ source ]
+    branches: [source]
 
 jobs:
   ping:
@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Waitt for deploy process
-        # Deplot usuallu takes 43sec 
+        # Deplot usuallu takes 43sec
         run: sleep 50s
         shell: bash
 
