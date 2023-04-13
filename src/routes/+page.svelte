@@ -4,6 +4,7 @@
 	import Button from '$lib/components/Button.svelte';
 	import Container from '$lib/components/Container.svelte';
 	import { Avatar } from '@skeletonlabs/skeleton';
+	import PostList from '$lib/components/PostList.svelte';
 	export let data;
 
 	const { latestPost, popular, latest, picks } = data.posts;
@@ -19,39 +20,13 @@
 			description={latestPost.description}
 		/>
 	</section>
-	<section class="latest space-y-4 my-16">
-		<h2 class="mb-4">Latest</h2>
-		<div class="grid mt-2">
-			{#each latest as { title, description, path, category } (path)}
-				<PostCard {title} {category} href={path} {description} />
-			{/each}
-		</div>
-	</section>
-	<section class="popular space-y-4 my-16">
-		<h2 class="mb-4">Popular</h2>
-		<div class="grid mt-2">
-			{#each popular as { title, description, path, category } (path)}
-				<PostCard {title} {category} href={path} {description} />
-			{/each}
-		</div>
-	</section>
-	<section class="random space-y-4 my-16">
-		<h2 class="mb-4">Random</h2>
-		<div class="grid mt-2">
-			{#each picks as { title, description, path, category } (path)}
-				<PostCard {title} {category} href={path} {description} />
-			{/each}
-		</div>
-	</section>
+	<PostList posts={latest} sectionTitle="Latest" />
+	<PostList posts={popular} sectionTitle="Popular" />
+	<PostList posts={picks} sectionTitle="Random" />
 </div>
 
 <style>
 	.homepage {
 		max-width: 1280px;
-	}
-	.grid {
-		display: grid;
-		gap: 1rem;
-		grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
 	}
 </style>

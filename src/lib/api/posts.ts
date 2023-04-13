@@ -76,29 +76,16 @@ export async function getPosts(path: string): Promise<PostsType> {
 	};
 }
 
-/**
- * Gets posts by category from GitHub
- */
-export async function getPostsByCategory(category: string): Promise<PostType[]> {
-	const posts = await getPostsData();
-	const postsByCategory = posts.filter((post) => !post.draft && post.category === category);
-	return postsByCategory;
+export async function getAllCategories(path: string) {
+	const posts = await getPostsData(path);
+	return [...new Set(posts.map((post) => post.category))];
 }
 
 /**
- * Get post by slug from GitHub
+ * Gets posts by category from GitHub
  */
-export async function getPost(slug: string): Promise<PostMarkdownType> {
-	const postUrl = `${postsUrl}/${slug}/${slug}.md`;
-
-	const response = await fetch(postUrl);
-
-	if (!response.ok) {
-		throw new Error(`💩 Could not fetch ${postUrl}`);
-	}
-
-	const postMarkdown = await response.text();
-	const { content, frontmatter } = await markdownToHTML(postMarkdown);
-
-	return { content, frontmatter, postMarkdown };
+export async function getPostsByCategory(path: string, category: string): Promise<PostType[]> {
+	const posts = await getPostsData(path);
+	const postsByCategory = posts.filter((post) => !post.draft && post.category === category);
+	return postsByCategory;
 }
