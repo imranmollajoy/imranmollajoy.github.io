@@ -6,11 +6,11 @@ const config = {
 	extensions: ['.svelte', '.md', '.svx'],
 	kit: {
 		adapter: adapter({
-			pages: 'build',
-			assets: 'build',
-			fallback: 'index.html',
 			precompress: true
-		})
+		}),
+		prerender: {
+			crawl: true
+		}
 	},
 	preprocess: [
 		mdsvex({
