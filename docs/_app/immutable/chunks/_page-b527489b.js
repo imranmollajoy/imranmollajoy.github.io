@@ -1,0 +1,1 @@
+import{g as t}from"./posts-efd8586d.js";const r=async({setHeaders:e,url:o})=>{const a=await t(`${o.origin}/api/posts`);return e({"Cache-Control":`max-age=0, s-maxage=${60*60}`}),{categories:a}},g=Object.freeze(Object.defineProperty({__proto__:null,load:r},Symbol.toStringTag,{value:"Module"}));export{g as _,r as l};

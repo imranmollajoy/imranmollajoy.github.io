@@ -1,0 +1,1 @@
+import{g as t}from"./posts-efd8586d.js";const s=!0,o=!1,r=async({setHeaders:a,url:e})=>({categories:await t(`${e.origin}/api/posts`)}),c=Object.freeze(Object.defineProperty({__proto__:null,load:r,prerender:s,ssr:o},Symbol.toStringTag,{value:"Module"}));export{c as _,r as l,s as p,o as s};
