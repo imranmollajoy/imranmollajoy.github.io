@@ -1,3 +1,4 @@
+export const prerender = true;
 export const GET = async () => {
 	const allPostFiles = import.meta.glob('../../posts/**/*.svx');
 	const iterablePostFiles = Object.entries(allPostFiles);
