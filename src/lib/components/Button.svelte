@@ -3,7 +3,6 @@
 	export let variant: String | 'filled' | 'ghost' | 'soft' | 'ringed' = 'filled';
 	export let color:
 		| String
-		| ''
 		| 'surface'
 		| 'primary'
 		| 'secondary'
