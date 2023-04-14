@@ -3,3 +3,4 @@ export const load = async ({ params: { category }, url }) => {
 	const posts = await getPostsByCategory(`${url.origin}/api/posts`, category);
 	return { posts, category };
 };
+export const prerender = 'auto';

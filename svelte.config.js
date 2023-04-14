@@ -1,15 +1,16 @@
 import preprocess from 'svelte-preprocess';
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-auto';
 import { mdsvex } from 'mdsvex';
 import relativeImages from 'mdsvex-relative-images';
 const config = {
 	extensions: ['.svelte', '.md', '.svx'],
 	kit: {
 		adapter: adapter({
-			precompress: true
+			precompress: false
 		}),
 		prerender: {
-			crawl: true
+			crawl: true,
+			entries: ['*']
 		}
 	},
 	preprocess: [

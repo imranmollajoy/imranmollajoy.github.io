@@ -5,6 +5,8 @@
 	export let data;
 </script>
 
-<Container>
+<!-- <Container>
 	<PostList posts={data.posts} sectionTitle={data.category} />
-</Container>
+</Container> -->
+
+<h1>Hi</h1>
