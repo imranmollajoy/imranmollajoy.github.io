@@ -8,5 +8,3 @@
 <Container>
 	<PostList posts={data.posts} sectionTitle={data.category} />
 </Container>
-
-<h1>Hi</h1>

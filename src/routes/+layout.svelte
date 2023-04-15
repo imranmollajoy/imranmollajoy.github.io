@@ -56,7 +56,6 @@
 								{#each categories as cat}
 									<a href="/posts/category/{cat}"> <span>{cat}</span></a>
 								{/each}
-								<a href="/posts/category/Hmm"> <span>Hmm</span></a>
 							</li>
 						</ul>
 					</nav>
