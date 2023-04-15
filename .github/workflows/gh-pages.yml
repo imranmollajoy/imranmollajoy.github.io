@@ -6,27 +6,23 @@ on:
       - source # change this to the branch you want to deploy from
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
-      - name: Cache dependencies
-        uses: actions/cache@v2
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
         with:
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          npm: true
-          directories:
-            - node_modules
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-      - name: Install Dependencies
+          persist-credentials: false
+
+      - name: Install 🔧
         run: npm install
-      - name: Build Site
-        run: npm run build # replace this with your build script command
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+
+      - name: Build 🏗️
+        run: npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build # replace this with the directory where your built site is located
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
