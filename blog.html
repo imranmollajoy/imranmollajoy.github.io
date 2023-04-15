@@ -8,7 +8,6 @@
 <meta http-equiv="cache-control" content="max-age=0, s-maxage=3600">
 		<link href="./_app/immutable/assets/_layout-21e8b6ef.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/ProgressBar-05e4960c.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/_page-c3455fb0.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/PostList-397a144a.css" rel="stylesheet">
 		<link rel="modulepreload" href="./_app/immutable/start-a198a910.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index-04714a88.js">
@@ -18,11 +17,11 @@
 		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.ts-06b1c00f.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/updatedPosts-23439f27.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-5721ac7d.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-0e4f6f5c.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/Container-0c7f51a4.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/blog/_page.svelte-8ac83552.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/PostList-f9c798a3.js">
-		<link rel="modulepreload" href="./_app/immutable/modules/pages/_page.ts-186d87d8.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/_page-28b09816.js"><!-- HEAD_svelte-1fqad1o_START --><!-- HTML_TAG_START --><script>(function setInitialClassState() {
+		<link rel="modulepreload" href="./_app/immutable/chunks/Container-0c7f51a4.js">
+		<link rel="modulepreload" href="./_app/immutable/modules/pages/blog/_page.ts-93896099.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_page-6bab6983.js"><!-- HEAD_svelte-1fqad1o_START --><!-- HTML_TAG_START --><script>(function setInitialClassState() {
   const elemHtmlClasses = document.documentElement.classList;
   const condLocalStorageUserPrefs = localStorage.getItem("modeUserPrefers") === "false";
   const condLocalStorageUserPrefsExists = !("modeUserPrefers" in localStorage);
@@ -70,32 +69,11 @@
 			
 
 			
-			<main id="page-content" class="flex-auto "><section class="hero py-64 svelte-3guu1g"><div class="container sticky"><h1 class="font-bold leading-tight svelte-3guu1g">Web developer. Web designer</h1>
-		<p class="subtitle mt-4 text-xl max-w-2xl text-opacity-80 svelte-3guu1g">Hi, I&#39;m Imran Molla Joy, a web developer and designer passionate about crafting beautiful and
-			intuitive digital experiences. With expertise in HTML, CSS, JavaScript, and UX/UI design, I
-			specialize in building responsive, dynamic, and user-friendly websites that meet and exceed
-			client expectations.
-		</p>
-		<a href="#portfolio" class="btn variant-filled-error mt-4">Portfolio</a></div></section>
-
-<section class="py-8" id="portfolio"><div class="container"><div class="post-list"><section class="space-y-4" id="Projects"><h2 class="mb-4">Projects</h2>
-	<div class="grid mt-2 svelte-12qtppj">
-			<a class="block card card-hover variant-filled-primary" href="/portfolio/note-taking-app/">
-	<div class="p-4 flex h-full flex-col justify-between">
-		<h3 class="font-bold mb-2" data-toc-ignore>Note Taking App</h3></div></a>
-			<a class="block card card-hover variant-filled-primary" href="/portfolio/watchlist-tracker/">
-	<div class="p-4 flex h-full flex-col justify-between">
-		<h3 class="font-bold mb-2" data-toc-ignore>Watchnlist Tracker</h3></div></a>
-			<a class="block card card-hover variant-filled-primary" href="/portfolio/weather-app/">
-	<div class="p-4 flex h-full flex-col justify-between">
-		<h3 class="font-bold mb-2" data-toc-ignore>Weather Forecast App</h3></div></a>
-			<a class="block card card-hover variant-filled-primary" href="/portfolio/rose-landing-page/">
-	<div class="p-4 flex h-full flex-col justify-between">
-		<h3 class="font-bold mb-2" data-toc-ignore>Landing Page Design about Rose</h3></div></a></div>
-</section>
-			<a href="/blog" class="btn variant-filled-secondary mt-4">More</a></div></div></section>
-
-<section class="bg-surface-50-900-token py-8"><div class="container"><div class="post-list"><section class="space-y-4" id="Blog"><h2 class="mb-4">Blog</h2>
+			<main id="page-content" class="flex-auto "><div class="container"><div class="homepage container mt-8 backgroundg-surface"><section class="latest-single space-y-4 my-168"><h2>Latest Post</h2>
+			<a class="block card card-hover variant-filled-primary" href="/blog/create-button-component-for-svelte/">
+	<div class="p-4 flex h-full flex-col justify-between"><h6 class="mb-4">Web development</h6>
+		<h3 class="font-bold mb-2" data-toc-ignore>Create A Reusable Button Component for Svelte</h3></div></a></section>
+		<section class="space-y-4" id="Latest"><h2 class="mb-4">Latest</h2>
 	<div class="grid mt-2 svelte-12qtppj">
 			<a class="block card card-hover variant-filled-primary" href="/blog/create-button-component-for-svelte/">
 	<div class="p-4 flex h-full flex-col justify-between"><h6 class="mb-4">Web development</h6>
@@ -110,8 +88,36 @@
 	<div class="p-4 flex h-full flex-col justify-between"><h6 class="mb-4">Android</h6>
 		<h3 class="font-bold mb-2" data-toc-ignore>Ad Free Alternatives on Android and iOS</h3></div></a></div>
 </section>
-			<a href="/portfolio" class="btn variant-filled-secondary mt-4">More</a></div></div>
-</section></main>
+		<section class="space-y-4" id="Popular"><h2 class="mb-4">Popular</h2>
+	<div class="grid mt-2 svelte-12qtppj">
+			<a class="block card card-hover variant-filled-primary" href="/blog/create-button-component-for-svelte/">
+	<div class="p-4 flex h-full flex-col justify-between"><h6 class="mb-4">Web development</h6>
+		<h3 class="font-bold mb-2" data-toc-ignore>Create A Reusable Button Component for Svelte</h3></div></a>
+			<a class="block card card-hover variant-filled-primary" href="/blog/passkeys-now-available-in-chrome/">
+	<div class="p-4 flex h-full flex-col justify-between"><h6 class="mb-4">Technology</h6>
+		<h3 class="font-bold mb-2" data-toc-ignore>Passkeys Now Available in Chrome</h3></div></a>
+			<a class="block card card-hover variant-filled-primary" href="/blog/create-horizontal-scroll-section-html-css-js/">
+	<div class="p-4 flex h-full flex-col justify-between"><h6 class="mb-4">Web development</h6>
+		<h3 class="font-bold mb-2" data-toc-ignore>Create a horizontal scroll section with HTML,CSS and JS</h3></div></a>
+			<a class="block card card-hover variant-filled-primary" href="/blog/ad-free-alternatives-on-android-and-ios/">
+	<div class="p-4 flex h-full flex-col justify-between"><h6 class="mb-4">Android</h6>
+		<h3 class="font-bold mb-2" data-toc-ignore>Ad Free Alternatives on Android and iOS</h3></div></a></div>
+</section>
+		<section class="space-y-4" id="Random"><h2 class="mb-4">Random</h2>
+	<div class="grid mt-2 svelte-12qtppj">
+			<a class="block card card-hover variant-filled-primary" href="/blog/create-button-component-for-svelte/">
+	<div class="p-4 flex h-full flex-col justify-between"><h6 class="mb-4">Web development</h6>
+		<h3 class="font-bold mb-2" data-toc-ignore>Create A Reusable Button Component for Svelte</h3></div></a>
+			<a class="block card card-hover variant-filled-primary" href="/blog/ad-free-alternatives-on-android-and-ios/">
+	<div class="p-4 flex h-full flex-col justify-between"><h6 class="mb-4">Android</h6>
+		<h3 class="font-bold mb-2" data-toc-ignore>Ad Free Alternatives on Android and iOS</h3></div></a>
+			<a class="block card card-hover variant-filled-primary" href="/blog/passkeys-now-available-in-chrome/">
+	<div class="p-4 flex h-full flex-col justify-between"><h6 class="mb-4">Technology</h6>
+		<h3 class="font-bold mb-2" data-toc-ignore>Passkeys Now Available in Chrome</h3></div></a>
+			<a class="block card card-hover variant-filled-primary" href="/blog/create-horizontal-scroll-section-html-css-js/">
+	<div class="p-4 flex h-full flex-col justify-between"><h6 class="mb-4">Web development</h6>
+		<h3 class="font-bold mb-2" data-toc-ignore>Create a horizontal scroll section with HTML,CSS and JS</h3></div></a></div>
+</section></div></div></main>
 
 			
 			</div>
@@ -123,24 +129,23 @@
 	</div>
 
 
-		<script type="module" data-sveltekit-hydrate="1idmgjs">
+		<script type="module" data-sveltekit-hydrate="1j8drbo">
 			import { start } from "./_app/immutable/start-a198a910.js";
 
 			start({
 				env: {},
 				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="1idmgjs"]').parentNode,
+				target: document.querySelector('[data-sveltekit-hydrate="1j8drbo"]').parentNode,
 				version: "1681555592355",
 				hydrate: {
-					node_ids: [0, 2],
+					node_ids: [0, 3],
 					data: [null,null],
 					form: null
 				}
 			});
 		</script>
 	<script type="application/json" data-sveltekit-fetched data-url="/api/blog">{"status":200,"statusText":"","headers":{},"body":"[{\"title\":\"Ad Free Alternatives on Android and iOS\",\"date\":\"2022-12-08T13:21:48.000Z\",\"draft\":false,\"tags\":[\"alternative of apps\",\"android alternative apps\",\"tips\",\"software\"],\"category\":\"Android\",\"type\":\"post\",\"cover\":{\"image\":\"./images/featured.png\",\"alt\":\"Thumbnail of Ad Free Alternatives on Android and Ios\"},\"weight\":1,\"preview\":\"/content/post/ad-free-alternatives-on-android-and-ios/images/featured.png\",\"description\":\"Tired of dealing with ads and pop-ups in your video and music players, or when reading documents on your phone? Try using ad-free apps listed here.\",\"path\":\"/blog/ad-free-alternatives-on-android-and-ios/\"},{\"title\":\"Create A Reusable Button Component for Svelte\",\"date\":\"2022-12-13T06:20:51.000Z\",\"draft\":false,\"tags\":[\"tutorial\",\"how-to\",\"svelte\",\"web-dev\"],\"category\":\"Web development\",\"type\":\"post\",\"cover\":{\"image\":\"./images/featured.png\",\"alt\":\"Thumbnail of Create Button Component for Svelte\"},\"slug\":\"create-button-component-for-svelte\",\"weight\":1,\"description\":\"Robust and flexible button component for your Svelte/SvelteKit project\",\"path\":\"/blog/create-button-component-for-svelte/\"},{\"title\":\"Create a horizontal scroll section with HTML,CSS and JS\",\"date\":\"2022-12-09T10:15:22.000Z\",\"draft\":false,\"tags\":[\"tutorial\",\"how-to\",\"web-dev\"],\"category\":\"Web development\",\"type\":\"post\",\"cover\":{\"image\":\"./images/featured.png\",\"alt\":\"Thumbnail of Create Horizontal Scroll Section Html Css Js\"},\"slug\":\"create-horizontal-scroll-section-html-css-js\",\"description\":\"Learn how to use HTML, CSS, and JavaScript to create a horizontal scrolling section on your website.\",\"weight\":1,\"path\":\"/blog/create-horizontal-scroll-section-html-css-js/\"},{\"title\":\"Passkeys Now Available in Chrome\",\"date\":\"2022-12-10T17:04:28.000Z\",\"draft\":false,\"tags\":[\"chrome\",\"security\"],\"category\":\"Technology\",\"type\":\"post\",\"cover\":{\"alt\":\"Thumbnail of Passkeys Now Available in Chrome\"},\"slug\":\"passkeys-now-available-in-chrome\",\"weight\":9,\"description\":\"\",\"path\":\"/blog/passkeys-now-available-in-chrome/\"}]"}</script>
-	<script type="application/json" data-sveltekit-fetched data-url="/api/blog">{"status":200,"statusText":"","headers":{},"body":"[{\"title\":\"Ad Free Alternatives on Android and iOS\",\"date\":\"2022-12-08T13:21:48.000Z\",\"draft\":false,\"tags\":[\"alternative of apps\",\"android alternative apps\",\"tips\",\"software\"],\"category\":\"Android\",\"type\":\"post\",\"cover\":{\"image\":\"./images/featured.png\",\"alt\":\"Thumbnail of Ad Free Alternatives on Android and Ios\"},\"weight\":1,\"preview\":\"/content/post/ad-free-alternatives-on-android-and-ios/images/featured.png\",\"description\":\"Tired of dealing with ads and pop-ups in your video and music players, or when reading documents on your phone? Try using ad-free apps listed here.\",\"path\":\"/blog/ad-free-alternatives-on-android-and-ios/\"},{\"title\":\"Create A Reusable Button Component for Svelte\",\"date\":\"2022-12-13T06:20:51.000Z\",\"draft\":false,\"tags\":[\"tutorial\",\"how-to\",\"svelte\",\"web-dev\"],\"category\":\"Web development\",\"type\":\"post\",\"cover\":{\"image\":\"./images/featured.png\",\"alt\":\"Thumbnail of Create Button Component for Svelte\"},\"slug\":\"create-button-component-for-svelte\",\"weight\":1,\"description\":\"Robust and flexible button component for your Svelte/SvelteKit project\",\"path\":\"/blog/create-button-component-for-svelte/\"},{\"title\":\"Create a horizontal scroll section with HTML,CSS and JS\",\"date\":\"2022-12-09T10:15:22.000Z\",\"draft\":false,\"tags\":[\"tutorial\",\"how-to\",\"web-dev\"],\"category\":\"Web development\",\"type\":\"post\",\"cover\":{\"image\":\"./images/featured.png\",\"alt\":\"Thumbnail of Create Horizontal Scroll Section Html Css Js\"},\"slug\":\"create-horizontal-scroll-section-html-css-js\",\"description\":\"Learn how to use HTML, CSS, and JavaScript to create a horizontal scrolling section on your website.\",\"weight\":1,\"path\":\"/blog/create-horizontal-scroll-section-html-css-js/\"},{\"title\":\"Passkeys Now Available in Chrome\",\"date\":\"2022-12-10T17:04:28.000Z\",\"draft\":false,\"tags\":[\"chrome\",\"security\"],\"category\":\"Technology\",\"type\":\"post\",\"cover\":{\"alt\":\"Thumbnail of Passkeys Now Available in Chrome\"},\"slug\":\"passkeys-now-available-in-chrome\",\"weight\":9,\"description\":\"\",\"path\":\"/blog/passkeys-now-available-in-chrome/\"}]"}</script>
-	<script type="application/json" data-sveltekit-fetched data-url="/api/portfolio">{"status":200,"statusText":"","headers":{},"body":"[{\"title\":\"Blog Made with Svelte\",\"draft\":false,\"tags\":[\"svelte-kit\",\"Contentful\"],\"date\":\"2020-06-01T00:00:00.000Z\",\"featuredImg\":\"./images/featured.png\",\"cover\":{\"image\":\"./images/featured.png\",\"alt\":\"Thumbnail of Blog With Svelte\"},\"weight\":2,\"layout\":\"portfolio\",\"path\":\"/portfolio/blog-with-svelte/\"},{\"title\":\"A Dummy Text Generator\",\"draft\":false,\"tags\":[\"react-js\",\"remote api\"],\"date\":\"2020-06-01T00:00:00.000Z\",\"featuredImg\":\"./images/featured.png\",\"cover\":{\"image\":\"./images/featured.png\",\"alt\":\"Thumbnail of Dummy Text Generator\"},\"layout\":\"portfolio\",\"weight\":2,\"path\":\"/portfolio/dummy-text-generator/\"},{\"title\":\"Note Taking App\",\"draft\":false,\"tags\":[\"react-js\",\"local storage\"],\"date\":\"2025-10-24T00:00:00.000Z\",\"featuredImg\":\"./images/featured.png\",\"cover\":{\"image\":\"./images/featured.png\",\"alt\":\"Thumbnail of Take Note App\"},\"layout\":\"portfolio\",\"weight\":2,\"path\":\"/portfolio/note-taking-app/\"},{\"title\":\"Landing Page Design about Rose\",\"date\":\"2022-12-21T17:56:03.000Z\",\"draft\":false,\"tags\":[\"web-design\",\"figma\"],\"featuredImg\":\"./images/featured.png\",\"cover\":{\"image\":\"./images/featured.png\",\"alt\":\"Thumbnail of Rose Landing Page\"},\"layout\":\"portfolio\",\"weight\":1,\"path\":\"/portfolio/rose-landing-page/\"},{\"title\":\"Watchnlist Tracker\",\"date\":\"2025-10-24T00:00:00.000Z\",\"draft\":false,\"tags\":[\"svelte-kit\",\"remote api\",\"local storage\"],\"featuredImg\":\"./images/featured.png\",\"cover\":{\"image\":\"./images/featured.png\",\"alt\":\"Thumbnail of Watchnext\"},\"layout\":\"portfolio\",\"path\":\"/portfolio/watchlist-tracker/\"},{\"title\":\"Weather Forecast App\",\"draft\":false,\"tags\":[\"react-js\",\"remote api\"],\"date\":\"2025-10-24T00:00:00.000Z\",\"featuredImg\":\"./images/featured.png\",\"cover\":{\"image\":\"./images/featured.png\",\"alt\":\"Thumbnail of Bring Your Umbrella\"},\"layout\":\"portfolio\",\"weight\":2,\"path\":\"/portfolio/weather-app/\"}]"}</script></div>
+	<script type="application/json" data-sveltekit-fetched data-url="/api/blog">{"status":200,"statusText":"","headers":{},"body":"[{\"title\":\"Ad Free Alternatives on Android and iOS\",\"date\":\"2022-12-08T13:21:48.000Z\",\"draft\":false,\"tags\":[\"alternative of apps\",\"android alternative apps\",\"tips\",\"software\"],\"category\":\"Android\",\"type\":\"post\",\"cover\":{\"image\":\"./images/featured.png\",\"alt\":\"Thumbnail of Ad Free Alternatives on Android and Ios\"},\"weight\":1,\"preview\":\"/content/post/ad-free-alternatives-on-android-and-ios/images/featured.png\",\"description\":\"Tired of dealing with ads and pop-ups in your video and music players, or when reading documents on your phone? Try using ad-free apps listed here.\",\"path\":\"/blog/ad-free-alternatives-on-android-and-ios/\"},{\"title\":\"Create A Reusable Button Component for Svelte\",\"date\":\"2022-12-13T06:20:51.000Z\",\"draft\":false,\"tags\":[\"tutorial\",\"how-to\",\"svelte\",\"web-dev\"],\"category\":\"Web development\",\"type\":\"post\",\"cover\":{\"image\":\"./images/featured.png\",\"alt\":\"Thumbnail of Create Button Component for Svelte\"},\"slug\":\"create-button-component-for-svelte\",\"weight\":1,\"description\":\"Robust and flexible button component for your Svelte/SvelteKit project\",\"path\":\"/blog/create-button-component-for-svelte/\"},{\"title\":\"Create a horizontal scroll section with HTML,CSS and JS\",\"date\":\"2022-12-09T10:15:22.000Z\",\"draft\":false,\"tags\":[\"tutorial\",\"how-to\",\"web-dev\"],\"category\":\"Web development\",\"type\":\"post\",\"cover\":{\"image\":\"./images/featured.png\",\"alt\":\"Thumbnail of Create Horizontal Scroll Section Html Css Js\"},\"slug\":\"create-horizontal-scroll-section-html-css-js\",\"description\":\"Learn how to use HTML, CSS, and JavaScript to create a horizontal scrolling section on your website.\",\"weight\":1,\"path\":\"/blog/create-horizontal-scroll-section-html-css-js/\"},{\"title\":\"Passkeys Now Available in Chrome\",\"date\":\"2022-12-10T17:04:28.000Z\",\"draft\":false,\"tags\":[\"chrome\",\"security\"],\"category\":\"Technology\",\"type\":\"post\",\"cover\":{\"alt\":\"Thumbnail of Passkeys Now Available in Chrome\"},\"slug\":\"passkeys-now-available-in-chrome\",\"weight\":9,\"description\":\"\",\"path\":\"/blog/passkeys-now-available-in-chrome/\"}]"}</script></div>
 	</body>
 	<script async src="https://counterapi.com/counterapi.embed.js"></script>
 </html>
