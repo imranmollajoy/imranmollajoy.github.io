@@ -24,7 +24,7 @@
 	<Container>
 		<div class="post-list">
 			<PostList posts={data.portfolios} sectionTitle="Projects" />
-			<a href="/blog" class="btn variant-filled-secondary mt-4">More</a>
+			<a href="/portfolio" class="btn variant-filled-secondary mt-4">More</a>
 		</div>
 	</Container>
 </section>
@@ -33,7 +33,7 @@
 	<Container>
 		<div class="post-list">
 			<PostList posts={data.posts} sectionTitle="Blog" />
-			<a href="/portfolio" class="btn variant-filled-secondary mt-4">More</a>
+			<a href="/blog" class="btn variant-filled-secondary mt-4">More</a>
 		</div>
 	</Container>
 </section>

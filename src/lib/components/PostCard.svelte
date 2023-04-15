@@ -6,8 +6,8 @@
 	export let title;
 	export let description;
 	export let category;
+	
 </script>
-
 <a class="block card card-hover variant-filled-primary" {href}>
 	{#if img}
 		<header>
