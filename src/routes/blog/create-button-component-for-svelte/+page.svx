@@ -23,6 +23,7 @@ description: 'Robust and flexible button component for your Svelte/SvelteKit pro
 </script>
 
 ![](./images/featured.png)
+
 Creating a button component for Svelte can be a quick and easy way to add custom, reusable buttons to your Svelte application. In this article, we'll go through the steps to create a simple button component that you can use in your own Svelte projects.
 
 We will use TypeScript and SASS to create the button component (Recommended, you will get autocompletion). However, if you prefer to use JavaScript and CSS, code for that will also be included in the article. You can copy the code which works best for you and your project.
