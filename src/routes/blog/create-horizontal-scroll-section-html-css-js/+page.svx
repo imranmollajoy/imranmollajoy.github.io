@@ -16,6 +16,8 @@ description: Learn how to use HTML, CSS, and JavaScript to create a horizontal s
 weight: 1
 ---
 
+![](./images/featured.png)
+
 ## Horizontal Section
 
 A horizontal section is a type of layout in which the content is arranged from left to right, rather than from top to bottom. This design can be elegant and visually appealing, and it can also save space by allowing more content to be displayed on the screen at once. Horizontal sections are commonly used in web design to create menus, galleries, or other types of content that can be easily scrolled through by the user. To create a horizontal section, you can use CSS styles such as `display: flex;` and `flex-wrap: wrap;` to control the layout and appearance of the content.
