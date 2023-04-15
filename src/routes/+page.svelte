@@ -11,6 +11,7 @@
 </script>
 
 <div class="homepage container mt-8 backgroundg-surface">
+	<a href="/posts/category/Hmm"> <span>Hmm</span></a>
 	<section class="latest-single space-y-4 my-168">
 		<h2>Latest Post</h2>
 		<PostCard

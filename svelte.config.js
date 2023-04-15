@@ -1,5 +1,5 @@
 import preprocess from 'svelte-preprocess';
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
 import { mdsvex } from 'mdsvex';
 import relativeImages from 'mdsvex-relative-images';
 const config = {
@@ -11,12 +11,7 @@ const config = {
 		}),
 		prerender: {
 			crawl: true,
-			entries: [
-				'*',
-				'/posts/category/Web development',
-				'/posts/category/Android',
-				'/posts/category/Technology'
-			]
+			entries: ['*']
 		}
 	},
 	preprocess: [
