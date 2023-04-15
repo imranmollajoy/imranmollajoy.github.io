@@ -1,4 +1,4 @@
-import{S as cn,i as un,s as rn,J as Lt,w as kn,x as hn,y as dn,Y as mn,Z as It,f as fn,t as gn,z as wn,K as Jt,k as e,q as k,a as i,l as o,m as p,r as h,h as n,c as u,n as y,b as a,E as c,B as yn}from"../../../../chunks/index-04714a88.js";import{D as vn}from"../../../../chunks/default-a74e6f10.js";function bn(L){let l,f,g,d,r,m,T,rt,Y,kt,ht,J,C,dt,W,H,mt,F,v,Ft=`<code class="language-undefined">&lt;!DOCTYPE html&gt;
+import{S as cn,i as un,s as rn,J as Lt,w as kn,x as hn,y as dn,Y as mn,Z as It,f as fn,t as gn,z as wn,K as Jt,k as e,q as k,a as i,l as o,m as p,r as h,h as n,c as u,n as y,b as a,E as c,B as yn}from"../../../../chunks/index-04714a88.js";import{D as vn}from"../../../../chunks/default-a40746ff.js";function bn(L){let l,f,g,d,r,m,T,rt,Y,kt,ht,J,C,dt,W,H,mt,F,v,Ft=`<code class="language-undefined">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 	&lt;head&gt;
 		&lt;meta charset=&quot;UTF-8&quot; /&gt;
