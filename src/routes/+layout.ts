@@ -14,3 +14,5 @@ export const load = async ({ setHeaders, url }) => {
 
 	return { categories };
 };
+export const prerender = true;
+export const ssr = false;
