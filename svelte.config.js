@@ -6,8 +6,7 @@ const config = {
 	extensions: ['.svelte', '.md', '.svx'],
 	kit: {
 		adapter: adapter({
-			precompress: false,
-			pages: 'docs'
+			precompress: false
 		}),
 		prerender: {
 			crawl: true,
