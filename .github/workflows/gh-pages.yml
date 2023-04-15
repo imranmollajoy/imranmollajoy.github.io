@@ -16,7 +16,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           npm: true
           directories:
-          - node_modules
+            - node_modules
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
