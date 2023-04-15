@@ -92,7 +92,7 @@
     "src": ".svelte-kit/generated/nodes/3.js"
   },
   ".svelte-kit/generated/nodes/4.js": {
-    "file": "_app/immutable/chunks/4-e4cf2352.js",
+    "file": "_app/immutable/chunks/4-00b424e5.js",
     "imports": [
       "src/routes/blog/ad-free-alternatives-on-android-and-ios/+page.svx"
     ],
@@ -118,7 +118,7 @@
     "src": ".svelte-kit/generated/nodes/6.js"
   },
   ".svelte-kit/generated/nodes/7.js": {
-    "file": "_app/immutable/chunks/7-7062ae30.js",
+    "file": "_app/immutable/chunks/7-1f25f019.js",
     "imports": [
       "src/routes/blog/create-button-component-for-svelte/+page.svx"
     ],
@@ -126,7 +126,7 @@
     "src": ".svelte-kit/generated/nodes/7.js"
   },
   ".svelte-kit/generated/nodes/8.js": {
-    "file": "_app/immutable/chunks/8-b4ba6458.js",
+    "file": "_app/immutable/chunks/8-7c84969c.js",
     "imports": [
       "src/routes/blog/create-horizontal-scroll-section-html-css-js/+page.svx"
     ],
@@ -259,7 +259,7 @@
       ".svelte-kit/generated/nodes/15.js",
       ".svelte-kit/generated/nodes/16.js"
     ],
-    "file": "_app/immutable/start-7e559f77.js",
+    "file": "_app/immutable/start-fb63483b.js",
     "imports": [
       "_index-04714a88.js",
       "_index-4db62b91.js"
@@ -352,7 +352,7 @@
     "assets": [
       "_app/immutable/assets/featured-e000051a.png"
     ],
-    "file": "_app/immutable/components/pages/blog/ad-free-alternatives-on-android-and-ios/_page.svx-9dd8ca3c.js",
+    "file": "_app/immutable/components/pages/blog/ad-free-alternatives-on-android-and-ios/_page.svx-7b62ffc3.js",
     "imports": [
       "_index-04714a88.js",
       "_default-27f02ab3.js"
@@ -411,7 +411,7 @@
     "css": [
       "_app/immutable/assets/_page-113b8192.css"
     ],
-    "file": "_app/immutable/components/pages/blog/create-button-component-for-svelte/_page.svx-41c9d6f8.js",
+    "file": "_app/immutable/components/pages/blog/create-button-component-for-svelte/_page.svx-cd4a0ca9.js",
     "imports": [
       "_index-04714a88.js",
       "_default-27f02ab3.js",
@@ -425,13 +425,20 @@
     "src": "src/routes/blog/create-button-component-for-svelte/images/featured.png"
   },
   "src/routes/blog/create-horizontal-scroll-section-html-css-js/+page.svx": {
-    "file": "_app/immutable/components/pages/blog/create-horizontal-scroll-section-html-css-js/_page.svx-883c6faf.js",
+    "assets": [
+      "_app/immutable/assets/featured-e84a95c8.png"
+    ],
+    "file": "_app/immutable/components/pages/blog/create-horizontal-scroll-section-html-css-js/_page.svx-6565c748.js",
     "imports": [
       "_index-04714a88.js",
       "_default-27f02ab3.js"
     ],
     "isEntry": true,
     "src": "src/routes/blog/create-horizontal-scroll-section-html-css-js/+page.svx"
+  },
+  "src/routes/blog/create-horizontal-scroll-section-html-css-js/images/featured.png": {
+    "file": "_app/immutable/assets/featured-e84a95c8.png",
+    "src": "src/routes/blog/create-horizontal-scroll-section-html-css-js/images/featured.png"
   },
   "src/routes/blog/passkeys-now-available-in-chrome/+page.svx": {
     "file": "_app/immutable/components/pages/blog/passkeys-now-available-in-chrome/_page.svx-63297eee.js",
