@@ -5,5 +5,5 @@
 </script>
 
 {#each categories as cat}
-	<h2>{cat}</h2>
+	<a href="/posts/category/{cat}">{cat}</a>
 {/each}

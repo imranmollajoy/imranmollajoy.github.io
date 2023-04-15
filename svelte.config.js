@@ -6,11 +6,17 @@ const config = {
 	extensions: ['.svelte', '.md', '.svx'],
 	kit: {
 		adapter: adapter({
-			precompress: false
+			precompress: false,
+			pages: 'docs'
 		}),
 		prerender: {
 			crawl: true,
-			entries: ['*']
+			entries: [
+				'*',
+				'/posts/category/Web development',
+				'/posts/category/Android',
+				'/posts/category/Technology'
+			]
 		}
 	},
 	preprocess: [
