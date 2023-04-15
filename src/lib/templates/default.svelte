@@ -20,7 +20,7 @@
 	});
 
 	// Classes
-	const cBase = 'page-padding flex items-start  gap-10 ';
+	const cBase = 'page-padding lg:flex lg:items-start  lg:gap-10 ';
 
 	// Reactive
 	$: classesBase = `${cBase} ${$$props.class ?? ''}`;
