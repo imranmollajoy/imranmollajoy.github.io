@@ -30,4 +30,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs # replace this with the directory where your built site is located
+          publish_dir: ./build # replace this with the directory where your built site is located
