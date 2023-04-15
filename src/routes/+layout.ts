@@ -1,7 +1,7 @@
 import { getAllCategories } from '$lib/api/updatedPosts';
 import type { PostType } from '$lib/types';
 
-export const load = async ({ setHeaders, url }) => {
+export const load = async ({ setHeaders, url, fetch }) => {
 	const response = await fetch(`${url.origin}/api/posts`);
 
 	if (!response.ok) {
@@ -15,4 +15,4 @@ export const load = async ({ setHeaders, url }) => {
 	return { categories };
 };
 export const prerender = true;
-export const ssr = false;
+// export const csr = false;
