@@ -20,7 +20,7 @@
 	</div>
 </section>
 
-<section class="py-8">
+<section class="py-8" id="portfolio">
 	<Container>
 		<div class="post-list">
 			<PostList posts={data.portfolios} sectionTitle="Projects" />
