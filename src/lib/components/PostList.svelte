@@ -5,7 +5,7 @@
 	export let sectionTitle;
 </script>
 
-<section class="latest space-y-4 my-16">
+<section class="space-y-4" id={sectionTitle}>
 	<h2 class="mb-4">{sectionTitle}</h2>
 	<div class="grid mt-2">
 		{#each posts as { title, description, path, category } (path)}

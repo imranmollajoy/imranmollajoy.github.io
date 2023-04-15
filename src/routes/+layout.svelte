@@ -54,7 +54,7 @@
 								<hr class="my-4" />
 								<h4>Blog</h4>
 								{#each categories as cat}
-									<a href="/posts/category/{cat}"> <span>{cat}</span></a>
+									<a href="/blog/category/{cat}"> <span>{cat}</span></a>
 								{/each}
 							</li>
 						</ul>

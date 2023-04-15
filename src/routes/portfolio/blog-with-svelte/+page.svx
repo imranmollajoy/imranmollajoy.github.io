@@ -1,5 +1,5 @@
 ---
-title: 'Blog With Svelte'
+title: 'Blog Made with Svelte'
 draft: false
 tags: ['svelte-kit', 'Contentful']
 date: 2020-06-01
@@ -7,9 +7,11 @@ featuredImg: './images/featured.png'
 cover:
   image: './images/featured.png'
   alt: Thumbnail of Blog With Svelte
-type: portfolio
 weight: 2
+layout: portfolio
 ---
+
+![](./images/featured.png)
 
 This blog was made using SvelteKit and Contentful.
 

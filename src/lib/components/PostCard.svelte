@@ -18,13 +18,10 @@
 			/>
 		</header>
 	{/if}
-	<div class="p-4">
-		<h6 class="mb-4">{category}</h6>
+	<div class="p-4 flex h-full flex-col justify-between">
+		{#if category}
+			<h6 class="mb-4">{category}</h6>
+		{/if}
 		<h3 class="font-bold mb-2" data-toc-ignore>{title}</h3>
-		<article>
-			<p>
-				{description}
-			</p>
-		</article>
 	</div>
 </a>

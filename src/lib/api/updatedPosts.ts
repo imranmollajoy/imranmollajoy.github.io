@@ -1,4 +1,3 @@
-import { postsDataUrl, postsUrl } from './config';
 import type { PostMarkdownType, PostsType, PostType, RateType } from '$lib/types';
 
 /**
@@ -73,4 +72,8 @@ export async function getPostsByCategory(data: PostType[], category: string): Pr
 	const posts = data;
 	const postsByCategory = posts.filter((post) => !post.draft && post.category === category);
 	return postsByCategory;
+}
+
+export async function getPostsForHomepage(data: PostType[]) {
+	return (await getPosts(data)).latest;
 }

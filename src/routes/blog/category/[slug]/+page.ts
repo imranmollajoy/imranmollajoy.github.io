@@ -1,7 +1,7 @@
 import { getPostsByCategory } from '$lib/api/updatedPosts';
 import type { PostType } from '$lib/types';
 export const load = async ({ params, url, fetch }) => {
-	const response = await fetch(`${url.origin}/api/posts`);
+	const response = await fetch(`${url.origin}/api/blog`);
 	if (!response.ok) {
 		throw new Error('💩 Could not fetch posts');
 	}

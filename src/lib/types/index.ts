@@ -31,7 +31,16 @@ export type PostType = {
 	series?: string;
 	draft?: string;
 };
-
+export type PortfolioType = {
+	title: string;
+	description: string;
+	path: string;
+	date: string;
+	tags: string[];
+	category: string;
+	series?: string;
+	draft?: string;
+};
 export type PostsType = {
 	posts: PostType[];
 	latestPost: PostType;
