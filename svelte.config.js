@@ -17,8 +17,8 @@ const config = {
 		mdsvex({
 			extensions: ['.md', '.svx'],
 			layout: {
-				// material: 'src/lib/templates/material.svelte',
-				_: 'src/lib/templates/default.svelte'
+				_: 'src/lib/templates/default.svelte',
+				portfolio: 'src/lib/templates/portfolio.svelte'
 			},
 			remarkPlugins: [relativeImages]
 		}),

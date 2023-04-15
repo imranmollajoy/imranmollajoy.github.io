@@ -30,7 +30,7 @@
 	<div class="p-4 max-w-2xl mx-auto lg:max-w-3xl lg:ml-auto lg:mr-0">
 		<article class="prose max-w-none lg:prose-xl dark:prose-invert" id="toc-target">
 			<p>View {view}</p>
-			<a href="/posts/category/{category}">
+			<a href="/blog/category/{category}">
 				<h5>{category}</h5>
 			</a>
 			<h1>{title}</h1>

@@ -1,5 +1,5 @@
 ---
-title: 'Bring Your Umbrella'
+title: 'Weather Forecast App'
 draft: false
 tags: ['react-js', 'remote api']
 date: 2025-10-24
@@ -7,9 +7,12 @@ featuredImg: './images/featured.png'
 cover:
   image: './images/featured.png'
   alt: Thumbnail of Bring Your Umbrella
-type: portfolio
+layout: portfolio
 weight: 2
 ---
+
+
+![](./images/featured.png)
 
 An app made mainly for getting the days with high chances of rainfall. It also gives the weather forecast of next 5 days.
 

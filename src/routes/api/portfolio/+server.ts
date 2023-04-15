@@ -1,6 +1,6 @@
 export const prerender = true;
 export const GET = async () => {
-	const allPostFiles = import.meta.glob('../../posts/**/*.svx');
+	const allPostFiles = import.meta.glob('../../portfolio/**/*.svx');
 	const iterablePostFiles = Object.entries(allPostFiles);
 
 	const allPosts = await Promise.all(
@@ -15,10 +15,6 @@ export const GET = async () => {
 		})
 	);
 
-	const sortedPosts = allPosts.sort((a, b) => {
-		return new Date(b.date) - new Date(a.date);
-	});
-
 	const responseOptions = {
 		status: 200,
 		headers: {
@@ -26,5 +22,5 @@ export const GET = async () => {
 		}
 	};
 
-	return new Response(JSON.stringify(sortedPosts), responseOptions);
+	return new Response(JSON.stringify(allPosts), responseOptions);
 };

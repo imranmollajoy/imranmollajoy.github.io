@@ -1,6 +1,5 @@
 import { getAllCategories } from '$lib/api/updatedPosts';
 import type { PostType } from '$lib/types';
-
 export const load = async ({ setHeaders, url, fetch }) => {
 	const response = await fetch(`${url.origin}/api/blog`);
 
@@ -8,11 +7,10 @@ export const load = async ({ setHeaders, url, fetch }) => {
 		throw new Error('💩 Could not fetch posts');
 	}
 
-	const posts: PostType[] = await response.json();
-
-	const categories = await getAllCategories(posts);
-
+	const allposts: PostType[] = await response.json();
+	const categories = await getAllCategories(allposts);
+	setHeaders({
+		'Cache-Control': `max-age=0, s-maxage=${60 * 60}`
+	});
 	return { categories };
 };
-export const prerender = true;
-// export const csr = false;
