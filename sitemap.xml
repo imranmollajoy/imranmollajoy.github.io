@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://imranmollajoy.github.io/</loc>
+  <lastmod>2023-04-16T06:15:16+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://imranmollajoy.github.io/blog/category/Android</loc>
+  <lastmod>2023-04-16T06:15:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://imranmollajoy.github.io/blog/category/Web%20development</loc>
+  <lastmod>2023-04-16T06:15:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://imranmollajoy.github.io/blog/category/Technology</loc>
+  <lastmod>2023-04-16T06:15:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://imranmollajoy.github.io/portfolio/note-taking-app</loc>
+  <lastmod>2023-04-16T06:15:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://imranmollajoy.github.io/portfolio/watchlist-tracker</loc>
+  <lastmod>2023-04-16T06:15:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://imranmollajoy.github.io/portfolio/weather-app</loc>
+  <lastmod>2023-04-16T06:15:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://imranmollajoy.github.io/portfolio/rose-landing-page</loc>
+  <lastmod>2023-04-16T06:15:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://imranmollajoy.github.io/portfolio</loc>
+  <lastmod>2023-04-16T06:15:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://imranmollajoy.github.io/blog/create-button-component-for-svelte</loc>
+  <lastmod>2023-04-16T06:15:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://imranmollajoy.github.io/blog/passkeys-now-available-in-chrome</loc>
+  <lastmod>2023-04-16T06:15:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://imranmollajoy.github.io/blog/create-horizontal-scroll-section-html-css-js</loc>
+  <lastmod>2023-04-16T06:15:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://imranmollajoy.github.io/blog/ad-free-alternatives-on-android-and-ios</loc>
+  <lastmod>2023-04-16T06:15:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://imranmollajoy.github.io/blog</loc>
+  <lastmod>2023-04-16T06:15:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
