@@ -1,13 +1,36 @@
 <script>
-	import { scale, slide } from 'svelte/transition';
-
+	import Button from './Button.svelte';
+	/**
+	 * The URL to link to.
+	 * @type {string}
+	 */
 	export let href;
+
+	/**
+	 * The image source URL.
+	 * @type {string}
+	 */
 	export let img;
+
+	/**
+	 * The title of the item.
+	 * @type {string}
+	 */
 	export let title;
+
+	/**
+	 * The description of the item.
+	 * @type {string}
+	 */
 	export let description;
+
+	/**
+	 * The category of the item.
+	 * @type {string}
+	 */
 	export let category;
-	
 </script>
+
 <a class="block card card-hover variant-filled-primary" {href}>
 	{#if img}
 		<header>
@@ -25,3 +48,4 @@
 		<h3 class="font-bold mb-2" data-toc-ignore>{title}</h3>
 	</div>
 </a>
+<Button>Hi</Button>
