@@ -1,20 +1,22 @@
 <!-- SEO.svelte -->
 
 <script lang="ts">
+	import { siteName, siteUrl, siteDescription, categories } from '$lib/api/config';
+
 	/**
 	 * The title of the page.
 	 */
-	export let title: string;
+	export let title: string = siteName;
 
 	/**
 	 * The description of the page.
 	 */
-	export let description: string;
+	export let description: string = siteDescription;
 
 	/**
 	 * The keywords associated with the page.
 	 */
-	export let keywords: string[] = [];
+	export let keywords: string[] = categories;
 
 	/**
 	 * The Open Graph (OG) type of the page.
