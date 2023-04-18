@@ -48,6 +48,6 @@
 	{/if}
 
 	<meta property="og:type" content={ogType} />
-	<meta property="og:url" content={window.location.href} />
+	<!-- <meta property="og:url" content={window.location.href} /> -->
 	<meta property="og:title" content={title} />
 </svelte:head>
