@@ -1,5 +1,4 @@
 <script>
-	import Button from './Button.svelte';
 	/**
 	 * The URL to link to.
 	 * @type {string}
@@ -31,7 +30,7 @@
 	export let category;
 </script>
 
-<a class="block card card-hover variant-filled-primary" {href}>
+<a class="block card card-hover variant-ghost-primary" {href}>
 	{#if img}
 		<header>
 			<img
@@ -48,4 +47,3 @@
 		<h3 class="font-bold mb-2" data-toc-ignore>{title}</h3>
 	</div>
 </a>
-<Button>Hi</Button>
