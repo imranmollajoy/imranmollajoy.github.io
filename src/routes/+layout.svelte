@@ -3,18 +3,9 @@
 	import '@skeletonlabs/skeleton/styles/all.css';
 	import '../app.postcss';
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
-	import { page } from '$app/stores';
-	import {
-		AppBar,
-		AppShell,
-		Drawer,
-		drawerStore,
-		LightSwitch,
-		storePopup,
-		popup
-	} from '@skeletonlabs/skeleton';
+	import { AppBar, AppShell, LightSwitch, storePopup, popup } from '@skeletonlabs/skeleton';
 	import type { PopupSettings } from '@skeletonlabs/skeleton';
-	import Navigation from '$lib/components/Navigation.svelte';
+	import Seo from '$lib/components/SEO.svelte';
 	export let data;
 
 	const categories = data.categories;
@@ -22,13 +13,12 @@
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
 	let popupSettings: PopupSettings = {
-		// Set the event as: click | hover | hover-click | focus | focus-click
 		event: 'click',
-		// Provide a matching 'data-popup' value.
 		target: 'goto'
 	};
 </script>
 
+<Seo />
 <AppShell>
 	<svelte:fragment slot="header">
 		<AppBar background="bg-surface-100n space-y-4 p-4 shadow-xl">
