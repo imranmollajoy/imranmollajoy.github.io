@@ -9,14 +9,19 @@
 
 <section class="hero py-64">
 	<div class="container sticky">
-		<h1 class="font-bold leading-tight">Web developer. Web designer</h1>
+		<h1 class="font-bold leading-tight">
+			<span class="gradient-heading from-primary-500 to-secondary-500">Web</span>
+			developer<span class="text-primary-500">.</span>
+			<span class="gradient-heading from-secondary-500 to-primary-500">Web</span>
+			designer<span class="text-secondary-500">.</span>
+		</h1>
 		<p class="subtitle mt-4 text-xl max-w-2xl text-opacity-80">
 			Hi, I'm Imran Molla Joy, a web developer and designer passionate about crafting beautiful and
 			intuitive digital experiences. With expertise in HTML, CSS, JavaScript, and UX/UI design, I
 			specialize in building responsive, dynamic, and user-friendly websites that meet and exceed
 			client expectations.
 		</p>
-		<a href="#portfolio" class="btn variant-filled-error mt-4">Portfolio</a>
+		<a href="#portfolio" class="btn variant-filled-tertiary mt-4">Portfolio</a>
 	</div>
 </section>
 
@@ -24,7 +29,7 @@
 	<Container>
 		<div class="post-list">
 			<PostList posts={data.portfolios} sectionTitle="Projects" />
-			<a href="/portfolio" class="btn variant-filled-secondary mt-4">More</a>
+			<a href="/portfolio" class="btn variant-soft-secondary mt-4">More</a>
 		</div>
 	</Container>
 </section>
@@ -33,7 +38,7 @@
 	<Container>
 		<div class="post-list">
 			<PostList posts={data.posts} sectionTitle="Blog" />
-			<a href="/blog" class="btn variant-filled-secondary mt-4">More</a>
+			<a href="/blog" class="btn variant-soft-secondary mt-4">More</a>
 		</div>
 	</Container>
 </section>
