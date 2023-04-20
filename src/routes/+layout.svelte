@@ -24,7 +24,7 @@
 		<AppBar background="bg-surface-100n space-y-4 p-4 shadow-xl">
 			<svelte:fragment slot="lead">
 				<div class="flex items-center">
-					<a href="/">
+					<a href="/" class="text-primary-500">
 						<strong class="text-xl uppercase">Imjoy</strong>
 					</a>
 				</div>

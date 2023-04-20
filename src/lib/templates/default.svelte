@@ -38,7 +38,11 @@
 					<span class="icon">visibility</span><span> {view}</span>
 				</div>
 				<div class="flex items-center gap-2">
-					<span class="icon">calendar_today</span><span>{new Date(date).toLocaleDateString()}</span>
+					<span class="icon">calendar_today</span><span>
+						{new Date(date)
+							.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
+							.replace(',', '')}
+					</span>
 				</div>
 				<div class="flex items-center gap-2">
 					<span>
