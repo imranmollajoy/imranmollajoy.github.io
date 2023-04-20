@@ -1,5 +1,5 @@
 ---
-title: 'Watchnlist Tracker'
+title: 'Watchlist Tracker'
 date: 2025-10-24
 draft: false
 tags: ['svelte-kit', 'remote api', 'local storage']
