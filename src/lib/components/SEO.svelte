@@ -6,7 +6,7 @@
 	/**
 	 * The title of the page.
 	 */
-	export let title: string = siteName;
+	export let title: string = '';
 
 	/**
 	 * The description of the page.
@@ -33,7 +33,7 @@
 
 <svelte:head>
 	{#if title}
-		<title>{title}</title>
+		<title>{title}-{siteName}</title>
 	{/if}
 
 	{#if description}
