@@ -1,0 +1,1 @@
+async function a(e){const o=e.filter(t=>!t.draft).map(t=>t);function s(){return[...o].sort((t,r)=>new Date(r.date).getTime()-new Date(t.date).getTime())}function n(){return s().slice(0,4)}return{posts:s(),latest:n()}}async function u(e){return(await a(e)).latest}export{a,u as g};
