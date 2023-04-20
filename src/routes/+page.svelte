@@ -4,9 +4,13 @@
 	import Button from '$lib/components/Button.svelte';
 	import Container from '$lib/components/Container.svelte';
 	import PostList from '$lib/components/PostList.svelte';
+	import Seo from '$lib/components/SEO.svelte';
 	export let data;
+
+	const title = 'Home';
 </script>
 
+<Seo {title} />
 <section class="hero py-64">
 	<div class="container sticky">
 		<h1 class="font-bold leading-tight">

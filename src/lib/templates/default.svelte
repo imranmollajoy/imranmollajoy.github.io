@@ -2,9 +2,11 @@
 	import { onMount } from 'svelte';
 	import '../../code.postcss';
 	import { TableOfContents } from '@skeletonlabs/skeleton';
+	import Seo from '$lib/components/SEO.svelte';
 	export let title;
 	export let category;
-
+	export let description;
+	export let date;
 	let key = title.replace(/\s/g, '');
 	let action = 'view';
 	let namespace = 'imranmollajoy.gihub.io';
@@ -26,10 +28,12 @@
 	$: classesBase = `${cBase} ${$$props.class ?? ''}`;
 </script>
 
+<Seo {title} keywords={[category]} {description} />
+
 <div class={classesBase}>
 	<div class="p-4 max-w-2xl mx-auto lg:max-w-3xl lg:ml-auto lg:mr-0">
 		<article class="prose max-w-none lg:prose-xl dark:prose-invert" id="toc-target">
-			<p>View {view}</p>
+			<p><span> View {view}</span><span> - {new Date(date).toLocaleDateString()}</span></p>
 			<a href="/blog/category/{category}">
 				<h5>{category}</h5>
 			</a>
