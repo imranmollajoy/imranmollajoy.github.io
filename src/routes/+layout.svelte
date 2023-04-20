@@ -28,12 +28,10 @@
 						<strong class="text-xl uppercase">Imjoy</strong>
 					</a>
 				</div>
-			</svelte:fragment>
-			<svelte:fragment slot="trail">
-				<button
-					class="btn variant-ringed-primary hover:variant-soft-primary"
-					use:popup={popupSettings}>Explore</button
-				>
+				<button class="btn ml-2 hover:variant-soft-primary" use:popup={popupSettings}>
+					<i class="icon text-lg md:hidden">menu</i>
+					<span class="hidden md:inline-block">Explore</span>
+				</button>
 				<div
 					class="card p-4 w-60 shadow-xl"
 					data-popup="goto"
@@ -53,6 +51,8 @@
 					</nav>
 					<div class="arrow bg-surface-100-800-token" style="left: 116px; top: -4px;" />
 				</div>
+			</svelte:fragment>
+			<svelte:fragment slot="trail">
 				<LightSwitch />
 			</svelte:fragment>
 		</AppBar>
