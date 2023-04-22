@@ -1,9 +1,9 @@
-import type { PortfolioType } from '$lib/types';
+import type { PostType } from '$lib/types';
 
 /**
  * Turn posts from GitHub into categories
  */
-export async function getPortfolios(data: PortfolioType[]): Promise<PostsType> {
+export async function getPortfolios(data: PostType[]) {
 	const postLimit = 4;
 	const characterLimit = 80;
 
@@ -13,13 +13,13 @@ export async function getPortfolios(data: PortfolioType[]): Promise<PostsType> {
 			return post;
 		});
 
-	function sortedPosts(): PortfolioType[] {
+	function sortedPosts(): PostType[] {
 		return [...posts].sort((firstElement, secondElement) => {
 			return new Date(secondElement.date).getTime() - new Date(firstElement.date).getTime();
 		});
 	}
 
-	function getLatestPosts(): PortfolioType[] {
+	function getLatestPosts(): PostType[] {
 		return sortedPosts().slice(0, postLimit);
 	}
 
@@ -29,6 +29,6 @@ export async function getPortfolios(data: PortfolioType[]): Promise<PostsType> {
 	};
 }
 
-export async function getPortfoliosForHomepage(data: PortfolioType[]) {
+export async function getPortfoliosForHomepage(data: PostType[]) {
 	return (await getPortfolios(data)).latest;
 }

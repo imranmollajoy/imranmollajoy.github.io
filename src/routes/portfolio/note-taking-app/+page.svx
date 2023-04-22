@@ -3,9 +3,9 @@ title: 'Note Taking App'
 draft: false
 tags: ['react-js', 'local storage']
 date: 2025-10-24
-featuredImg: './images/featured.png'
+featuredImg: 'images/featured.png'
 cover:
-  image: './images/featured.png'
+  image: 'images/featured.png'
   alt: Thumbnail of Take Note App
 layout: portfolio
 weight: 2

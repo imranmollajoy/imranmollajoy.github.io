@@ -3,9 +3,9 @@ title: 'A Dummy Text Generator'
 draft: false
 tags: ['react-js', 'remote api']
 date: 2020-06-01
-featuredImg: './images/featured.png'
+featuredImg: 'images/featured.png'
 cover:
-  image: './images/featured.png'
+  image: 'images/featured.png'
   alt: Thumbnail of Dummy Text Generator
 layout: portfolio
 weight: 2

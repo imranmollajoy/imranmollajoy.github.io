@@ -3,9 +3,9 @@ title: 'Weather Forecast App'
 draft: false
 tags: ['react-js', 'remote api']
 date: 2025-10-24
-featuredImg: './images/featured.png'
+featuredImg: 'images/featured.png'
 cover:
-  image: './images/featured.png'
+  image: 'images/featured.png'
   alt: Thumbnail of Bring Your Umbrella
 layout: portfolio
 weight: 2
