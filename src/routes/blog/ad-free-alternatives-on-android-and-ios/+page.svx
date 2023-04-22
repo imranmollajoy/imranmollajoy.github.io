@@ -10,7 +10,7 @@ tags:
 category: Android
 type: post
 cover:
-  image: ./images/featured.png
+  image: images/featured.png
   alt: Thumbnail of Ad Free Alternatives on Android and Ios
 weight: 1
 preview: /content/post/ad-free-alternatives-on-android-and-ios/images/featured.png

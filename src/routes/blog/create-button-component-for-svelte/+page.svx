@@ -10,7 +10,7 @@ tags:
 category: Web development
 type: post
 cover:
-  image: './images/featured.png'
+  image: 'images/featured.png'
   alt: Thumbnail of Create Button Component for Svelte
 slug: create-button-component-for-svelte
 weight: 1

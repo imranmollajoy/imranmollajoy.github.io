@@ -4,7 +4,7 @@
 	"scripts": {
 		"dev": "vite dev",
 		"dev:host": "vite dev --host",
-		"build": "vite build",
+		"build": "node ./src/lib/scripts/gen-img.js && vite build",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
@@ -24,6 +24,7 @@
 		"eslint": "^8.21.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"fs-extra": "^11.1.1",
 		"gh-pages": "^4.0.0",
 		"marked": "^4.0.18",
 		"mdsvex": "^0.10.6",

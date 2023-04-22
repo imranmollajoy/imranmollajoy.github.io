@@ -5,9 +5,9 @@ draft: false
 tags:
   - web-design
   - figma
-featuredImg: './images/featured.png'
+featuredImg: 'images/featured.png'
 cover:
-  image: './images/featured.png'
+  image: 'images/featured.png'
   alt: Thumbnail of Rose Landing Page
 layout: portfolio
 weight: 1

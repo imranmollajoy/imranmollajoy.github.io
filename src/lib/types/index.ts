@@ -20,20 +20,14 @@ export type PostMarkdownType = {
 	frontmatter: FrontMatterType;
 	postMarkdown: string;
 };
-
-export type PostType = {
-	views: number;
-	title: string;
-	description: string;
-	path: string;
-	date: string;
-	category: string;
-	series?: string;
-	draft?: string;
+export type Cover = {
+	image: string;
+	alt: string;
 };
-export type PortfolioType = {
+export type PostType = {
 	title: string;
 	description: string;
+	cover: Cover;
 	path: string;
 	date: string;
 	tags: string[];
@@ -41,6 +35,7 @@ export type PortfolioType = {
 	series?: string;
 	draft?: string;
 };
+
 export type PostsType = {
 	posts: PostType[];
 	latestPost: PostType;

@@ -3,9 +3,9 @@ title: 'Blog Made with Svelte'
 draft: false
 tags: ['svelte-kit', 'Contentful']
 date: 2020-06-01
-featuredImg: './images/featured.png'
+featuredImg: 'images/featured.png'
 cover:
-  image: './images/featured.png'
+  image: 'images/featured.png'
   alt: Thumbnail of Blog With Svelte
 weight: 2
 layout: portfolio

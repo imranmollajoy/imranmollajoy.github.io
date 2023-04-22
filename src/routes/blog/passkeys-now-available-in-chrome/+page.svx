@@ -9,7 +9,7 @@ tags:
 category: 'Technology'
 type: post
 cover:
-  #image: "./images/featured.png"
+  #image: "images/featured.png"
   alt: Thumbnail of Passkeys Now Available in Chrome
 slug: passkeys-now-available-in-chrome
 weight: 9

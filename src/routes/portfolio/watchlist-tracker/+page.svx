@@ -3,9 +3,9 @@ title: 'Watchlist Tracker'
 date: 2025-10-24
 draft: false
 tags: ['svelte-kit', 'remote api', 'local storage']
-featuredImg: './images/featured.png'
+featuredImg: 'images/featured.png'
 cover:
-  image: './images/featured.png'
+  image: 'images/featured.png'
   alt: Thumbnail of Watchnext
 layout: portfolio
 ---
