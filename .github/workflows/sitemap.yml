@@ -7,15 +7,10 @@ on:
 jobs:
   ping:
     name: Ping Google
-    if: "contains(github.event.head_commit.message, 'deploy+ping google')"
+    if: "contains(github.event.head_commit.message, 'ping google')"
     runs-on: ubuntu-latest
 
     steps:
-      - name: Waitt for deploy process
-        # Deplot usuallu takes 43sec
-        run: sleep 50s
-        shell: bash
-
       - name: Send HTTP GET request
         # Example: `curl http://www.google.com/ping?sitemap=https://www.example.com/sitemap.xml`
         run: curl http://www.google.com/ping?sitemap=https://imranmollajoy.github.io/sitemap.xml
