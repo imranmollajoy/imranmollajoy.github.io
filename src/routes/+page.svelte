@@ -16,7 +16,7 @@
 			<span class="gradient-heading from-secondary-500 to-primary-500">Web</span>
 			designer<span class="text-secondary-500">.</span>
 		</h1>
-		<p class="subtitle mt-4 text-xl max-w-2xl text-opacity-80">
+		<p class="subtitle mt-4 max-w-2xl text-opacity-80">
 			Hi, I'm Imran Molla Joy, a web developer and designer passionate about crafting beautiful and
 			intuitive digital experiences. With expertise in HTML, CSS, JavaScript, and UX/UI design, I
 			specialize in building responsive, dynamic, and user-friendly websites that meet and exceed
@@ -32,6 +32,15 @@
 			<PostList posts={data.portfolios} sectionTitle="Projects" />
 			<a href="/portfolio" class="btn variant-soft-secondary mt-4">More</a>
 		</div>
+	</Container>
+</section>
+<section class="variant-filled-secondary py-32">
+	<Container>
+		<h1>Let's work together!</h1>
+		<p class="subtitle mt-4 max-w-2xl text-opacity-80">
+			I'd love to hear from you. Send me a message and let's chat about how I can help you.
+		</p>
+		<a href="https://contact.me" class="btn variant-filled-surface mt-4">Contact me</a>
 	</Container>
 </section>
 
