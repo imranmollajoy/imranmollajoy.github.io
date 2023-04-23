@@ -16,11 +16,6 @@
 	export let title: string;
 
 	/**
-	 * The description of the item.
-	 */
-	export let description: string;
-
-	/**
 	 * The category of the item.
 	 */
 	export let category: string;
