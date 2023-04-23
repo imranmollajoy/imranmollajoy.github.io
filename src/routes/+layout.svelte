@@ -13,7 +13,7 @@
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
 	let popupSettings: PopupSettings = {
-		event: 'hover-click',
+		event: 'click',
 		target: 'goto'
 	};
 </script>
