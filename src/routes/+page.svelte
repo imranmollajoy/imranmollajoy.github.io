@@ -1,7 +1,4 @@
 <script>
-	import PostCard from '../lib/components/PostCard.svelte';
-
-	import Button from '$lib/components/Button.svelte';
 	import Container from '$lib/components/Container.svelte';
 	import PostList from '$lib/components/PostList.svelte';
 	import Seo from '$lib/components/SEO.svelte';
@@ -55,8 +52,8 @@
 	.subtitle {
 		opacity: var(--tw-text-opacity);
 	}
-	section.post-list:not(:only-child) {
+	/* section.post-list:not(:only-child) {
 		margin-bottom: 1rem;
 		margin-top: 4rem;
-	}
+	} */
 </style>

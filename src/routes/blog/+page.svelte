@@ -1,9 +1,5 @@
 <script>
-	import PostCard from '$lib/components/PostCard.svelte';
-
-	import Button from '$lib/components/Button.svelte';
 	import Container from '$lib/components/Container.svelte';
-	import { Avatar } from '@skeletonlabs/skeleton';
 	import PostList from '$lib/components/PostList.svelte';
 	import Seo from '$lib/components/SEO.svelte';
 	import LatestPostCard from '$lib/components/LatestPostCard.svelte';
