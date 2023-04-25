@@ -36,11 +36,42 @@
 </section>
 <section class="variant-filled-secondary py-32">
 	<Container>
-		<h1>Let's work together!</h1>
-		<p class="subtitle mt-4 max-w-2xl text-opacity-80">
-			I'd love to hear from you. Send me a message and let's chat about how I can help you.
-		</p>
-		<a href="https://contact.me" class="btn variant-filled-surface mt-4">Contact me</a>
+		<div class="flex items-center justify-between gap-8">
+			<div>
+				<h1>Let's work together!</h1>
+				<p class="subtitle mt-4 max-w-2xl text-opacity-80">
+					I'd love to hear from you. Send me a message and let's chat about how I can help you.
+				</p>
+			</div>
+			<div>
+				<form action="https://formspree.io/f/mknakkoq" method="post" class="space-y-4">
+					<label for="email" class="label">
+						<span>Your email:</span>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							class="input text-black dark:text-white"
+							required
+						/>
+					</label>
+
+					<label for="message" class="label">
+						<span> Your message:</span>
+						<textarea
+							name="message"
+							id="message"
+							class="textarea text-black dark:text-white"
+							rows="5"
+							placeholder="Write your message here."
+							required
+						/>
+					</label>
+					<input type="text" name="_gotcha" style="display:none" />
+					<button class="btn variant-filled-surface" type="submit">Send</button>
+				</form>
+			</div>
+		</div>
 	</Container>
 </section>
 
