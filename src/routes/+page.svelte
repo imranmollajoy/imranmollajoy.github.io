@@ -8,6 +8,7 @@
 </script>
 
 <Seo {title} />
+
 <section class="hero py-64">
 	<div class="container sticky">
 		<h1 class="font-bold leading-tight">
