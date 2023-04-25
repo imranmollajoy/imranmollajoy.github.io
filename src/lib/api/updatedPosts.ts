@@ -77,3 +77,40 @@ export async function getPostsByCategory(data: PostType[], category: string): Pr
 export async function getPostsForHomepage(data: PostType[]) {
 	return (await getPosts(data)).latest;
 }
+export async function getRelatedPosts(
+	posts: PostType[],
+	currentPostTitle: string,
+	category: string,
+	tags: string[]
+) {
+	// Filter posts with the same category
+	const relatedPosts = posts.filter(
+		(post) => post.category === category && post.title !== currentPostTitle
+	);
+
+	// Get all tags from the current post
+	const currentPostTags = new Set(tags);
+
+	// Filter related posts that have at least one tag in common with the current post
+	const filteredPosts = relatedPosts.filter((post) => {
+		const postTags = new Set(post.tags);
+		for (const tag of postTags) {
+			if (currentPostTags.has(tag)) {
+				return true;
+			}
+		}
+		return false;
+	});
+
+	// Sort filtered posts by number of tags in common with the current post (descending)
+	filteredPosts.sort((a, b) => {
+		const aTags = new Set(a.tags);
+		const bTags = new Set(b.tags);
+		const aCommonTags = [...currentPostTags].filter((tag) => aTags.has(tag));
+		const bCommonTags = [...currentPostTags].filter((tag) => bTags.has(tag));
+		return bCommonTags.length - aCommonTags.length;
+	});
+
+	// Return the top 3 filtered posts
+	return filteredPosts.slice(0, 3);
+}

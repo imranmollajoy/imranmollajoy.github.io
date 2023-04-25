@@ -27,7 +27,7 @@
 </script>
 
 <a class="block card card-hover variant-ghost-primary flex flex-col justify-between" {href}>
-	{#if cover.image}
+	{#if cover?.image}
 		<header>
 			<img src="{href}/{cover?.image}" class="bg-black/50 w-full" alt={cover?.alt} />
 		</header>
