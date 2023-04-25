@@ -1,12 +1,15 @@
 <script>
-	import { onMount } from 'svelte';
 	import '../../code.postcss';
+	import { onMount } from 'svelte';
 	import { TableOfContents } from '@skeletonlabs/skeleton';
 	import Seo from '$lib/components/SEO.svelte';
+
 	export let title;
 	export let category;
 	export let description;
+	export let tags;
 	export let date;
+
 	let key = title.replace(/\s/g, '');
 	let action = 'view';
 	let namespace = 'imranmollajoy.gihub.io';
