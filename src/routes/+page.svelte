@@ -24,6 +24,12 @@
 			client expectations.
 		</p>
 		<a href="#portfolio" class="btn variant-filled-tertiary mt-4">Portfolio</a>
+		<a
+			href="https://devdesignfun.com"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="btn variant-ringed-secondary mt-4 ml-4">My blog</a
+		>
 	</div>
 </section>
 
@@ -72,15 +78,6 @@
 					<button class="btn variant-filled-surface" type="submit">Send</button>
 				</form>
 			</div>
-		</div>
-	</Container>
-</section>
-
-<section class="bg-surface-50-900-token py-8">
-	<Container>
-		<div class="post-list">
-			<PostList posts={data.posts} sectionTitle="Blog" />
-			<a href="/blog" class="btn variant-soft-secondary mt-4">More</a>
 		</div>
 	</Container>
 </section>
