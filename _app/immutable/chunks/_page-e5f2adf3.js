@@ -1,0 +1,1 @@
+import{g as l}from"./portfolios-f68ad170.js";const s=async({setHeaders:o,url:t,fetch:r})=>{const a=await(await r(`${t.origin}/api/portfolio`)).json(),e=await l(a);return o({"Cache-Control":`max-age=0, s-maxage=${60*60}`}),{portfolios:e}},c=Object.freeze(Object.defineProperty({__proto__:null,load:s},Symbol.toStringTag,{value:"Module"}));export{c as _,s as l};
