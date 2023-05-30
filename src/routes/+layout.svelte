@@ -41,11 +41,11 @@
 						<ul>
 							<li>
 								<a href="/"> <span>Homepage</span></a>
-								<hr class="my-4" />
+								<!-- <hr class="my-4" />
 								<h4>Blog</h4>
 								{#each categories as cat}
 									<a href="/blog/category/{cat}"> <span>{cat}</span></a>
-								{/each}
+								{/each} -->
 							</li>
 						</ul>
 					</nav>

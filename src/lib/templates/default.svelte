@@ -47,7 +47,7 @@
 							.replace(',', '')}
 					</span>
 				</div>
-				<div class="flex items-center gap-2">
+				<!-- <div class="flex items-center gap-2">
 					<span>
 						<a
 							href="/blog/category/{category}"
@@ -56,7 +56,7 @@
 							{category}
 						</a>
 					</span>
-				</div>
+				</div> -->
 			</div>
 
 			<h1>{title}</h1>
