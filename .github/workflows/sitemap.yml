@@ -1,13 +1,11 @@
 name: Ping Google about updated sitemap
 
 on:
-  push:
-    branches: [source]
+  workflow_dispatch:
 
 jobs:
   ping:
     name: Ping Google
-    if: "contains(github.event.head_commit.message, 'ping google')"
     runs-on: ubuntu-latest
 
     steps:
