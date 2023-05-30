@@ -53,5 +53,5 @@ async function createPostImageFoldersForCopy(targetDir, postsDir) {
 	}
 }
 
-createPostImageFoldersForCopy('static/blog', 'src/routes/blog');
+// createPostImageFoldersForCopy('static/blog', 'src/routes/blog');
 createPostImageFoldersForCopy('static/portfolio', 'src/routes/portfolio');
