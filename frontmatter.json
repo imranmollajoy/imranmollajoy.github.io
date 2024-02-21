@@ -81,15 +81,6 @@
       "path": "[[workspace]]/src/routes/blog"
     }
   ],
-  "frontMatter.taxonomy.tags": [
-    "Contentful",
-    "alternative of apps",
-    "android alternative apps",
-    "local storage",
-    "react-js",
-    "remote api",
-    "svelte-kit"
-  ],
   "frontMatter.taxonomy.category": [
     "Android"
   ]

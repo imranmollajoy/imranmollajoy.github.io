@@ -37,5 +37,8 @@
 			<h6 class="mb-4">{category}</h6>
 		{/if}
 		<h3 class="font-bold mb-2" data-toc-ignore>{title}</h3>
+		{#if description}
+			<p>{description}</p>
+		{/if}
 	</div>
 </a>

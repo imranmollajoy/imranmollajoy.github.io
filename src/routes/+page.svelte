@@ -43,7 +43,7 @@
 </section>
 <section class="variant-filled-secondary py-32">
 	<Container>
-		<div class="flex items-center justify-between gap-8">
+		<div class="flex flex-col md:flex-row items-center justify-between gap-8">
 			<div>
 				<h1>Let's work together!</h1>
 				<p class="subtitle mt-4 max-w-2xl text-opacity-80">
