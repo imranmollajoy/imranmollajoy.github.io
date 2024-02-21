@@ -41,6 +41,8 @@
 						<ul>
 							<li>
 								<a href="/"> <span>Homepage</span></a>
+								<a href="/portfolio"><span>Portfolio</span></a>
+								<a href="/story"> <span>Story</span></a>
 								<!-- <hr class="my-4" />
 								<h4>Blog</h4>
 								{#each categories as cat}
