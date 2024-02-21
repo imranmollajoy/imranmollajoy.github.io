@@ -18,7 +18,8 @@ const config = {
 			extensions: ['.md', '.svx'],
 			layout: {
 				_: 'src/lib/templates/default.svelte',
-				portfolio: 'src/lib/templates/portfolio.svelte'
+				portfolio: 'src/lib/templates/portfolio.svelte',
+				story: 'src/lib/templates/story.svelte'
 			},
 			remarkPlugins: [relativeImages]
 		}),
