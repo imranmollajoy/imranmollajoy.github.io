@@ -3,7 +3,9 @@ title: মধ্যাহ্নভোজ
 draft: false
 tags:
   - Story
-date: 2023-02-17
+date: 2024-02-17
+updates:
+  - 2024-02-23
 weight: 2
 layout: story
 description: "মধ্যাহ্নে সিলমোহর মারিতে গিয়া রাজদরবারে বিপত্তি"
