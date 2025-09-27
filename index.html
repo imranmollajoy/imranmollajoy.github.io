@@ -40,10 +40,10 @@ Check out some of my recent work below!
 <h1 class="section-title">Graphic Design Portfolio</h1>
 <div class="design-grid">
 {% for design in site.designs limit: 6 %}
-<figure class="design-card" data-title="{{ design.title }}" data-full-img="{{ design.image_path }}" onclick="openLightbox(this)">
+<div class="design-card" data-title="{{ design.title }}" data-full-img="{{ design.image_path }}" onclick="openLightbox(this)">
 <img src="{{ design.image_path }}" alt="{{ design.title }}" class="design-image">
 <figcaption class="design-caption">{{ design.title }}</figcaption>
-</figure>
+</div>
 {% endfor %}
 </div>
 </section>
