@@ -1,0 +1,36 @@
+# Site Settings
+
+title: Imran Molla Joy
+description: A portfolio of my latest projects and work, built with Jekyll.
+baseurl: "" 
+url: "https://imranmollajoy.github.io" 
+favicon: /assets/images/favicon.png 
+
+# Build Settings
+
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+collections:
+  posts:
+    output: true
+    permalink: /projects/:title/
+  designs:
+    output: true
+    permalink: /designs/:title/
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+
+plugins: []
+
+exclude:
+
+   - Gemfile
+   - Gemfile.lock
+   - node_modules
+   - vendor/
+
+theme: minima

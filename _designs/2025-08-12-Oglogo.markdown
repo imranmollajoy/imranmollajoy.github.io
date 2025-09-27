@@ -1,0 +1,5 @@
+---
+title: Logo Design for Ognidhro 
+image_path: /assets/designs/ognidhro.png
+date: 2024-10-20 10:00:00 +0600
+---

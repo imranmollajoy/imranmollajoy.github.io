@@ -1,0 +1,99 @@
+---
+layout: default 
+title: Home
+---
+
+<div class="text-center mb-12">
+<h1 class="text-5xl font-extrabold text-gray-900 mb-4">Hello, I'm Imran Molla Joy</h1>
+<p class="text-xl text-gray-600 max-w-2xl mx-auto">
+I am a Software Developer and a Graphic Designer.
+
+Check out some of my recent work below!
+</p>
+</div>
+
+<section class="mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-6 border-b pb-2">Featured Projects</h2>
+
+<div class="project-grid">
+    {% for project in site.posts limit: 4 %}
+    <a href="{{ project.url }}" class="project-card">
+        {% if project.featured_image %}
+        <img src="{{ project.featured_image }}" alt="Featured image for {{ project.title }}" class="project-image">
+        {% endif %}
+
+        <div class="project-content-wrapper">
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">{{ project.title }}</h2>
+        </div>
+    </a>
+    {% endfor %}
+
+    {% comment %} Message if no posts are found {% endcomment %}
+    {% unless site.posts.size > 0 %}Add a Markdown file in the _posts folder to see them here!</p>
+    {% endunless %}
+</div>
+
+</section>
+
+
+<section class="section" style="margin-top: 4rem;">
+<h1 class="section-title">Graphic Design Portfolio</h1>
+<div class="design-grid">
+{% for design in site.designs limit: 6 %}
+<figure class="design-card" data-title="{{ design.title }}" data-full-img="{{ design.image_path }}" onclick="openLightbox(this)">
+<img src="{{ design.image_path }}" alt="{{ design.title }}" class="design-image">
+<figcaption class="design-caption">{{ design.title }}</figcaption>
+</figure>
+{% endfor %}
+</div>
+</section>
+
+
+<section class="cta-section" style="margin-top: 4rem;">
+    <h2 class="title">Ready to start a project?</h2>
+    <p class="subtitle">I'm currently available for freelance work and collaborations.</p>
+    <a href="mailto:imranmollajoy@gmail.com" class="cta-button">Get In Touch</a>
+</section>
+
+
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+<span class="lightbox-close">&times;</span>
+<img class="lightbox-content" id="lightbox-img">
+<div id="lightbox-caption" class="lightbox-caption"></div>
+</div>
+
+
+
+<script>
+function openLightbox(element) {
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxCaption = document.getElementById('lightbox-caption');
+
+    // Prevent scrolling underneath the modal
+    document.body.style.overflow = "hidden";
+
+    lightbox.style.display = "block";
+    lightboxImg.src = element.dataset.fullImg;
+    lightboxCaption.innerHTML = element.dataset.title;
+}
+
+function closeLightbox(event) {
+    const lightbox = document.getElementById("lightbox");
+    // Only close if the user clicks the close button OR the backdrop (not the image itself)
+    if (event.target === lightbox || event.target.className === "lightbox-close") {
+        lightbox.style.display = "none";
+        document.body.style.overflow = "auto"; // Re-enable scrolling
+    }
+}
+
+// Allow closing with the ESC key
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape" &&  document.getElementById("lightbox").style.display === "block") {
+        document.getElementById("lightbox").style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+});
+
+</script>
