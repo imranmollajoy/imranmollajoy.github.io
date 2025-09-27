@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ page.title }} | {{ site.title }}</title>
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+</head>
+<body class="page-body">
+
+
+<header class="site-header">
+<div class="header-container">
+<a href="{{ site.baseurl }}/" class="site-title">{{ site.title }}</a>
+<nav class="site-nav">
+<a href="{{ site.baseurl }}/" class="nav-link">Home</a>
+<a href="{{ site.baseurl }}/about" class="nav-link">About</a>
+</nav>
+</div>
+</header>
+
+
+<main class="main-content">
+{{ content }}
+</main>
+
+
+<footer class="site-footer">
+<p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. Built with Jekyll.</p>
+{% comment %} You can add social links here {% endcomment %}
+</footer>
+
+</body>
+</html>
