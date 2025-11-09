@@ -1,21 +1,24 @@
 
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]),
+  :host:not([data-theme]) {
+    --pico-text-selection-color: rgba(245, 107, 61, 0.1875);
+    --pico-primary: var(--pico-color-pumpkin-300);
+    --pico-primary-background: var(--pico-color-zinc-300);
+    --pico-primary-underline: var(--pico-color-pumpkin-300);
+    --pico-primary-hover: var(--pico-color-pumpkin-200);
+    --pico-primary-hover-background:var(--pico-color-pumpkin-200);
+    --pico-primary-focus: var(--pico-color-pumpkin-700);
+    --pico-primary-inverse: #fff;
+  }
+}
 /* 1. Base Styles & Typography */
 img{
     max-width: 100%;
 }
 
-.page-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    background-color: #f9fafb;
-    color: #374151;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
 /* 2. Header & Navigation */
 .site-header {
-    background-color: #ffffff;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
@@ -32,10 +35,11 @@ img{
 .site-title {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #111827;
     text-decoration: none;
 }
-
+.meta-section{
+    margin-bottom: 1rem;
+}
 .site-nav {
     display: flex;
     gap: 1rem;
@@ -43,14 +47,11 @@ img{
 }
 
 .nav-link {
-    color: #4b5563;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.nav-link:hover {
-    color: #3b82f6;
-}
+
 
 /* 3. Main Content */
 .main-content {
@@ -62,11 +63,9 @@ img{
 
 /* 4. Footer */
 .site-footer {
-    background-color: #f3f4f6;
     margin-top: 3rem;
     padding: 1.5rem 0;
     text-align: center;
-    color: #6b7280;
     font-size: 0.875rem;
 }
 
@@ -108,7 +107,6 @@ img{
 
 .read-more-link {
     display: inline-block;
-    color: #2563eb;
     font-weight: 600;
     margin-top: 0.5rem;
 }
@@ -136,9 +134,7 @@ img{
     font-weight: 800;
 }
 
-.text-gray-900 {
-    color: #111827;
-}
+
 
 .mb-4 {
     margin-bottom: 1rem;
@@ -146,10 +142,6 @@ img{
 
 .text-xl {
     font-size: 1.25rem;
-}
-
-.text-gray-600 {
-    color: #4b5563;
 }
 
 .max-w-2xl {
@@ -173,9 +165,6 @@ img{
     font-weight: 700;
 }
 
-.border-b {
-    border-bottom: 1px solid #e5e7eb;
-}
 
 .pb-2 {
     padding-bottom: 0.5rem;
@@ -184,25 +173,21 @@ img{
 .cta-section {
     text-align: center;
     padding: 2rem;
-    background-color: #eff6ff;
     border-radius: 0.5rem;
 }
 
 .cta-section .title {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #1e40af;
     margin-bottom: 0.75rem;
 }
 
 .cta-section .subtitle {
     font-size: 1.125rem;
-    color: #1d4ed8;
     margin-bottom: 1rem;
 }
 
 .cta-button {
-    background-color: #3b82f6;
     color: white;
     font-weight: 700;
     padding: 0.75rem 1.5rem;
@@ -214,11 +199,8 @@ img{
 }
 
 .cta-button:hover {
-    background-color: #2563eb;
 }
 .tech-badge{
-    background-color: #3b82f6;
-    color: white;
     padding: 0.25rem 0.5rem;
     border-radius: 9999px;
 }
@@ -259,7 +241,6 @@ img{
     left: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.6);
-    color: white;
     padding: 0.5rem;
     font-size: 0.875rem;
     text-align: center;
