@@ -1,27 +1,27 @@
 ---
 layout: default
 ---
-
 <article class="project-detail">
-<h1 class="text-5xl font-extrabold text-gray-900 mb-6 text-center">{{ page.title }}</h1>
+
+<h2 class=" mb-6 text-center">{{ page.title }}</h1>
 
 <div class="project-meta">
-    <div class="meta-section">
+    <!-- <div class="meta-section">
         <h3 class="meta-heading">Technologies Used</h3>
         <div class="tech-list">
             {% for tech in page.technologies %}
-                <span class="tech-badge">{{ tech }}</span>
+            <span class="tech-badge">{{ tech }}</span>
             {% endfor %}
         </div>
-    </div>
+    </div> -->
     
     <div class="meta-section links-section">
-        <h3 class="meta-heading">Quick Links</h3>
+        <!-- <h3 class="meta-heading">Quick Links</h3> -->
         {% if page.demo_link %}
-            <a href="{{ page.demo_link }}" class="action-button demo-button" target="_blank" rel="noopener noreferrer">Try it!</a>
+        <a href="{{ page.demo_link }}" class="action-button demo-button" role="button" target="_blank" rel="noopener noreferrer">Try it!</a>
         {% endif %}
         {% if page.repo_link %}
-            <a href="{{ page.repo_link }}" class="action-button repo-button" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        <a href="{{ page.repo_link }}" class="action-button repo-button" role="button" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
         {% endif %}
     </div>
 </div>
