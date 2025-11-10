@@ -91,7 +91,7 @@ function createFlippingTextAnimation(targetElement, charIndex) {
     repeat: -1,
     repeatDelay: 0,
     defaults: {
-      ease: "power2.inOut",
+      ease: "bounce.out",
     },
   });
 
