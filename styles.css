@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+:root {
+  --text-color: #1c181a;
+  --bg-color: #92dee8;
+  --accent-color: #f0394b;
+  --spc-bg-color: #fefdfc;
+}
+
+html {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+h1,
+h2 {
+  font-family: "DM Serif Display";
+}
+
+h1 {
+  font-size: 9rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+h4 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+p,
+li,
+a {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+small,
+.caption {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+section {
+  padding: min(50px, 8%);
+}
+article {
+  margin-bottom: 3rem;
+}
+a {
+  color: var(--accent-color);
+}
+#hero {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  height: 100dvh;
+  overflow-x: hidden;
+  line-height: 0.78;
+  h1 {
+    margin-bottom: 0;
+    color: var(--accent-color);
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+  #titles {
+    margin-top: 3rem;
+    p {
+      margin-top: -1rem;
+    }
+  }
+}
+.list {
+  margin-top: 2rem;
+  article {
+    a {
+      display: inline-block;
+    }
+    p {
+      font-size: 1.2rem;
+      span {
+        white-space: nowrap;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 0 0.5rem;
+        border-radius: 999px;
+        border: var(--text-color) solid 1px;
+      }
+    }
+  }
+}
+
+#projects {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+#designs {
+  .list {
+    column-count: 1;
+    img {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+}
+#contact {
+  background-color: var(--spc-bg-color);
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 11rem;
+  }
+
+  h2 {
+    font-size: 6rem;
+  }
+  #designs {
+    .list {
+      column-count: 2;
+    }
+  }
+}
+
+@media screen and (min-width: 980px) {
+  #designs {
+    .list {
+      column-count: 3;
+    }
+  }
+}
