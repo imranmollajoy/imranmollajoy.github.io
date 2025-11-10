@@ -13,7 +13,9 @@ html {
 }
 body {
   background-color: var(--bg-color);
+  position: relative;
   color: var(--text-color);
+  overflow-x: hidden;
 }
 h1,
 h2 {
@@ -128,6 +130,13 @@ a {
 #contact {
   background-color: var(--spc-bg-color);
 }
+#line {
+  position: absolute;
+  left: 0px;
+  right: 0;
+  top: 0px;
+  width: 120vw;
+}
 
 @media screen and (min-width: 768px) {
   h1 {
@@ -143,7 +152,6 @@ a {
     }
   }
 }
-
 @media screen and (min-width: 980px) {
   #designs {
     .list {
