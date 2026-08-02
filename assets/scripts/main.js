@@ -19,9 +19,9 @@ gsap.registerPlugin(SplitText, TextPlugin, ScrollTrigger);
 
 const textChangesJ1 = [
   { text: "app developer", scrollEnd: 50 },
-  { text: "wpp developer", scrollEnd: 100 },
-  { text: "wep developer", scrollEnd: 150 },
-  { text: "web developer", scrollEnd: 200 },
+  { text: "wpp developer", scrollEnd: 200 },
+  { text: "wep developer", scrollEnd: 350 },
+  { text: "web developer", scrollEnd: 400 },
 ];
 
 const textChangesJ2 = [
@@ -55,7 +55,7 @@ function createTextTimeline(element, changes) {
         text: change.text,
         ease: "power1.inOut",
       },
-      currentScrollStart
+      currentScrollStart,
     );
 
     currentScrollStart = change.scrollEnd;
@@ -80,7 +80,7 @@ function createFlippingTextAnimation(targetElement, charIndex) {
 
   if (!targetChar) {
     console.error(
-      `Character at index ${charIndex} not found in target element.`
+      `Character at index ${charIndex} not found in target element.`,
     );
     return;
   }

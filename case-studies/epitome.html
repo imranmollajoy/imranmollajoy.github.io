@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../assets/styles/reset.css" />
+        <link rel="stylesheet" href="../assets/styles/styles.css" />
+        <title>Epitome Case Study - IMJOY</title>
+    </head>
+    <body>
+        <section>
+            <h1 style="font-size: 1.5rem">Epitome Case Study</h1>
+        </section>
+        <article>
+            <section>
+                <h2>= Motivation</h2>
+                <p>
+                    I needed to make some resume. I searched online for resume
+                    builder. Found a seemingly feature-rich one. 'Great', I
+                    thought. I excitedly entered all the necessary information.
+                    Tweaked colors. Rearranged some sections. Tried to change
+                    the template. Ooops, changing template requires
+                    subscription. Fair enough. The default is fine. So I clicked
+                    generate.
+                </p>
+                <p>
+                    Guess what happened next? Yup, I got a popup saying
+                    'Subscribe to Download the Watermark-free Resume'. What?
+                    There was no mention of watermark on free version in
+                    anywhere of your landing page. Now you are telling me that?
+                    After I have already spent like 30 minutes to fill up
+                    everything? Ugh.
+                </p>
+                <p>
+                    "Okay", I blamed myself. "I should have checked their
+                    pricing first". I searched again. Found another one. I
+                    checked their pricing. No watermark on free version. So I
+                    filled in information. Tried to hide a section. And, yup,
+                    customizing section requires subscription. And no, there was
+                    no mention of this feature being subscription only.
+                </p>
+                <p>
+                    I was fuming with rage. If I was a character of a animated
+                    movies, surely steam would come out of my nose and ears. I
+                    decided, okay I will build something for me.
+                </p>
+            </section>
+            <section>
+                <h2>= Why not use (Word, LaTeX etc.)</h2>
+                <p>
+                    Please do not tell me to use microsoft products. Also using
+                    word for resume? What? It is a word processor. Not a layout
+                    designer.
+                </p>
+                <p>
+                    I did use Typst for a while (If you are familiar with typst
+                    then you can see that i've used typst syntax for the
+                    headings). But making resumes for different needs would
+                    become kind of pain. I had a template system though. Still,
+                    I wanted something that any average person can use and get
+                    benefit from.
+                </p>
+            </section>
+            <section>
+                <h2>= Key Considerations</h2>
+                <h3>== It should be free</h3>
+                <p>
+                    Keeping the application free meant I have to host it
+                    somewhere for zero cost. Also, processing of the pdf should
+                    happen on the user's browser. As modern devices are
+                    powerful, why using a server to process simple documents.
+                </p>
+                <h3>== It should work on mobile devices</h3>
+                <p>
+                    The mobile compatibility meant I had to pivot from some
+                    design decisions from the initial development (more in the
+                    obstacles section.)
+                </p>
+            </section>
+            <section>
+                <h2>= Technology Used</h2>
+                <p>
+                    I used SvelteKit, as I'm familiar and comfortable with it (I
+                    could glaze how great svelte is but you would get bored so I
+                    wouldn't).
+                </p>
+                <p>
+                    UI library is shadcn-svelte. Hosted on github pages as a
+                    static site.
+                </p>
+            </section>
+            <section>
+                <h2>= Obstacles</h2>
+                <h3>== Previewing the resume</h3>
+                <p>
+                    Initillay, I used browser's builtin pdf preview to show the
+                    updated resume. It worked on pc browsers. But some mobile
+                    browsers (chrome) would show download the document instead
+                    of a preview. So I had to resort to alternative measures.
+                </p>
+                <p></p>
+            </section>
+        </article>
+    </body>
+</html>
